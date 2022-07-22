@@ -1,0 +1,123 @@
+@import "variables", "mixins";
+.video{
+    @include pantalla(xs){
+        background-color: $verde-pino;
+        // height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1.6rem;
+    };
+    @include pantalla(md){
+        display: flex;
+        flex-direction: row;
+        padding-right: 2rem;
+       padding-bottom: 0;
+    }
+    .reproduccionVideo{
+        background-color: $verde-pino;
+        @include pantalla(xs){
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4px 10px;
+            height: 54%;
+            width: 88%;
+        };
+        @include pantalla(md){
+            width: 60%;
+        }
+    }
+}
+.fila1{
+    // height: calc(100% - );
+    video{
+        @include pantalla(xs){
+            width: 100%;
+        };
+    }
+}
+.fila2{
+    height: 0px;
+}
+.barra1{
+    @include pantalla(xs){
+        background-color: $verde-principal;
+        height: 2px;
+    };
+}
+.barra1:hover{
+    height: 6px;
+}
+.barra2{
+    @include pantalla(xs){
+        background-color: rgb(128, 20, 42);
+        height: 100%;
+        width: 0%
+    };
+}
+.fila3{
+    @include pantalla(xs){
+        display: grid;
+        grid-template-columns: 1fr 30px; 
+    };
+    .izquierda {
+        @include pantalla(xs){
+            display: grid;
+            grid-template-columns: repeat(5,30px) 150px;
+            align-items: center;
+            padding: 0 0 .5rem 1rem;
+        };
+        img{
+            @include pantalla(xs){
+                width: 3.3rem;
+                padding-right:2.3rem;
+            };
+            @include pantalla (md){
+                width: 3.5rem;
+            }
+        }
+    }
+}
+.p3{
+    @include pantalla(xs){
+        color: $naranja-oscuro;
+        font-size: 1rem;
+        padding: 3rem 0 2rem;
+        text-align: center;
+    }; 
+    @include pantalla(md){
+        font-size: 1.3rem;
+    }     
+
+}
+.btnServicios{
+    @include pantalla(xs){
+        color: $verde-principal;
+        border: 1px solid $verde-principal;
+        border-radius: 6px;
+        padding: .4rem;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-size: .8rem;
+    }
+    @include pantalla(md){
+        font-size: .9rem;
+    }
+}
+.btnServicios:hover{
+    color: #fff;
+    background-color: $verde-principal;
+}
+.texto{
+    @include pantalla(xs){
+        text-align: center;
+        overflow-y: hidden;
+        padding-bottom: 1.5rem;
+    }  @include pantalla(md){
+        width: 60%;
+        margin-right: 1rem;
+        height: 28vh;
+        padding: 0 2rem;
+        border-right:2px solid $naranja-oscuro;
+    }  
+}

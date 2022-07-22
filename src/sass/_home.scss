@@ -1,0 +1,125 @@
+@import "variables" ,"mixins";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lexend Deca','Urbanist', sans-serif;
+}
+img{
+    object-fit: cover;
+}
+header{
+    @include pantalla(xs){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    };
+    .head{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        };
+        
+    }
+    
+}
+#logo{
+    position:absolute;
+    @include pantalla(xs){
+        padding-top: .6rem;
+        width:4rem;
+        display: flex;
+        z-index: 2;
+    }
+    @include pantalla(md){
+        width: 4.2rem;
+    }
+}
+#logo:hover{
+    width: 4.3rem;
+}
+#index-fondo{
+    @include pantalla(xs){
+        display: flex;
+        width: 100vw;
+        max-height: 70vh;
+    }
+}
+
+.p1{
+    @include pantalla(xs){
+        color: $verde-principal;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    };
+    @include pantalla(md){
+        font-size: 1.6rem;
+    }
+}
+.p2{
+        
+    @include pantalla(xs){
+        color: $verde-principal;
+        font-size: 1rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    };
+    @include pantalla (md){
+        font-size: 1.3rem;
+    }
+}
+.containerUvas{
+    @include pantalla(xs){
+        overflow: hidden;
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+}
+.uvas{
+    @include pantalla(xs){
+        object-fit: cover;
+        max-width: 100vw;
+        min-height: 18rem;
+    }
+}
+#wpp{
+    // display: flex;
+    padding: 1rem;
+    margin:35% 0 0 95%;
+    z-index: 100;
+    position: fixed;
+    @include pantalla (xs){
+        margin:80vh 0 0 82%;
+        // width: 85vw;
+        // height: 35%;
+    }
+    @include pantalla(sm){
+        margin:80vh 0 0 88%;
+        
+    }
+    @include pantalla (md){
+        margin:80vh 0 0 95%;
+        // background-color: aqua;
+        // width: 95vw;
+        // height: 50vh;
+        // width: 93vw;
+        // height: 46%;
+    }
+    .whatsapp{
+        @include pantalla(xs){
+            width: 30px;
+        }
+    }
+    .whatsapp:hover {
+        transition: 1s;
+        transform: scale(1.3);    
+    }
+}

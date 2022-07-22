@@ -1,0 +1,74 @@
+@import "variables", "mixins";
+.carrusel{
+    padding: 0rem;
+    overflow: hidden;
+    background-color: $verde-dark;
+    @include pantalla(xs){
+        max-width: 100vw;
+        padding: 2rem 1rem;
+    }
+    @include pantalla (md){
+        padding: 2rem 2rem;
+    }
+    .grande{
+        background-color: $verde-dark;
+        width:300%;
+        // height: 50vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        // @include neo( 1 , 1em , 1em );
+        transition: all .5s ease;
+        transform: translateX(0%);
+        @include pantalla(xs){
+            // height: 50%;
+            padding: 0rem 1.5rem;
+            border-left: 2px solid $naranja-oscuro;
+            border-right: 2px solid $naranja-oscuro;
+        }
+        @include pantalla (md){
+            width:270%;
+        }
+        @include pantalla (lg){
+            width: 300%;
+        }
+        
+        .img{
+            width: calc( 100% / 3 - 2em);
+            // min-height: 40vh;
+            object-fit: cover;
+            @include pantalla(xs){
+                min-height:50vh ;
+            }
+            @include pantalla(md){
+                max-height: 40vh;
+            }
+        }
+    }
+    .puntos{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $verde-dark;
+        padding-top: 1rem;
+        @include pantalla(xs){
+            
+        }
+        .punto{
+            margin: 0 1em ;
+            list-style-type: none;
+            // @include neo( 1 , 1em , .6em );
+            background-color: $verde-pino;
+            border-radius: 1rem;
+            @include pantalla(xs){
+                width:  1em;
+                height: 1em;
+            }
+        }
+        .punto.activo{
+            background-color: $verde-principal;
+        }
+    }
+}

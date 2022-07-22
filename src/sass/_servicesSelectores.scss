@@ -1,0 +1,306 @@
+@import "variables" ,"mixins";
+/*Inicia Selectores*/
+.t-contenedor {  
+    width: 100%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 0.5em;
+
+  }
+  
+  .t-contenedor .t-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;    
+    list-style:none;
+    @include pantalla(xs){
+    width: 80%;
+    height: 10%;
+    padding: 20px;
+    margin: 30px 0 0 0;
+    }
+
+    @include pantalla(md){
+    width: 100%;
+    height: 10%;
+    margin: 50px 0 20px 0;
+    }
+
+  }
+
+   
+  .t-contenedor .tabli {
+    @include pantalla(xs){
+    padding-left: 40px;
+    margin: 16px;   
+    font-size: 0;
+    font-weight: 300;    
+    color: $verde-principal;
+    transition: all 0.4s ease;
+    border-radius: 0.5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    }
+
+    @include pantalla(md){
+    padding-left: 10rem;
+    margin: 16px;   
+    font-size: 13px;
+    font-weight: 300;    
+    color: $verde-principal;
+    transition: all 0.4s ease;
+    border-radius: 0.5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    } 
+
+    @include pantalla(lg){
+    padding-left: 18rem;
+    margin-left: 1rem; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+    font-size: 20px;
+    font-weight: 300;    
+    } 
+    
+    @include pantalla(xl){
+    padding-left: 20rem;
+    } 
+    
+  }
+
+  .t-contenedor .tabli i{
+        margin: 0px;
+        padding: 2px;
+        font-size: 20px;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+  }
+  
+  .t-contenedor .tabli.active {    
+    color: $naranja-oscuro;
+  }
+  
+  .t-contenedor .tab-subcontenedor {
+    @include pantalla(xs){
+        min-height: 40vh; 
+        position: relative;
+        margin: 0 20px 0 10px;
+    }
+
+    @include pantalla(md){
+        min-height: 110vh; 
+        position: relative;
+        margin: 0 20px 0 10px;
+        display: block;
+    }
+
+    @include pantalla(lg){
+        min-height: 110vh;
+        margin-left: 100px;
+    } 
+
+    @include pantalla(xl){
+        margin-left: 250px;
+    } 
+
+    
+  }
+
+  .t-contenedor .tab-subcontenedor .tBloque {
+    list-style:none;
+    width: 50vh;
+    display: inline-block;
+    @include pantalla(xs){
+       margin-left: 5px;
+    }
+
+    @include pantalla(md){
+       margin-left: 20px;
+       width: 100vh;
+    }
+
+    @include pantalla(lg){
+        width: 200vh;
+        
+    }
+
+    @include pantalla(xl){
+        margin-left: 0px;
+        width: 300vh;
+        
+    }
+    
+  }
+
+  .t-contenedor .tab-subcontenedor li{
+    color: $verde-principal; 
+    margin-top: 0;
+    padding-left: 0; 
+    font-size: 12px; 
+    font-weight: 200;
+  }
+
+  .t-contenedor .tBloque {
+    margin: 0 1rem 0 11.5rem;
+    position: absolute;
+    top: 2em;
+    display: inline-block;
+    -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+            box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    transition: all 0.5s ease;
+  }
+  
+  .t-contenedor .tBloque.active {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translatex(0%);
+  }
+
+  /* inicia Imagenes*/
+
+.img-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include pantalla(md){
+    width: 50rem;
+    }
+
+    @include pantalla(lg){
+    width: 70rem;
+    }
+
+    }
+    
+.img-list li {
+        @include pantalla(xs){
+            border: 2px solid transparent;
+            width: 30%;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+
+        @include pantalla(md){
+            border: 4px solid transparent;
+            width: 30%;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+
+        @include pantalla(lg){
+            border: 5px solid transparent;
+            width: 30%;
+        } 
+        
+    }
+    
+.img-list img {
+    vertical-align: middle;
+    @include pantalla(xs){
+    width: 8rem;
+    height: 5rem;
+    }
+
+    @include pantalla(md){
+    width: 20rem;
+    height: 15rem;
+    }
+
+    @include pantalla(lg){
+    width: 20rem;
+    height: 15rem;
+    }
+    
+    
+    }
+    
+    /* Image Placeholder Styles */
+    .img-placeholder:before,
+    .img-placeholder:after {
+    padding-top: 30%;
+    content: "";
+    display: flex;
+    align-items: center;
+    }  
+
+    .img-placeholder {
+    background: $verde-pino;
+    color: $verde-principal;
+    line-height: 0;
+    display: block;
+    @include pantalla(xs){
+    width: 8rem;
+    height: 5rem;
+    text-align: center;
+    }
+
+    @include pantalla(md){
+    width: 20rem;
+    height: 15rem;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 30px;
+    }
+
+    @include pantalla(lg){
+    padding-left: 80px;
+    padding-top: 50px;
+    }
+    }
+    
+    /* The hover effect*/
+    .img-placeholder:hover{
+        color: $naranja-claro;
+    }
+
+
+    .img-list li:before {
+    transition: all .5s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $verde-dark;
+    transform: scale(0);
+    
+    }
+    .img-list li:hover:before {
+    opacity: .5;
+    transform: scale(1);
+    
+    }
+    .img-list li:after {
+    transition: all .6s ease .2s;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid $verde-dark;
+    background: $verde-dark;
+    opacity: 0;
+    transform: scale(0);
+    }
+    .img-list li:hover:after {
+    opacity: .35;
+    transform: scale(1);
+    
+    }
+
+    /* Finaliza Imagenes*/
+
+
+
+/*Finaliza Selectores*/
+
+  

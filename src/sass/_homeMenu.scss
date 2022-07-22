@@ -1,0 +1,78 @@
+@import "variables" ,"mixins";
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu-nav{
+text-align: center;
+position: fixed;
+z-index: 1;
+padding-top: 6rem;
+// top: 50px;
+left: 0;
+width: 30%;
+height: 100vh;
+background: $verde-dark;
+opacity: .8;
+transition: all 0.5s;
+transform: translateX(-100%);
+
+}
+.menu-nav a{
+    display: block;
+    color: $naranja-oscuro;
+    // height: 100vh;
+    text-decoration: none;
+    padding: 20px;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+    overflow-y: hidden;
+}
+
+
+.menu-nav a:hover{
+    color: #057f2a;
+}
+
+#menu-bar:checked ~ .menu-nav{
+    transform: translateX(0%);
+}
+
+.menu-nav{
+    @include pantalla(md){
+        position: static;
+        width: 100vw;
+        padding-top: 1.4rem;
+        // padding-right: 90rem;
+        height: auto;
+        transform: translate(0%);
+        justify-content: space-around;
+        // float: right;
+        display: flex;
+
+    }
+}
+    header label{
+        @include pantalla(md){
+            display:none ;
+        }
+    }
+    .menu-nav a {
+        @include pantalla (md){
+            border: none;
+        }
+    }
+
+.containerMenu{
+    width: 100%;
+    display: table;
+    color: $naranja-oscuro;
+    position: absolute;
+    z-index:2;
+}

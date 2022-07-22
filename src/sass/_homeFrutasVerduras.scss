@@ -1,0 +1,135 @@
+@import "variables" ,"mixins";
+.frutas{
+    @include pantalla(xs){
+        background-color: $verde-dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding-bottom: 1.6rem;
+    };
+    @include pantalla(md){
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        // justify-items: center;
+    }
+    .p4{
+        @include pantalla(xs){
+            color: $verde-principal;
+            font-size: 1rem;
+            padding: 2rem 0;
+            text-align: center;
+            width: 70%;
+        };
+        @include pantalla(md){
+            font-size: 1.3rem;
+            padding: 0 5rem 0 .4rem ;
+            text-align: center;
+            width: 100%;
+            border-left: 2px solid $verde-principal ;
+        }
+    }
+    .imgAfricultor{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+        };
+        @include pantalla(md){
+            justify-content: start;
+            padding-left: 1.5rem;
+            max-width: 60%;
+        }
+        @include pantalla(lg){
+            max-width: 52%;
+        }
+        .agricultor{
+            @include pantalla(xs){
+                width: 88%;
+            };
+            @include pantalla(xs){
+            max-width: 80%;
+            }
+        }
+    }
+}
+.verduras{
+    @include pantalla(xs){
+        // height: 60vh;
+        background-color: $verde-pino;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.6rem;
+    };
+    @include pantalla(md){
+        // display: flex;
+        flex-direction: row;
+        padding-bottom: 0rem;
+    };
+
+    .verduras1{
+
+        @include pantalla(xs){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 1.6rem;
+        };
+        @include pantalla(md){
+            padding-bottom: 0rem;
+            border-right: 1px solid $naranja-oscuro;
+        }
+        .p5{
+            @include pantalla(xs){
+                color: $naranja-oscuro;
+                font-size: 1rem;
+                padding: 2rem 0;
+                text-align: center;
+                width: 65%;
+            };
+            @include pantalla(md){
+                font-size: 1.2rem;
+                padding: 1rem 0;
+            }
+        }
+
+        .alimentos{
+            img{
+                @include pantalla(xs){
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 15px;
+                };
+                @include pantalla(md){
+                    margin: 0rem;
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+    .cultivo{
+        @include pantalla(xs){
+            display: flex;
+            justify-content: center;
+        };
+        @include pantalla(md){
+            width: 100%;
+        }
+        @include pantalla (lg){
+            width: 45%;
+        }
+        .cosecha{
+            @include pantalla(xs){
+                width: 88%;
+                padding-top: 30px;
+            };
+            @include pantalla(md){
+                width: 100%;
+                padding-top: 0; 
+                padding:1rem 2rem;
+            }
+        }
+    }
+}

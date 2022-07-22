@@ -1,0 +1,220 @@
+@import "variables" ,"mixins";
+/*Inicia Valores*/
+
+.valoresTex{
+    color: $naranja-oscuro;
+    text-align: center;    
+    @include pantalla(xs){
+    font-weight: 200;
+    font-size: 13px;
+    }
+
+    @include pantalla(md){
+    font-size: 15px;  
+    }
+
+    @include pantalla(lg){
+    font-size: 15px;  
+    }
+}
+
+.mision3{
+    background-color: $verde-pino;    
+}
+
+
+.mision3 .linea {  
+    @include pantalla(xs) { 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 113px;    
+    border-top:1px solid $naranja-oscuro;
+    position: relative;
+    top:20px;
+    float:left; 
+    }
+
+    @include pantalla(md){
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width:260px;       
+   } 
+
+   @include pantalla(lg){
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width:150px;       
+   }
+   
+   @include pantalla(lg){
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width:150px;       
+   }
+}
+  
+  .mision3 .leyenda {
+    @include pantalla(xs){      
+    margin: 30px 0 10px 0;
+    color: $naranja-oscuro;
+    font-weight: 250;
+    float:left;
+   } 
+
+   @include pantalla(md){      
+    margin: 45px 0 10px 0;  
+    font-size: 20px;
+    font-weight: 250;
+   }
+
+   @include pantalla(lg){         
+    margin: 50px 0 10px 0;    
+    font-size: 22px;
+    font-weight: 250;
+   }  
+
+   @include pantalla(xl){      
+    margin: 40px 0 10px 0;  
+    font-size: 25px;
+    font-weight: 250;
+   }     
+   
+}
+
+
+.imagen4 {       
+    @include pantalla(xs){
+    margin-top: 20px;    
+    width: 100vw;
+    height: 10rem;
+    }
+
+    @include pantalla(md){
+    margin-top: 20px;
+    width: 5rem;
+    height: 17rem;
+    }
+
+    @include pantalla(md){
+    width: 0;
+    height: 17rem;
+    }
+}
+
+.buttonWaap2{
+    position: absolute;    
+    overflow-y: hidden;
+}
+
+.fondo2 {
+    background-color: $verde-pino;
+    width: 100vw;
+}
+
+.buttonWaap2 a{
+    @include pantalla(xs){
+    position: absolute;
+    bottom: 70px;
+    left: 10.5rem;
+    background-color:$verde-pino;
+    border-radius:50%;
+    width: 40px;
+    height: 10px;  
+    padding: 20px;
+    margin: 0;
+    overflow-y: hidden;
+    }
+
+    @include pantalla(md){    
+    bottom: 98px;
+    left: 21rem;    
+    width:60px;
+    height: 50px;  
+    padding: 25px;
+    }
+
+    @include pantalla(lg){    
+    bottom: 209px;
+    left: 36.5rem;    
+    width: 75px;
+    height: 50px;  
+    padding: 30px;
+    }
+
+    @include pantalla(xl){    
+    bottom: 209px;
+    left: 43.5rem;    
+    width: 75px;
+    height: 50px;  
+    padding: 30px;
+    }
+}
+
+.whatsapp3{
+    @include pantalla(xs){       
+    position: relative;
+    z-index: 2;
+    width: 15px;
+    height: auto;
+    margin-top: 2px;
+    margin-left: 11.4rem;
+    }  
+
+    @include pantalla(md){
+    width: 21px;
+    margin-top: 0.3rem;
+    margin-left: 22.3rem;    
+    }  
+
+    @include pantalla(lg){    
+    width: 25px;
+    margin-top: 1.6rem;
+    margin-left: 38rem;    
+    }  
+     
+    @include pantalla(xl){
+    margin-top: 1.5rem;
+    margin-left: 45rem;    
+    }   
+}
+
+.whatsapp3:hover{
+    transition: 1s;
+    transform: scale(1.3);
+}
+
+.separadorNos2{
+    @include pantalla(xs){
+        overflow: hidden;
+        background-color: $verde-pino;
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        opacity: 0.8;
+        margin-top: 10px;
+    }
+    @include pantalla(md){        
+        height: 8rem;
+        width: 100vw;
+             
+    }
+    @include pantalla(lg){        
+        height: 15rem;
+        width: 100vw;
+        margin-top: 40px;       
+    }
+}
+
+
+/*Finaliza Valores*/
