@@ -1,3 +1,209 @@
+#menu-bar {
+  display: none;
+}
 
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu-nav {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  padding-top: 6rem;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  background: #1c2723;
+  opacity: 0.8;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu-nav a {
+  display: block;
+  color: #ff5d02;
+  text-decoration: none;
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.menu-nav a:hover {
+  color: #057f2a;
+}
+
+#menu-bar:checked ~ .menu-nav {
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    position: static;
+    width: 100vw;
+    padding-top: 1.4rem;
+    height: auto;
+    transform: translate(0%);
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header label {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav a {
+    border: none;
+  }
+}
+
+.containerMenu {
+  width: 100%;
+  display: table;
+  color: #ff5d02;
+  position: absolute;
+  z-index: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Lexend Deca", "Urbanist", sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 150px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 150px) {
+  header .head {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+}
+
+#logo {
+  position: absolute;
+}
+@media screen and (min-width: 150px) {
+  #logo {
+    padding-top: 0.6rem;
+    width: 4rem;
+    display: flex;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 4.2rem;
+  }
+}
+
+#logo:hover {
+  width: 4.3rem;
+}
+
+@media screen and (min-width: 150px) {
+  #index-fondo {
+    display: flex;
+    width: 100vw;
+    max-height: 70vh;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .p1 {
+    color: #057f2a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .p2 {
+    color: #057f2a;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .containerUvas {
+    overflow: hidden;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .uvas {
+    object-fit: cover;
+    max-width: 100vw;
+    min-height: 18rem;
+  }
+}
+
+#wpp {
+  padding: 1rem;
+  margin: 35% 0 0 95%;
+  z-index: 100;
+  position: fixed;
+}
+@media screen and (min-width: 150px) {
+  #wpp {
+    margin: 80vh 0 0 82%;
+  }
+}
+@media screen and (min-width: 399px) {
+  #wpp {
+    margin: 80vh 0 0 88%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #wpp {
+    margin: 80vh 0 0 95%;
+  }
+}
+@media screen and (min-width: 150px) {
+  #wpp .whatsapp {
+    width: 30px;
+  }
+}
+#wpp .whatsapp:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
 
 /*# sourceMappingURL=reserva.css.map */
