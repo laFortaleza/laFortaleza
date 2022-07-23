@@ -23,7 +23,7 @@
             
             <label class="icon-menu" for="menu-bar"></label>
              <nav class="menu-nav">
-                <a href="./nosotros.html">Nosotros</a>
+                <a href="./index.html">Inicio</a>
                 <a href="./servicios.html">Servicios</a>
                 <a href="./reserva.html">Reservas</a>
                 <a href="./contactenos.html">Contáctanos</a>
@@ -37,9 +37,51 @@
         <div id="wpp">
             <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!" target="_blank"><img class="whatsapp" src="./src/img/whatsapp.png" alt="whatsapp"></a>
         </div>
-            <!-- <img id="index-fondo" src="./src/img/Fondo Index.jpg" alt="Paisaje la fortaleza"> -->
-
     </header>
+
+    <main>
+        <section class="primera-seccion">
+            <h1 class="texto-1">Reservas</h1>
+            <img class="img-1" src="./src/img/82509457_218818512460271_7892411978776313856_n.jpg" alt="">
+        </section>
+
+        <section class="reservas">
+            <div class="check-in">
+                <label for="checkIn">Check - in</label><br>
+                <input type="date" id="checkIn">
+            </div>
+            <div class="check-out">
+                <label for="checkOut">Check - out</label> <br>
+                <input type="date" id="checkPut">
+
+            </div>
+            <div class="personas">
+                <label for="people">Personas</label> <br>
+                <input type="number" name="peolple" id="people" placeholder="Personas">
+            </div>
+            <div class="servicio">
+                <label for="services">Servicios</label> <br>
+                <select id="services" name="services">
+                    <option value="Pasadia">Pasadia</option>
+                    <option value="Estadia">Estadia</option>
+                    <option value="Eventos">Eventos</option>
+                </select>
+            </div>
+            <div class="cedula">
+                <label for="id">Cédula de ciudadania</label><br>
+                <input type="number" id="id" placeholder="cédula de ciudadania">
+            </div>
+            <button >Reservar</button>
+        </section>
+        <section class="miReserva">
+            <div class="informacion">
+
+            </div>
+            <div class="eliminar">
+
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

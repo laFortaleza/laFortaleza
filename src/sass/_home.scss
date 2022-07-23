@@ -14,31 +14,58 @@ header{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
     };
     .head{
         @include pantalla(xs){
-            display: flex;
-            justify-content: center;
-            width: 100vw;
-        };
-        
+            background-color: $verde-dark;
+            position: absolute;    
+            width: 60px;
+            height: 60px;
+            // -moz-border-radius: 50%;
+            // -webkit-border-radius: 50%;
+            border-radius: 50%;
+            // background: $verde-dark;
+            margin: 4px;
+            z-index: 2; 
+        }
+        @include pantalla(xl){ 
+            width: 90rem;
+            height: 90rem;
+        } 
+    
+        @include pantalla(md){  
+            width: 90px;
+            height: 90px;
+        }       
+        @include pantalla(lg){  
+            width: 100px;
+            height: 100px;
+        }       
     }
     
 }
 #logo{
     position:absolute;
     @include pantalla(xs){
-        padding-top: .6rem;
-        width:4rem;
+        padding-top: 8%;
+        margin-left: 8%;
+        width:3.1rem;
         display: flex;
-        z-index: 2;
+        z-index: 100;
     }
     @include pantalla(md){
-        width: 4.2rem;
+        width: 80px;  
+        padding-top: 5%;
+        margin-left:5%; 
+    }
+    @include pantalla(lg){
+        width: 90px;
     }
 }
 #logo:hover{
-    width: 4.3rem;
+    transition: 1s;
+    transform: scale(0.9);
 }
 #index-fondo{
     @include pantalla(xs){
