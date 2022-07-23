@@ -1,0 +1,72 @@
+@import "variables", "mixins";
+
+header{
+    @include pantalla(xs){
+        height: auto;
+        padding: 0rem 0px 5rem;
+        background-color: $verde-dark;
+    };
+}
+main{
+        
+    @include pantalla(xs){
+        height: auto;
+        background-color: $verde-dark;
+    };
+}
+.primera-seccion{
+    @include pantalla(xs){
+        height: auto;
+        background-color: $verde-dark;
+    };
+   .texto-1{
+       @include pantalla(xs){
+            font-size: 1.2rem;
+            text-align: center;
+            color: $naranja-oscuro;
+            letter-spacing: 4px;
+            padding: 18px 0px ;
+            font-weight:300;
+            background-color: $verde-pino;
+       }
+   }
+}
+.img-1{
+    // background-color: $verde-dark;
+    margin: 3rem;
+    width: 80%;
+}
+.reservas{
+    // display: flex;
+    color: $naranja-oscuro;
+    text-align: center;
+    // height: auto;
+    div{
+        // display: inline-block;
+        text-align: center;
+        padding: .4rem;
+    }
+    input, select{
+        color: $verde-principal;
+        margin:.7rem;
+        padding: .3rem;
+    }
+}
+.personas{
+    input{
+        width: 6rem;
+    }
+}
+button{
+    padding: .4rem 1.3rem;
+    background-color: $verde-principal;
+    font-size:1rem ;
+    border-radius: .4rem;
+    outline: none;
+    border: hidden;
+    letter-spacing: .09rem;
+}
+button:hover{
+    border-radius: 4px solid $naranja-oscuro;
+    letter-spacing: .12rem;
+}
