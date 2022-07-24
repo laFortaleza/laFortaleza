@@ -23,10 +23,9 @@
             
             <label class="icon-menu" for="menu-bar"></label>
              <nav class="menu-nav">
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./index.html">Inicio</a>
+                 <a href="./index.html">Inicio</a>
+                 <a href="./nosotros.html">Nosotros</a>
                 <a href="./servicios.html">Servicios</a>
-                <a href="./reserva.html">Reservas</a>
                 <a href="./contactenos.html">Contáctanos</a>
                 
                </nav>
@@ -45,37 +44,43 @@
 
     <main>
         <section class="primera-seccion">
-            <h1 class="texto-1">Reservas</h1>
-            <img class="img-1" src="./src/img/82509457_218818512460271_7892411978776313856_n.jpg" alt="">
+            <div class="title">
+                <p class="linea">&nbsp;</p>
+                <h1 class="texto-1">Reservas</h1>
+                <p class="linea">&nbsp;</p>
+            </div>
         </section>
-
+        
         <section class="reservas">
-            <div class="check-in">
-                <label for="checkIn">Check - in</label><br>
-                <input type="date" id="checkIn">
+            <img class="img-1" src="./src/img/82509457_218818512460271_7892411978776313856_n.jpg" alt="">
+            <div class="containerFormulario">
+                <div class="check-in">
+                    <label for="checkIn">Check - in</label><br>
+                    <input type="date" id="checkIn" required>
+                </div>
+                <div class="check-out">
+                    <label for="checkOut">Check - out</label> <br>
+                    <input type="date" id="checkOut" required>
+    
+                </div>
+                <div class="personas">
+                    <label for="people">Personas</label> <br>
+                    <input type="number" name="peolple" id="people" placeholder="Personas" max="200" required>
+                </div>
+                <div class="servicio">
+                    <label for="services">Servicios</label> <br>
+                    <select id="services" name="services">
+                        <option value="Pasadia">Pasadia</option>
+                        <option value="Estadia">Estadia</option>
+                        <option value="Eventos">Eventos</option>
+                    </select>
+                </div>
+                <div class="cedula">
+                    <label for="id">Cédula de ciudadania</label><br>
+                    <input type="number" id="id" placeholder="cédula de ciudadania" required>
+                </div><br>
+                <button class="button">Reservar</button>
             </div>
-            <div class="check-out">
-                <label for="checkOut">Check - out</label> <br>
-                <input type="date" id="checkPut">
-
-            </div>
-            <div class="personas">
-                <label for="people">Personas</label> <br>
-                <input type="number" name="peolple" id="people" placeholder="Personas">
-            </div>
-            <div class="servicio">
-                <label for="services">Servicios</label> <br>
-                <select id="services" name="services">
-                    <option value="Pasadia">Pasadia</option>
-                    <option value="Estadia">Estadia</option>
-                    <option value="Eventos">Eventos</option>
-                </select>
-            </div>
-            <div class="cedula">
-                <label for="id">Cédula de ciudadania</label><br>
-                <input type="number" id="id" placeholder="cédula de ciudadania">
-            </div>
-            <button class="button" >Reservar</button>
         </section>
         <section class="miReserva">
             
@@ -90,11 +95,11 @@
             </section>
             <section class="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
                     <li><a href="#">Reservas</a></li>
-                    <li><a href="#">Contactenos</a></li>
+                    <li><a href="./contactenos.html">Contactenos</a></li>
                 </ul>
             </section>
             <section class="redesSociales">
