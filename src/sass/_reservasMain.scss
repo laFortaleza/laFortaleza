@@ -70,7 +70,6 @@ main{
         @include pantalla ( md){
             width: 40%;
         }
-        
     }
     div{
         @include pantalla(xs){

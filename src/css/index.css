@@ -117,7 +117,7 @@ img {
 @media screen and (min-width: 150px) {
   .containerUvas {
     overflow: hidden;
-    height: 5.5rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -211,6 +211,7 @@ img {
 .carrusel .grande .img {
   width: calc(33.3333333333% - 2em);
   object-fit: cover;
+  z-index: 10000;
 }
 @media screen and (min-width: 150px) {
   .carrusel .grande .img {
@@ -451,6 +452,9 @@ img {
   }
 }
 
+.verduras {
+  z-index: 10000;
+}
 @media screen and (min-width: 150px) {
   .verduras {
     background-color: #26362b;

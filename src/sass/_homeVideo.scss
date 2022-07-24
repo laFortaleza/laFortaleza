@@ -1,5 +1,6 @@
 @import "variables", "mixins";
 .video{
+
     @include pantalla(xs){
         background-color: $verde-pino;
         // height: 100%;
@@ -31,6 +32,7 @@
 .fila1{
     // height: calc(100% - );
     video{
+
         @include pantalla(xs){
             width: 100%;
         };
