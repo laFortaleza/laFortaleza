@@ -677,7 +677,7 @@ header label {
 @media screen and (min-width: 150px) {
   .buttonWaapServ a {
     position: absolute;
-    bottom: -10px;
+    bottom: 5px;
     left: 10.5rem;
     background-color: #26362b;
     border-radius: 50%;
