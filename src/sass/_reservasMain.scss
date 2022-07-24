@@ -70,3 +70,16 @@ button:hover{
     border-radius: 4px solid $naranja-oscuro;
     letter-spacing: .12rem;
 }
+.container{
+    border: 1px solid white;
+    width: 40%;
+    height: auto;
+    font-size: 1rem;
+    color: $verde-principal;
+    padding-top:4rem ;
+    font-weight: 300;
+    h3{
+        font-size: 0.8rem;
+    }
+
+}

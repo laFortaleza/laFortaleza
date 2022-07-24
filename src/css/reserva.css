@@ -309,4 +309,123 @@ button:hover {
   letter-spacing: 0.12rem;
 }
 
+.container {
+  border: 1px solid white;
+  width: 40%;
+  height: auto;
+  font-size: 1rem;
+  color: #057f2a;
+  padding-top: 4rem;
+  font-weight: 300;
+}
+.container h3 {
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #1c2723;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer";
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .LaFortaleza {
+    padding-top: 2rem;
+    color: #057f2a;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza {
+    grid-area: info;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza #logoFooter {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza #logoFooter {
+    width: 7rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p7 {
+    font-size: 1rem;
+    padding: 0.5rem 0 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p7 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .menu {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    grid-area: menuF;
+    margin-right: 6rem;
+    border-left: 1px solid #057f2a;
+  }
+}
+@media screen and (min-width: 150px) {
+  .menu li a {
+    font-size: 1rem;
+    color: #ff5d02;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu li a {
+    line-height: 2.8rem;
+    font-size: 1.1rem;
+  }
+}
+.menu li a:active {
+  color: #ff5d02;
+}
+.menu li a:hover {
+  color: #057f2a;
+}
+
+.redesSociales {
+  background-color: #057f2a;
+}
+@media screen and (min-width: 768px) {
+  .redesSociales {
+    grid-area: footer;
+  }
+}
+@media screen and (min-width: 150px) {
+  .redesSociales img {
+    width: 1.6rem;
+    margin: 1.4rem 1rem;
+  }
+}
+
 /*# sourceMappingURL=reserva.css.map */
