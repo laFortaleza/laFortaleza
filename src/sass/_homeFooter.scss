@@ -1,5 +1,6 @@
 @import "variables", "mixins";
 footer{
+    
     background-color: $verde-dark;
     text-align: center;
     @include pantalla(md){
@@ -50,6 +51,7 @@ footer{
     }
 }
 .menu{
+    
     @include pantalla(xs){
         padding-bottom: 2rem;
     };

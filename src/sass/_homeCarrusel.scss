@@ -38,6 +38,8 @@
             width: calc( 100% / 3 - 2em);
             // min-height: 40vh;
             object-fit: cover;
+            z-index: 10000;
+
             @include pantalla(xs){
                 min-height:50vh ;
             }

@@ -190,7 +190,7 @@ img {
 @media screen and (min-width: 150px) {
   .containerUvas {
     overflow: hidden;
-    height: 5.5rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -253,45 +253,105 @@ img {
   }
 }
 
+.primera-seccion {
+  height: auto;
+  background-color: #1c2723;
+}
 @media screen and (min-width: 150px) {
   .primera-seccion {
-    height: auto;
-    background-color: #1c2723;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion {
+    padding-bottom: 5rem;
   }
 }
 @media screen and (min-width: 150px) {
   .primera-seccion .texto-1 {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1rem;
     color: #ff5d02;
-    letter-spacing: 4px;
-    padding: 18px 0px;
+    letter-spacing: 2px;
     font-weight: 300;
-    background-color: #26362b;
   }
 }
 
-.img-1 {
-  margin: 3rem;
-  width: 80%;
+@media screen and (min-width: 150px) {
+  .img-1 {
+    margin: 1.5rem 3rem;
+    width: 80%;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-1 {
+    padding-bottom: 6rem;
+    width: 45%;
+    margin: 1rem 4rem;
+  }
 }
 
 .reservas {
   color: #ff5d02;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.reservas div {
-  text-align: center;
-  padding: 0.4rem;
+@media screen and (min-width: 150px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas .containerFormulario {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 150px) {
+  .reservas div {
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem;
+  }
 }
 .reservas input, .reservas select {
   color: #057f2a;
-  margin: 0.7rem;
-  padding: 0.3rem;
+}
+@media screen and (min-width: 150px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas input, .reservas select {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
+.reservas #checkIn, .reservas #checkOut {
+  width: 8.3rem;
 }
 
-.personas input {
+#people {
   width: 6rem;
+}
+
+#id {
+  width: 11rem;
 }
 
 button {
@@ -302,6 +362,7 @@ button {
   outline: none;
   border: hidden;
   letter-spacing: 0.09rem;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -309,17 +370,100 @@ button:hover {
   letter-spacing: 0.12rem;
 }
 
-.container {
-  border: 1px solid white;
-  width: 40%;
-  height: auto;
-  font-size: 1rem;
-  color: #057f2a;
-  padding-top: 4rem;
-  font-weight: 300;
+.miReserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #26362b;
 }
-.container h3 {
+
+.informacion {
+  background-color: #1c2723;
+  margin: 1rem;
+  box-shadow: 2px 2px 15px black;
+  border-radius: 0.5rem;
+  color: #057f2a;
+  font-weight: 200;
+  letter-spacing: 0.13rem;
+  padding: 1rem;
+  z-index: 300;
+}
+@media screen and (min-width: 150px) {
+  .informacion {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+}
+.informacion h3 {
+  padding-bottom: 1rem;
+  font-weight: 200;
   font-size: 0.8rem;
+}
+.informacion .eliminar {
+  margin-top: 1.6rem;
+  padding: 5px 0px;
+  border: 2px solid #26362b;
+  text-align: center;
+  color: #ff5d02;
+  letter-spacing: 4px;
+  border-radius: 6px;
+}
+@media screen and (min-width: 150px) {
+  .informacion .eliminar {
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion .eliminar {
+    font-weight: 500;
+  }
+}
+.informacion .eliminar:hover {
+  background-color: #057f2a;
+  color: black;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #26362b;
+}
+@media screen and (min-width: 150px) {
+  .title {
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 2rem 0;
+    margin: 2rem;
+  }
+}
+
+.linea {
+  color: #ff5d02;
+  background-color: #ff5d02;
+  height: 1px;
+}
+@media screen and (min-width: 150px) {
+  .linea {
+    width: 25%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea {
+    margin: 0 3rem;
+    width: 30%;
+  }
 }
 
 footer {
