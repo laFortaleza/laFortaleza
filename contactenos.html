@@ -85,14 +85,21 @@
     <section class="form">
         <div class="form-register">
               <h4>Comunicate</h4>
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Correo">
+              <form action="https://formsubmit.co/madyanfeliperuiz@gmail.com" method="POST">
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Correo" required>
             <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono" required >
-            <input class="controls" type="text" name="asunto" id="asunto" placeholder="Asunto">
-           <textarea class="controls" name="texto" id="texto" placeholder="Mensaje" cols="30" rows="10"></textarea>       
-           <input class="botons" type="submit" value="Enviar">
+            <input class="controls" type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+           <textarea class="controls" name="texto" id="texto" placeholder="Mensaje" cols="30" rows="10" required></textarea>       
+           <!-- <input class="botons" type="submit" value="Enviar"> -->
+           <input type="submit" class="botons" id="button" value="Enviar" >
+        </form>
+        <!-- <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+       <script type="text/javascript">emailjs.init('anY2oLe-0E-9PcSJb')</script> -->
+        </section> 
         </div> 
-    </section> 
+       
+    
     <footer>
         <section class="LaFortaleza">
             <a href="#">
@@ -128,5 +135,31 @@
     </footer>
  </main>
  <script src="./src/js/index.js"></script>
+ 
+
+
 </body>
+<script>const button= document.getElementById(button);
+
+// document.getElementById('form')
+// .addEventListener('submit', function(event){
+//     event.preventDefault();
+
+//     button.vaule='Enviando....';
+
+//     const servicedID = 'default_service';
+//     const templatedID = 'template_4gtcfwm';
+
+//     emailjs.sendForm(servicedID, templatedID, this)
+//     .then(() => {
+//         button.value = 'Enviar';
+//         alert('mensaje enviado');
+//     }, (err) => {
+//         button.value = 'Enviar';
+//         alert(JSON.stringify(err));
+//     });
+    
+// });
+
+</script>
 </html>
