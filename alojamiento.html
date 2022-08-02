@@ -4,21 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/contactenos.css">
+    <link rel="stylesheet" href="./src/css/fontello.css">
+    <link rel="stylesheet" href="./src/css/alojamiento.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3405a3f558.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/css/alojamiento.css">
-
     <link rel="stylesheet" href="./src/css/fontello.css">
-
-    <title>Alojamiento La Fortaleza</title>
+    <title>La Fortaleza</title>
 </head>
 <body>
+    <header>
+        <div class="containerMenu">
+            <input type="checkbox" id="menu-bar">
+            
+            <label class="icon-menu" for="menu-bar"></label>
+             <nav class="menu-nav">
+                <a href="./index.html">Inicio</a>
+                 <a href="./servicios.html">Servicios</a>
+                 <a href="./alojamiento.html">Alojamiento</a>
+                 <a href="./reserva.html">Reservas</a>
+                 <a href="./nosotros.html">Nosotros</a>
+                <a href="./contactenos.html">Contáctanos</a>
+               </nav>
+        </div>
+        
+        <div class="head">
+            <img id="logo" src="./src/img/Logo.png" alt="Logo La Fortaleza" title="La Fortaleza">
+        </div>
+        <div id="wpp">
+            <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!" target="_blank"><img class="whatsapp" src="./src/img/whatsapp.png" alt="whatsapp"></a>
+        </div>
+            <img id="index-fondo" src="./src/img/Fondo Alojamiento.jpg" alt="Paisaje la fortaleza">
+    </header>
 
-    <h1>Alojamiento</h1> <!--Pegar aqui codigo // Poner sass a correr -->
+    <div class="alojamiento">            
+        <div class="linea">&nbsp;</div>
+        <div class="leyenda">Alojamiento</div>
+        <div class="linea">&nbsp;</div>
+    </div>
+
+    <section class="aloja">
+        <div class="aloja1">
+            <p class="p10">QUIOSCO <hr></p>
+            <p class="p11">Caracteristicas Bàsicas</p>
+            <p class="p5">"Experiencia del modo de vida de las familias que habitan el llano"</p>
+         <div class="bloque">
+            <ul class="ul">
+                <li class="li"><i class="fa-solid fa-house-chimney"></i>Cabaña</li>
+                <li class="li"><i class="fa-solid fa-people-group"></i>Huèspedes: 3</li>
+                <li class="li"><i class="fa-solid fa-mug-saucer"></i>Desayuno, almuerzo, cena</li>
+                <li class="li"><i class="fa-solid fa-dollar-sign"></i>$150.000</li>
+            </ul>
+        </div>
+        </div>
+        <div class="quiosco">
+            <img class="quiosco1" src="./src/img/quiosco.jpg" alt="quiosco">
+        </div>
+    </section>
+     <!--Inicia Footer -->
+     <footer>
+        <section class="LaFortaleza">
+            <a href="#">
+                <img id="logoFooter" src="./src/img/Logo.png" alt="Logo">
+            </a>
+            <p class="p6">LA FORTALEZA</p>
+            <p class="p7">Finca Ecolodge</p>
+            
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./alojamiento.html">Alojamiento</a></li>
+                <li><a href="./reserva.html">Reservas</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </section>
+        <section class="redesSociales">
+            <a href="https://www.facebook.com/FincaEcolodgeLaFortaleza" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-f.png" alt="Facebook" title="facebook"/>
+            </a>
+            <a href="https://www.instagram.com/fincalafortalezaecobio/?hl=es" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="Instagram" title="instagram"/>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!" target="_blank">
+                <img src="https://img.icons8.com/material-outlined/24/000000/whatsapp--v1.png" alt="WhatsApp" title="whatsApp"/>
+            </a>
+            <a href="https://www.google.com/maps/place/Ecolodge+La+Fortaleza/@6.8448779,-70.7210129,17z/data=!3m1!4b1!4m5!3m4!1s0x8e6fc9b9e70fd659:0x93ece5ea8c368d58!8m2!3d6.8448779!4d-70.7210129" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/windows/32/000000/marker.png" alt="Ubicación" title="ubicación"/>
+            </a>
+        </section>
+    </footer>
+<!--Finaliza Footer -->
     
 </body>
 </html>

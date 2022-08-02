@@ -1,5 +1,6 @@
 @import "variables" ,"mixins";
 .frutas{
+
     @include pantalla(xs){
         background-color: $verde-dark;
         display: flex;
@@ -53,6 +54,7 @@
     }
 }
 .verduras{
+    z-index: 10000;
     @include pantalla(xs){
         // height: 60vh;
         background-color: $verde-pino;

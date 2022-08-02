@@ -88,13 +88,36 @@ img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 @media screen and (min-width: 150px) {
   header .head {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    background-color: #1c2723;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1328px) {
+  header .head {
+    width: 90rem;
+    height: 90rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .head {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .head {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -103,20 +126,29 @@ img {
 }
 @media screen and (min-width: 150px) {
   #logo {
-    padding-top: 0.6rem;
-    width: 4rem;
+    padding-top: 8%;
+    margin-left: 8%;
+    width: 3.1rem;
     display: flex;
-    z-index: 2;
+    z-index: 100;
   }
 }
 @media screen and (min-width: 768px) {
   #logo {
-    width: 4.2rem;
+    width: 80px;
+    padding-top: 5%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #logo {
+    width: 90px;
   }
 }
 
 #logo:hover {
-  width: 4.3rem;
+  transition: 1s;
+  transform: scale(0.9);
 }
 
 @media screen and (min-width: 150px) {
@@ -158,7 +190,7 @@ img {
 @media screen and (min-width: 150px) {
   .containerUvas {
     overflow: hidden;
-    height: 5.5rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -204,6 +236,340 @@ img {
 #wpp .whatsapp:hover {
   transition: 1s;
   transform: scale(1.3);
+}
+
+@media screen and (min-width: 150px) {
+  header {
+    height: auto;
+    padding: 0rem 0px 5rem;
+    background-color: #1c2723;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  main {
+    height: auto;
+    background-color: #1c2723;
+  }
+}
+
+.primera-seccion {
+  height: auto;
+  background-color: #1c2723;
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion .texto-1 {
+    font-size: 1rem;
+    color: #ff5d02;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .img-1 {
+    margin: 1.5rem 3rem;
+    width: 80%;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-1 {
+    padding-bottom: 6rem;
+    width: 45%;
+    margin: 1rem 4rem;
+  }
+}
+
+.reservas {
+  color: #ff5d02;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 150px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas .containerFormulario {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 150px) {
+  .reservas div {
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem;
+  }
+}
+.reservas input, .reservas select {
+  color: #057f2a;
+}
+@media screen and (min-width: 150px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas input, .reservas select {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
+.reservas #checkIn, .reservas #checkOut {
+  width: 8.3rem;
+}
+
+#people {
+  width: 6rem;
+}
+
+#id {
+  width: 11rem;
+}
+
+button {
+  padding: 0.4rem 1.3rem;
+  background-color: #057f2a;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: hidden;
+  letter-spacing: 0.09rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  border-radius: 4px solid #ff5d02;
+  letter-spacing: 0.12rem;
+}
+
+.miReserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #26362b;
+}
+
+.informacion {
+  background-color: #1c2723;
+  margin: 1rem;
+  box-shadow: 2px 2px 15px black;
+  border-radius: 0.5rem;
+  color: #057f2a;
+  font-weight: 200;
+  letter-spacing: 0.13rem;
+  padding: 1rem;
+  z-index: 300;
+}
+@media screen and (min-width: 150px) {
+  .informacion {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+}
+.informacion h3 {
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.informacion .eliminar {
+  margin-top: 1.6rem;
+  padding: 5px 0px;
+  border: 2px solid #26362b;
+  text-align: center;
+  color: #ff5d02;
+  letter-spacing: 4px;
+  border-radius: 6px;
+}
+@media screen and (min-width: 150px) {
+  .informacion .eliminar {
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion .eliminar {
+    font-weight: 500;
+  }
+}
+.informacion .eliminar:hover {
+  background-color: #057f2a;
+  color: black;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #26362b;
+}
+@media screen and (min-width: 150px) {
+  .title {
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 2rem 0;
+    margin: 2rem;
+  }
+}
+
+.linea {
+  color: #ff5d02;
+  background-color: #ff5d02;
+  height: 1px;
+}
+@media screen and (min-width: 150px) {
+  .linea {
+    width: 25%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea {
+    margin: 0 3rem;
+    width: 30%;
+  }
+}
+
+footer {
+  background-color: #1c2723;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer";
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .LaFortaleza {
+    padding-top: 2rem;
+    color: #057f2a;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza {
+    grid-area: info;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza #logoFooter {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza #logoFooter {
+    width: 7rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p7 {
+    font-size: 1rem;
+    padding: 0.5rem 0 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p7 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .menu {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    grid-area: menuF;
+    margin-right: 6rem;
+    border-left: 1px solid #057f2a;
+  }
+}
+@media screen and (min-width: 150px) {
+  .menu li a {
+    font-size: 1rem;
+    color: #ff5d02;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu li a {
+    line-height: 2.8rem;
+    font-size: 1.1rem;
+  }
+}
+.menu li a:active {
+  color: #ff5d02;
+}
+.menu li a:hover {
+  color: #057f2a;
+}
+
+.redesSociales {
+  background-color: #057f2a;
+}
+@media screen and (min-width: 768px) {
+  .redesSociales {
+    grid-area: footer;
+  }
+}
+@media screen and (min-width: 150px) {
+  .redesSociales img {
+    width: 1.6rem;
+    margin: 1.4rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=reserva.css.map */

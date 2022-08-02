@@ -1,0 +1,204 @@
+@import "variables", "mixins";
+
+header{
+    @include pantalla(xs){
+        height: auto;
+        padding: 0rem 0px 5rem;
+        background-color: $verde-dark;
+    };
+}
+main{
+        
+    @include pantalla(xs){
+        height: auto;
+        background-color: $verde-dark;
+    };
+
+}
+.primera-seccion{
+    height: auto;
+    background-color: $verde-dark;
+    @include pantalla(xs){
+        padding-bottom: 0;
+    };
+    @include pantalla(md){
+      padding-bottom: 5rem;
+    };
+   .texto-1{
+       @include pantalla(xs){
+            font-size: 1rem;
+            // text-align: center;
+            color: $naranja-oscuro;
+            letter-spacing: 2px;
+            font-weight:300;
+       }
+   }
+}
+.img-1{
+    @include pantalla(xs){
+        margin: 1.5rem 3rem;
+        width: 80%;
+        padding-bottom: 1rem
+    };
+    @include pantalla(md){
+        padding-bottom: 6rem;
+        width: 45%;
+        margin:1rem 4rem;
+    };
+}
+.reservas{
+    color: $naranja-oscuro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    // @include pantalla(xs){
+    // };
+    // @include pantalla(md){
+        
+        
+    // };
+    .containerFormulario{
+        @include pantalla(xs){
+            width: 100%;
+            padding: 2rem 0;
+        }
+        @include pantalla ( sm){
+            width: 100%;
+            padding-top: 0;
+        }
+        @include pantalla ( md){
+            width: 40%;
+        }
+    }
+    div{
+        @include pantalla(xs){
+            display: inline-block;
+            text-align: center;
+            padding: .3rem;
+        };
+    }
+    input, select{
+        color: $verde-principal;
+        @include pantalla(xs){
+            margin:.7rem;
+            padding: .2rem;
+        };
+        @include pantalla(sm){
+            margin:.7rem;
+            padding: .3rem;
+        };
+        @include pantalla(md){
+            margin:1rem;
+            padding: .5rem;
+        };
+    }
+    #checkIn, #checkOut{
+        width: 8.3rem;
+    }
+}
+#people{
+    width: 6rem;
+    // @include pantalla(xs){
+    
+    // };
+}
+#id{
+    width: 11rem;
+}
+button{
+    
+    // @include pantalla(xs){
+        padding: .4rem 1.3rem;
+        background-color: $verde-principal;
+        font-size:1rem ;
+        border-radius: .4rem;
+        outline: none;
+        border: hidden;
+        letter-spacing: .09rem;
+        margin-top: 1rem;
+    // };
+}
+button:hover{
+    // @include pantalla(xs){
+        border-radius: 4px solid $naranja-oscuro;
+        letter-spacing: .12rem;
+    // };
+}
+.miReserva{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $verde-pino;
+}
+.informacion{
+    background-color: $verde-dark;
+    margin: 1rem;
+    box-shadow: 2px 2px  15px black;
+    border-radius: .5rem;
+    color: $verde-principal;
+    font-weight: 200;
+    letter-spacing: .13rem;
+    padding: 1rem; 
+    z-index: 300;
+    @include pantalla(xs){
+        width: 40%;
+        font-size: .8rem;
+    };
+    @include pantalla(md){
+        width: 30%;
+        font-size: .9rem;
+    };
+    h3{
+        padding-bottom: 1rem;
+        font-weight: 200;
+        font-size: .8rem;
+    }
+    .eliminar{
+        margin-top: 1.6rem;
+        padding: 5px 0px;
+        border: 2px solid $verde-pino;
+        text-align: center;
+        color: $naranja-oscuro;
+        letter-spacing: 4px;
+        border-radius: 6px;
+        @include pantalla(xs){
+            font-weight: 200; 
+        };
+        @include pantalla(md){
+            font-weight: 500; 
+        };
+    }
+    .eliminar:hover{
+        background-color: $verde-principal;
+        color: black;
+    }
+}
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $verde-pino;
+    @include pantalla(xs){
+        padding: 1rem 0;
+    }
+    @include pantalla(md){
+        padding: 2rem 0;
+        margin: 2rem;
+    }
+    
+}
+.linea{
+    color: $naranja-oscuro;
+    background-color: $naranja-oscuro;
+    height: 1px;
+    @include pantalla(xs){
+        width: 25%;
+        margin: 0 1rem;
+    }
+    @include pantalla(md){
+        margin: 0 3rem;
+        width: 30%;
+    }
+}

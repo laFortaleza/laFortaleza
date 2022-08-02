@@ -1,3 +1,734 @@
 
 
 /*# sourceMappingURL=alojamiento.css.map */
+
+
+
+
+
+@media screen and (min-width: 150px) {
+    .p01 {  
+        background-color: #26362b;
+      color: #ff5d02;
+      font-size: 1rem;
+      padding: 3rem 0 2rem;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 150px) {
+    .aloja {
+      background-color: #26362b;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 1.6rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .aloja {
+      display: flex;
+      flex-direction: row;
+      padding-right: 10rem;
+      padding-bottom: 0;
+      height: 100%;
+    }
+  }
+  .aloja .reproduccionVideo {
+    background-color: #26362b;
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .reproduccionVideo {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 4px 10px;
+      height: 54%;
+      width: 88%;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .aloja .reproduccionVideo {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 150px) {
+    .LaFortaleza {
+      padding-top: 2rem;
+      color: #057f2a;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .LaFortaleza {
+      grid-area: info;
+      margin-left: 4rem;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .LaFortaleza #logoFooter {
+      width: 9rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .LaFortaleza #logoFooter {
+      width: 7rem;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .LaFortaleza .p6 {
+      color: #ff5d02;
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .LaFortaleza .p6 {
+      color: #057f2a;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .LaFortaleza .p7 {
+      font-size: 1rem;
+      padding: 0.5rem 0 4rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .LaFortaleza .p7 {
+      
+      font-size: 1.1rem;
+    }
+  }
+  
+
+  .menu .p6{
+    color: #057f2a;
+  }
+
+  .menu h3{
+    color: #ff5d02;
+  }
+  .menu h2{
+    color: #057f2a;
+  }
+  #res{
+    width: 30%;
+    background-color: #ff5d02;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 3px 6px 15px #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+  
+  @media screen and (min-width: 150px) {
+    .menu {
+      padding-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .menu {
+      grid-area: menuF;
+      margin-right: 6rem;
+      border-left: 1px solid #057f2a;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .menu li a {
+      font-size: 1rem;
+      color: #ff5d02;
+      text-decoration: none;
+      line-height: 2rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .menu li a {
+      line-height: 2.8rem;
+      font-size: 1.1rem;
+    }
+  }
+  .menu li a:active {
+    color: #ff5d02;
+  }
+  .menu li a:hover {
+    color: #057f2a;
+  }
+
+
+.alojamiento{
+background-color: #26362b;
+align-content: center;
+}
+  @media screen and (min-width: 150px) {
+    .alojamiento .linea {
+      margin-top: 0;
+      margin-bottom: 30px;
+      margin-left: 25px;
+      margin-right: 25px;
+      width: 120px;
+      border-top: 1px solid #ff5d02;
+      position: relative;
+      top: 20px;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .alojamiento .linea {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 270px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .alojamiento .linea {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 150px) {
+    .alojamiento .leyenda {
+      margin: 10px 0 10px 0;
+      color: #ff5d02;
+      font-weight: 250;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .alojamiento .leyenda {
+      margin: 25px 0 10px 0;
+      font-size: 20px;
+      font-weight: 250;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .alojamiento .leyenda {
+      margin: 50px 0 10px 0;
+      font-size: 22px;
+      font-weight: 250;
+    }
+  }
+  @media screen and (min-width: 1328px) {
+    .alojamiento .leyenda {
+      margin: 40px 0 10px 0;
+      font-size: 25px;
+      font-weight: 250;
+    }
+  }
+ 
+
+  .aloja {
+    z-index: 10000;
+  }
+  @media screen and (min-width: 150px) {
+    .aloja {
+      background-color: #26362b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1.6rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja {
+      flex-direction: row;
+      padding-bottom: 0rem;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .aloja1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1.6rem;
+    }
+  }
+
+  
+  /* @media screen and (min-width: 768px) {
+    .aloja .aloja1 {
+      padding-bottom: 0rem;
+      border-right: 1px solid #ff5d02;
+    }
+  } */
+
+  @media screen and (min-width: 150px) {
+    .aloja .aloja1 .p10 {
+      color: #057f2a;
+      font-size: 1rem;
+      padding: 2rem 0;
+      
+      width: 65%;
+    }
+  }
+
+  @media screen and (min-width: 150px) {
+    .aloja .aloja1 .p11 {
+      color: #ff5d02;
+      width: 65%;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .aloja1 .p5 {
+      color: #057f2a;
+      font-size: 1rem;
+      padding: 2rem 0;
+      text-align: center;
+      width: 65%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja .aloja1 .p5 {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .aloja1 .alimentos img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin: 0 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja .aloja1 .alimentos img {
+      margin: 0rem;
+      width: 65px;
+      height: 65px;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .quiosco {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja .quiosco {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .aloja .quiosco {
+      width: 85%;
+    }
+  }
+  @media screen and (min-width: 150px) {
+    .aloja .quiosco .quiosco1 {
+      width: 88%;
+      padding-top: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja .quiosco .quiosco1 {
+      width: 200%;
+      padding-top: 0;
+      padding: 1rem 2rem;
+    }
+  }
+
+  @media screen and (min-width: 150px) {
+    .aloja1 .bloque {
+      min-height: 20vh;
+      position: relative;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja1 .bloque {
+      min-height: 40vh;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  @media screen and (min-width: 1328px) {
+    .aloja1 .bloque {
+      min-height: 50vh;
+      position: relative;
+    }
+  }
+  
+  .aloja1 .bloque {
+    list-style: none;
+    width: 150vh;
+    display: inline-block;
+  }
+  @media screen and (min-width: 150px) {
+    .aloja1 .bloque {
+      margin-left: 8px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja1 .bloque {
+      margin-left: 80px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .aloja1 .bloque {
+      margin-left: 150px;
+    }
+  }
+  @media screen and (min-width: 1328px) {
+    .aloja1 .bloque {
+      margin-left: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 150px) {
+    .aloja1 li {
+      color: #057f2a;
+      margin-top: 0;
+      padding-left: 150px;
+      font-size: 12px;
+      font-weight: 200;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja1 li {
+      color: #057f2a;
+      margin-top: 10px;
+      padding-left: 250px;
+      font-size: 17px;
+      font-weight: 200;
+    }
+  }
+  
+  .aloja1 i {
+    color: #ff5d02;
+    opacity: 0.5;
+  }
+  @media screen and (min-width: 150px) {
+    .aloja1 i {
+      font-size: 10px;
+      margin: 5px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja1 i {
+      font-size: 15px;
+      margin: 10px;
+    }
+  }
+  
+  .aloja1 h2 {
+    color: #057f2a;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+  }
+  @media screen and (min-width: 150px) {
+    .aloja1 h2 {
+      padding-left: 20px;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .aloja1 h2 {
+      padding-left: 20px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 150px) {
+    .aloja1 hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ff5d02;
+      margin: 3px 0;
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .aloja1 hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ff5d02;
+      margin: 1em 0;
+      padding: 0;
+    }
+  }
+
+  
+  
+
+footer {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    margin-top: 110px;
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer";
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: 210px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .LaFortaleza {
+    padding-top: 7rem;
+    color: #057f2a;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza {
+    padding-top: 3rem;
+    grid-area: info;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .LaFortaleza {
+    padding-top: 5rem;
+    margin-left: 6rem;
+  }
+}
+@media screen and (min-width: 1328px) {
+  .LaFortaleza {
+    padding-top: 4rem;
+    margin-left: 10rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza #logoFooter {
+    width: 6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza #logoFooter {
+    width: 7rem;
+  }
+}
+.LaFortaleza #logoFooter:hover {
+  transition: 1s;
+  transform: scale(0.9);
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p6 {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p7 {
+    font-size: 1rem;
+    padding: 0.5rem 0 2.5rem;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p7 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .LaFortaleza hr {
+    height: 1.2px;
+    border: none;
+    color: #ff5d02;
+    background-color: #ff5d02;
+    width: 80px;
+    margin-left: 155px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza hr {
+    width: 85px;
+    margin-left: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .LaFortaleza hr {
+    margin-left: 220px;
+  }
+}
+@media screen and (min-width: 1328px) {
+  .LaFortaleza hr {
+    margin-left: 230px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .menu {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 1px 0px 20px;
+    grid-area: menuF;
+    margin-right: 11rem;
+    border-left: 1.2px solid #057f2a;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 20px 0px 10px;
+    margin-right: 20rem;
+  }
+}
+@media screen and (min-width: 1328px) {
+  .menu {
+    margin-right: 30rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .menu li a {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #ff5d02;
+    text-decoration: none;
+    line-height: 2px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu li a {
+    line-height: 2.8rem;
+    font-size: 1.1rem;
+  }
+}
+.menu li a:active {
+  color: #ff5d02;
+}
+.menu li a:hover {
+  color: #057f2a;
+}
+
+.redesSociales {
+  background-color: #057f2a;
+  padding: 13px;
+}
+@media screen and (min-width: 768px) {
+  .redesSociales {
+    grid-area: footer;
+  }
+}
+
+.redesSociales a {
+  text-decoration: none;
+}
+
+.redesSociales i {
+  color: #1c2723;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+@media screen and (min-width: 1328px) {
+  .redesSociales i {
+    margin-right: 60px;
+  }
+}
+
+.redesSociales i:hover {
+  color: #ff5d02;
+  opacity: 0.7;
+}
+
+/* Finaliza Footer*/
+/* Inicia Menu*/
+#menu-bar {
+  display: none;
+}
+
+.icon-menu {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu-nav {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1rem;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  background: #1c2723;
+  opacity: 0.8;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu-nav a {
+  display: block;
+  color: #ff5d02;
+  text-decoration: none;
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.menu-nav a:hover {
+  color: #057f2a;
+}
+
+#menu-bar:checked ~ .menu-nav {
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    position: static;
+    width: 100vw;
+    padding-top: 1.4rem;
+    height: auto;
+    transform: translate(0%);
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header label {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav a {
+    border: none;
+  }
+}
+
+.containerMenu {
+  width: 100%;
+  display: table;
+  color: #ff5d02;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Finaliza Menu*/
+
+/*# sourceMappingURL=nosotros.css.map */
