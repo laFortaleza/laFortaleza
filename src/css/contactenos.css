@@ -273,6 +273,13 @@
       text-align: center;
     }
   }
+
+  .contacm i {
+    color: #ff5d02;
+    
+  }
+
+  
   
   @media screen and (min-width: 150px) {
     .p3 {  
