@@ -3,21 +3,27 @@
     display: none;
 }
 
+.icon-menu{
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 header label{
     float: right;
-    font-size: 28px;
+    font-size: 26px;
     margin: 6px 0;
     cursor: pointer;
+    font-weight: 200;
 }
 
 .menu-nav{
 text-align: center;
 position: fixed;
 z-index: 1;
-padding-top: 6rem;
+padding-top: 1rem;
 // top: 50px;
 left: 0;
-width: 30%;
+width: 35%;
 height: 100vh;
 background: $verde-dark;
 opacity: .8;
@@ -28,10 +34,8 @@ transform: translateX(-100%);
 .menu-nav a{
     display: block;
     color: $naranja-oscuro;
-    // height: 100vh;
     text-decoration: none;
     padding: 20px;
-    // border-bottom: 1px solid rgba(255, 255, 255, 0.89);
     overflow-y: hidden;
 }
 
@@ -49,11 +53,9 @@ transform: translateX(-100%);
         position: static;
         width: 100vw;
         padding-top: 1.4rem;
-        // padding-right: 90rem;
         height: auto;
         transform: translate(0%);
         justify-content:space-around;
-        // float: right;
         display: flex;
 
     }
