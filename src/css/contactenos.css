@@ -18,35 +18,79 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      align-items: center;
+
     }
   }
   @media screen and (min-width: 150px) {
     header .head {
-      display: flex;
+      /* display: flex;
       justify-content: center;
-      width: 100vw;
+      width: 100vw; */
+      background-color: #1c2723;
+      position: absolute;    
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 4px;
+      z-index: 2; 
     }
   }
+  @media screen and (min-width: 700px) {
+    header .head {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    header .head{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /* @media screen and (min-width: 1328px) {
+    header .head{
+      width: 90rem;
+      height: 90rem;
+    }
+  } */
+  
   
   #logo {
     position: absolute;
   }
   @media screen and (min-width: 150px) {
     #logo {
-      padding-top: 0.6rem;
+      /* padding-top: 0.6rem;
       width: 4rem;
       display: flex;
-      z-index: 2;
+      z-index: 2; */
+      padding-top: 8%;
+      margin-left: 8%;
+      width:3.1rem;
+      display: flex;
+      z-index: 100;
     }
   }
   @media screen and (min-width: 700px) {
     #logo {
-      width: 4.2rem;
+      /* width: 4.2rem; */
+      width: 80px;  
+      padding-top: 5%;
+      margin-left:5%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    #logo {
+     width: 90px;
     }
   }
   
+  
   #logo:hover {
-    width: 4.3rem;
+    /* width: 4.3rem; */
+    transition: 1s;
+    transform: scale(0.9);
   }
   
   @media screen and (min-width: 150px) {
@@ -451,20 +495,34 @@
     color: #057f2a;
   }
   
-  .redesSociales {
-    background-color: #057f2a;
+  
+.redesSociales {
+  background-color: #057f2a;
+  padding: 13px;
+}
+@media screen and (min-width: 768px) {
+  .redesSociales{
+    grid-area: footer;
   }
-  @media screen and (min-width: 700px) {
-    .redesSociales {
-      grid-area: footer;
-    }
+}
+.redesSociales a{
+  text-decoration: none;
+}
+.redesSociales i{
+  color: #1c2723;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+@media screen and (min-width: 1328px) {
+  .redesSociales i {
+    margin-right: 60px;
   }
-  @media screen and (min-width: 150px) {
-    .redesSociales img {
-      width: 1.6rem;
-      margin: 1.4rem 1rem;
-    }
-  }
+}
+.redesSociales i:hover{
+  color: #ff5d02;
+  opacity: 0.7;
+}
   
   #menu-bar {
     display: none;
@@ -472,18 +530,23 @@
   
   header label {
     float: right;
-    font-size: 28px;
+    font-size: 26px;
     margin: 6px 0;
     cursor: pointer;
+    font-weight: 200;
   }
-  
+  .icon-menu{
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
   .menu-nav {
     text-align: center;
     position: fixed;
     z-index: 1;
-    padding-top: 6rem;
+    padding-top: 2rem;
     left: 0;
-    width: 30%;
+    width: 35%;
     height: 100vh;
     background: #1c2723;
     opacity: 0.8;

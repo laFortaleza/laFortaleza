@@ -22,18 +22,11 @@ header{
             position: absolute;    
             width: 60px;
             height: 60px;
-            // -moz-border-radius: 50%;
-            // -webkit-border-radius: 50%;
             border-radius: 50%;
-            // background: $verde-dark;
             margin: 4px;
             z-index: 2; 
         }
-        @include pantalla(xl){ 
-            width: 90rem;
-            height: 90rem;
-        } 
-    
+        
         @include pantalla(md){  
             width: 90px;
             height: 90px;
@@ -42,13 +35,16 @@ header{
             width: 100px;
             height: 100px;
         }       
+        // @include pantalla(xl){ 
+        //     width: 90rem;
+        //     height: 90rem;
+        // } 
     }
-    
 }
 #logo{
     position:absolute;
     @include pantalla(xs){
-        padding-top: 8%;
+        padding-top: 6%;
         margin-left: 8%;
         width:3.1rem;
         display: flex;

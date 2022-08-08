@@ -742,7 +742,8 @@ footer {
   footer {
     display: grid;
     grid-template: repeat(2, auto)/repeat(2, auto);
-    grid-template-areas: "info menuF" "footer footer";
+    grid-template-areas: "info menuF" 
+    "footer footer";
     align-items: center;
   }
 }
@@ -827,18 +828,32 @@ footer {
 
 .redesSociales {
   background-color: #057f2a;
+  padding: 13px;
 }
 @media screen and (min-width: 768px) {
-  .redesSociales {
+  .redesSociales{
     grid-area: footer;
   }
 }
-@media screen and (min-width: 150px) {
-  .redesSociales img {
-    width: 1.6rem;
-    margin: 1.4rem 1rem;
+.redesSociales a{
+  text-decoration: none;
+}
+.redesSociales i{
+  color: #1c2723;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+@media screen and (min-width: 1328px) {
+  .redesSociales i {
+    margin-right: 60px;
   }
 }
+.redesSociales i:hover{
+  color: #ff5d02;
+  opacity: 0.7;
+}
+
 
 #menu-bar {
   display: none;
@@ -846,18 +861,24 @@ footer {
 
 header label {
   float: right;
-  font-size: 28px;
+  font-size: 26px;
   margin: 6px 0;
   cursor: pointer;
+  font-weight: 200;
 }
 
+.icon-menu{
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
 .menu-nav {
   text-align: center;
   position: fixed;
   z-index: 1;
-  padding-top: 6rem;
+  padding-top: 2rem;
   left: 0;
-  width: 30%;
+  width: 35%;
   height: 100vh;
   background: #1c2723;
   opacity: 0.8;
