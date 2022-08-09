@@ -83,14 +83,14 @@ img {
 @media screen and (min-width: 150px) {
   .p1 {
     color: #057f2a;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .p1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -111,12 +111,17 @@ img {
 @media screen and (min-width: 150px) {
   .containerUvas {
     overflow: hidden;
-    height: 8rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .containerUvas {
+    height: 8rem;
   }
 }
 
@@ -157,6 +162,30 @@ img {
 #wpp .whatsapp:hover {
   transition: 1s;
   transform: scale(1.3);
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.linea {
+  color: #ff5d02;
+  background-color: #ff5d02;
+  height: 1px;
+}
+@media screen and (min-width: 150px) {
+  .linea {
+    width: 25%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea {
+    margin: 0 3rem;
+    width: 30%;
+  }
 }
 
 .carrusel {
@@ -320,13 +349,14 @@ img {
   }
 }
 @media screen and (min-width: 150px) {
-  .fila3 .izquierda img {
+  .fila3 .izquierda i {
     width: 3.3rem;
     padding-right: 2.3rem;
+    color: #ff5d02;
   }
 }
 @media screen and (min-width: 768px) {
-  .fila3 .izquierda img {
+  .fila3 .izquierda i {
     width: 3.5rem;
   }
 }
@@ -545,12 +575,17 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     display: grid;
-    grid-template: repeat(2, auto)/repeat(2, auto);
-    grid-template-areas: "info menuF" "footer footer";
+    grid-template: repeat(3, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer" "by by";
     align-items: center;
   }
 }
 
+.LaFortaleza {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (min-width: 150px) {
   .LaFortaleza {
     padding-top: 2rem;
@@ -611,6 +646,7 @@ footer {
 @media screen and (min-width: 150px) {
   .menu li a {
     font-size: 1rem;
+    font-weight: 200;
     color: #ff5d02;
     text-decoration: none;
     line-height: 2rem;
@@ -655,6 +691,71 @@ footer {
 .redesSociales i:hover {
   color: #ff5d02;
   opacity: 0.7;
+}
+
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
+}
+
+.by {
+  background-color: #057f2a;
+  grid-area: by;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff5d02;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 150px) {
+  .by {
+    line-height: 1.9rem;
+  }
+}
+.by ul li {
+  display: inline-block;
+}
+@media screen and (min-width: 150px) {
+  .by ul li {
+    line-height: 1.8rem;
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .by ul li {
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+}
+.by ul li a {
+  color: #ff5d02;
+  text-decoration: none;
+}
+.by ul li a:hover {
+  color: #1c2723;
+  font-weight: 700;
+}
+
+.linea3 {
+  height: 1px;
+  width: 37%;
+  background-color: #ff5d02;
+  margin: 0.5rem 0 1.4rem;
+}
+@media screen and (min-width: 150px) {
+  .linea3 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea3 {
+    width: 37%;
+  }
 }
 
 #menu-bar {

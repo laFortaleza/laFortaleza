@@ -69,10 +69,11 @@
             align-items: center;
             padding: 0 0 .5rem 1rem;
         };
-        img{
+        i{
             @include pantalla(xs){
                 width: 3.3rem;
                 padding-right:2.3rem;
+                color: $naranja-oscuro;
             };
             @include pantalla (md){
                 width: 3.5rem;

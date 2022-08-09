@@ -74,12 +74,12 @@ header{
 .p1{
     @include pantalla(xs){
         color: $verde-principal;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold;
         text-align: center;
     };
     @include pantalla(md){
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 }
 .p2{
@@ -97,12 +97,15 @@ header{
 .containerUvas{
     @include pantalla(xs){
         overflow: hidden;
-        height: 8rem;
+        height: 5rem;
         display: flex;
         justify-content: center;
         justify-items: center;
         align-items: center;
         align-content: center;
+    }
+    @include pantalla(md){
+        height: 8rem;
     }
     
 }
@@ -144,5 +147,33 @@ header{
     .whatsapp:hover {
         transition: 1s;
         transform: scale(1.3);    
+    }
+}
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    // background-color: $verde-pino;
+    @include pantalla(xs){
+        // padding: 1rem 0;
+    }
+    @include pantalla(md){
+        // padding: 2rem 0;
+        // margin: 2rem;
+    }
+    
+}
+.linea{
+    color: $naranja-oscuro;
+    background-color: $naranja-oscuro;
+    height: 1px;
+    @include pantalla(xs){
+        width: 25%;
+        margin: 0 1rem;
+    }
+    @include pantalla(md){
+        margin: 0 3rem;
+        width: 30%;
     }
 }
