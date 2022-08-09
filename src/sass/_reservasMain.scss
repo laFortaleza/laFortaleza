@@ -174,12 +174,12 @@ button:hover{
         color: black;
     }
 }
-.title{
+.titleR{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: $verde-pino;
+    // background-color: $verde-principal;
     @include pantalla(xs){
         padding: 1rem 0;
     }

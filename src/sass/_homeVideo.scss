@@ -2,7 +2,7 @@
 .video{
 
     @include pantalla(xs){
-        background-color: $verde-pino;
+        // background-color: $verde-pino;
         // height: 100%;
         display: flex;
         align-items: center;
@@ -16,7 +16,7 @@
        padding-bottom: 0;
     }
     .reproduccionVideo{
-        background-color: $verde-pino;
+        // background-color: $verde-pino;
         @include pantalla(xs){
             display: grid;
             grid-template-columns: 1fr;
@@ -47,9 +47,7 @@
         height: 2px;
     };
 }
-.barra1:hover{
-    height: 6px;
-}
+
 .barra2{
     @include pantalla(xs){
         background-color: rgb(128, 20, 42);
@@ -95,8 +93,8 @@
 }
 .btnServicios{
     @include pantalla(xs){
-        color: $verde-principal;
-        border: 1px solid $verde-principal;
+        // color: $verde-pino;
+        // border: 1px solid $verde-pino;
         border-radius: 6px;
         padding: .4rem;
         text-decoration: none;
@@ -107,10 +105,10 @@
         font-size: .9rem;
     }
 }
-.btnServicios:hover{
-    color: #fff;
-    background-color: $verde-principal;
-}
+// .btnServicios:hover{
+//     color: #fff;
+//     background-color: $verde-pino;
+// }
 .texto{
     @include pantalla(xs){
         text-align: center;

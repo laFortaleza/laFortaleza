@@ -18,6 +18,9 @@ footer{
 }
 
 .LaFortaleza{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     @include pantalla(xs){
         padding-top: 7rem;
         color: $verde-principal;
@@ -215,6 +218,13 @@ footer{
     color: #1c2723;
     font-weight: 700;
   }
+  .linea2{
+    display: flex;
+    text-align: center;
+    height: 1px;
+    width: 30%;
+    background-color: $naranja-oscuro;
+}
   .linea3{
     height: 1px;
     width: 37%;

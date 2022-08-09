@@ -1,7 +1,6 @@
 @import "variables", "mixins";
 footer{
-    
-    background-color: $verde-dark;
+    // background-color: $blanco;
     text-align: center;
     @include pantalla(md){
         display: grid;
@@ -89,7 +88,6 @@ footer{
 .redesSociales{
     background-color: $verde-principal;
     padding: 13px;     
-    
     @include pantalla(md){
         grid-area: footer;
     }
