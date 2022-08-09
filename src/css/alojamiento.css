@@ -913,6 +913,27 @@ header label {
   z-index: 2;
 }
 
+.dark-mode-button{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  padding: 20px;
+  background: white;
+
+}
+
+html.dark-mode{
+  filter: invert(100%);
+}
+
+html.dark-mode img{
+       filter: invert(100%);
+}
+
+html.dark-mode h3{
+  color: black;
+}
+
 /*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=nosotros.css.map */
