@@ -5,14 +5,18 @@ footer{
     text-align: center;
     @include pantalla(md){
         display: grid;
-        grid-template: repeat(2,auto)/repeat(2, auto);
+        grid-template: repeat(3,auto)/repeat(2, auto);
         grid-template-areas:
         "info menuF"
-        "footer footer";
+        "footer footer"
+        "by by";
         align-items: center;
     }
 }
 .LaFortaleza{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     @include pantalla(xs){
         padding-top: 2rem;
         color: $verde-principal;
@@ -64,6 +68,7 @@ footer{
     li a{
         @include pantalla(xs){
             font-size: 1rem;
+            font-weight: 200;
             color: $naranja-oscuro;
             text-decoration: none;
             line-height: 2rem;
@@ -83,18 +88,79 @@ footer{
 }
 .redesSociales{
     background-color: $verde-principal;
-    // @include pantalla(xs){
-    //     height: 10vh
-    // }; 
+    padding: 13px;     
+    
     @include pantalla(md){
         grid-area: footer;
     }
+    a{
+        text-decoration: none;
+    }
+    i{
+        color: $verde-dark;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 15px; 
+        @include pantalla(xl){
+            margin-right: 60px;
+        }  
+    }
+    i:hover{
+        color: $naranja-oscuro;
+        opacity: 0.7;
+    }
+}
+.linea2{
+    display: flex;
+    text-align: center;
+    height: 1px;
+    width: 30%;
+    background-color: $naranja-oscuro;
+}
+.by{
+    background-color: $verde-principal;
+    grid-area: by;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $naranja-oscuro;
+    font-weight: 300;
+    letter-spacing:4px;
+    @include pantalla(xs){
+        line-height: 1.9rem;
+    }
     
-    img{
+    ul li{
+        display: inline-block;
         @include pantalla(xs){
-            width: 1.6rem;
-            // padding:.4rem;
-            margin: 1.4rem 1rem;
-        };
+            line-height: 1.8rem;
+            font-size: 9px;
+        }
+        @include pantalla(md){
+            font-size: 14px;
+            line-height: 2.5rem;
+        }
+        a{
+            color: $naranja-oscuro;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $verde-dark;
+            font-weight: 700;
+        }
+    }
+    
+}
+.linea3{
+    height: 1px;
+    width: 37%;
+    background-color: $naranja-oscuro;
+    margin: 0.5rem 0 1.4rem;
+    @include pantalla(xs){
+        width: 60%;
+    }
+    @include pantalla(md){
+       width: 37%;
     }
 }

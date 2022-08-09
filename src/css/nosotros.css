@@ -140,6 +140,18 @@ header {
     width: 21px;
   }
 }
+@media (max-width: 600px) {
+  .whatsapp {
+    margin-top: 20rem;
+    margin-left: 215px;
+  }
+}
+@media (max-width: 980px) {
+  .whatsapp {
+    margin-top: 35rem;
+    margin-left: 410px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .whatsapp {
     margin-top: 39.5rem;
@@ -174,6 +186,30 @@ header {
     position: relative;
     top: 20px;
     float: left;
+  }
+}
+@media (max-width: 300px) {
+  .linea {
+    margin: 20px 20px 0 15px;
+    width: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .linea {
+    margin: 20px 10px 0 10px;
+    width: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .linea {
+    margin: 20px 50px 0 50px;
+    width: 120px;
+  }
+}
+@media (max-width: 980px) {
+  .linea {
+    margin: 20px 100px 0 80px;
+    width: 200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -495,6 +531,11 @@ header {
     float: left;
   }
 }
+@media (max-width: 300px) {
+  .mision .linea {
+    width: 65px;
+  }
+}
 @media screen and (min-width: 768px) {
   .mision .linea {
     margin-top: 20px;
@@ -554,6 +595,16 @@ header {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 300px) {
+  .texto p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 980px) {
+  .texto p {
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .texto p {
     font-size: 15px;
@@ -596,7 +647,7 @@ header {
     height: 17rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1328px) {
   .imagen2 {
     width: 0;
     height: 17rem;
@@ -614,6 +665,11 @@ header {
     height: 40px;
     padding: 20px;
     overflow-y: hidden;
+  }
+}
+@media (max-width: 300px) {
+  .buttonImg a {
+    left: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -649,6 +705,11 @@ header {
     height: auto;
     margin-top: 62px;
     margin-left: 5rem;
+  }
+}
+@media (max-width: 300px) {
+  .iconoMas {
+    margin-left: 2.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -687,6 +748,11 @@ header {
     margin-top: 0;
     opacity: 0.8;
     border-radius: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .imgValores {
+    margin-left: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -958,7 +1024,7 @@ header {
   .imgValores2 {
     margin-left: 15rem;
   }
-}  
+}
 
 /* finaliza seccion vision*/
 /*Inicia Valores*/
@@ -1204,8 +1270,8 @@ footer {
   footer {
     margin-top: 110px;
     display: grid;
-    grid-template: repeat(2, auto)/repeat(2, auto);
-    grid-template-areas: "info menuF" "footer footer";
+    grid-template: repeat(3, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer" "by by";
     align-items: center;
   }
 }
@@ -1215,6 +1281,11 @@ footer {
   }
 }
 
+.LaFortaleza {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (min-width: 150px) {
   .LaFortaleza {
     padding-top: 7rem;
@@ -1383,6 +1454,66 @@ footer {
   opacity: 0.7;
 }
 
+.by {
+  background-color: #057f2a;
+  grid-area: by;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff5d02;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width: 150px) {
+  .by {
+    line-height: 1.9rem;
+  }
+}
+.by ul li {
+  display: inline-block;
+}
+
+@media screen and (min-width: 150px) {
+  .by ul li {
+    line-height: 1.8rem;
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .by ul li {
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+}
+.by ul li a {
+  color: #ff5d02;
+  text-decoration: none;
+}
+
+.by ul li a:hover {
+  color: #1c2723;
+  font-weight: 700;
+}
+
+.linea3 {
+  height: 1px;
+  width: 37%;
+  background-color: #ff5d02;
+  margin: 0.5rem 0 1.4rem;
+}
+@media screen and (min-width: 150px) {
+  .linea3 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea3 {
+    width: 37%;
+  }
+}
+
 /* Finaliza Footer*/
 /* Inicia Menu*/
 #menu-bar {
@@ -1397,18 +1528,19 @@ footer {
 
 header label {
   float: right;
-  font-size: 28px;
+  font-size: 26px;
   margin: 6px 0;
   cursor: pointer;
+  font-weight: 200;
 }
 
 .menu-nav {
   text-align: center;
   position: fixed;
   z-index: 1;
-  padding-top: 1rem;
+  padding-top: 2rem;
   left: 0;
-  width: 30%;
+  width: 35%;
   height: 100vh;
   background: #1c2723;
   opacity: 0.8;
