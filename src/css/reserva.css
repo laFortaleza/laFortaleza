@@ -1,18 +1,703 @@
-/* Error: expected selector.
- *   ,
- * 9 | <<<<<<< HEAD
- *   | ^
- *   '
- *   sass\_home.scss 9:1     @import
- *   sass\reserva.scss 1:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a   \2577 \a 9 \2502  <<<<<<< HEAD\d\a   \2502  ^\a   \2575 \a   sass\\_home.scss 9:1     @import\a   sass\\reserva.scss 1:21  root stylesheet";
+#menu-bar {
+  display: none;
 }
+
+.icon-menu {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+header label {
+  float: right;
+  font-size: 26px;
+  margin: 6px 0;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+.menu-nav {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1rem;
+  left: 0;
+  width: 35%;
+  height: 100vh;
+  opacity: 0.8;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu-nav a {
+  display: block;
+  color: #ff5d02;
+  text-decoration: none;
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.menu-nav a:hover {
+  color: #057f2a;
+}
+
+#menu-bar:checked ~ .menu-nav {
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    position: static;
+    width: 100vw;
+    padding-top: 1.4rem;
+    height: auto;
+    transform: translate(0%);
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header label {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav a {
+    border: none;
+  }
+}
+
+.containerMenu {
+  width: 100%;
+  display: table;
+  color: #ff5d02;
+  position: absolute;
+  z-index: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Lexend Deca", "Urbanist", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1c2723;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #263d2d;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #22492e;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 150px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 150px) {
+  header .head {
+    background-color: #1c2723;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .head {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .head {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#logo {
+  position: absolute;
+}
+@media screen and (min-width: 150px) {
+  #logo {
+    padding-top: 6%;
+    margin-left: 8%;
+    width: 3.1rem;
+    display: flex;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 80px;
+    padding-top: 5%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #logo {
+    width: 90px;
+  }
+}
+
+#logo:hover {
+  transition: 1s;
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 150px) {
+  #index-fondo {
+    display: flex;
+    width: 100vw;
+    max-height: 70vh;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .p1 {
+    color: #057f2a;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .p2 {
+    color: #057f2a;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .containerUvas {
+    overflow: hidden;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .containerUvas {
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .uvas {
+    object-fit: cover;
+    max-width: 100vw;
+    min-height: 18rem;
+  }
+}
+
+#wpp {
+  padding: 1rem;
+  margin: 35% 0 0 95%;
+  z-index: 100;
+  position: fixed;
+}
+@media screen and (min-width: 150px) {
+  #wpp {
+    margin: 80vh 0 0 82%;
+  }
+}
+@media screen and (min-width: 399px) {
+  #wpp {
+    margin: 80vh 0 0 88%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #wpp {
+    margin: 80vh 0 0 95%;
+  }
+}
+@media screen and (min-width: 150px) {
+  #wpp .whatsapp {
+    width: 30px;
+  }
+}
+#wpp .whatsapp:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.linea {
+  background-color: #057f2a;
+  height: 1px;
+}
+@media screen and (min-width: 150px) {
+  .linea {
+    width: 25%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea {
+    margin: 0 3rem;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  header {
+    height: auto;
+    padding: 0rem 0px 5rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  main {
+    height: auto;
+  }
+}
+
+.primera-seccion {
+  height: auto;
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion .texto-1 {
+    font-size: 1rem;
+    color: #ff5d02;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .img-1 {
+    margin: 1.5rem 3rem;
+    width: 80%;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-1 {
+    padding-bottom: 6rem;
+    width: 45%;
+    margin: 1rem 4rem;
+  }
+}
+
+.reservas {
+  color: #ff5d02;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4rem;
+}
+@media screen and (min-width: 150px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas .containerFormulario {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas .containerFormulario {
+    width: 40%;
+    padding: 4rem 0;
+  }
+}
+@media screen and (min-width: 150px) {
+  .reservas div {
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem;
+  }
+}
+.reservas input, .reservas select {
+  color: #057f2a;
+}
+@media screen and (min-width: 150px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 399px) {
+  .reservas input, .reservas select {
+    margin: 0.7rem;
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reservas input, .reservas select {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
+.reservas #checkIn, .reservas #checkOut {
+  width: 8.3rem;
+}
+
+#people {
+  width: 6rem;
+}
+
+#id {
+  width: 11rem;
+}
+
+button {
+  padding: 0.4rem 1.3rem;
+  background-color: #057f2a;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: hidden;
+  letter-spacing: 0.09rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  border-radius: 4px solid #ff5d02;
+  letter-spacing: 0.12rem;
+}
+
+.miReserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #26362b;
+}
+
+.informacion {
+  background-color: #1c2723;
+  margin: 1rem;
+  box-shadow: 2px 2px 15px black;
+  border-radius: 0.5rem;
+  color: #057f2a;
+  font-weight: 200;
+  letter-spacing: 0.13rem;
+  padding: 1rem;
+  z-index: 300;
+}
+@media screen and (min-width: 150px) {
+  .informacion {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+}
+.informacion h3 {
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.informacion .eliminar {
+  margin-top: 1.6rem;
+  padding: 5px 0px;
+  border: 2px solid #26362b;
+  text-align: center;
+  color: #ff5d02;
+  letter-spacing: 4px;
+  border-radius: 6px;
+}
+@media screen and (min-width: 150px) {
+  .informacion .eliminar {
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .informacion .eliminar {
+    font-weight: 500;
+  }
+}
+.informacion .eliminar:hover {
+  background-color: #057f2a;
+  color: black;
+}
+
+.titleR {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 150px) {
+  .titleR {
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .titleR {
+    padding: 2rem 0;
+  }
+}
+
+.linea {
+  color: #ff5d02;
+  background-color: #ff5d02;
+  height: 1px;
+}
+@media screen and (min-width: 150px) {
+  .linea {
+    width: 25%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea {
+    margin: 0 3rem;
+    width: 30%;
+  }
+}
+
+footer {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(2, auto);
+    grid-template-areas: "info menuF" "footer footer" "by by";
+    align-items: center;
+  }
+}
+
+.LaFortaleza {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza {
+    padding-top: 2rem;
+    color: #057f2a;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza {
+    grid-area: info;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza #logoFooter {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza #logoFooter {
+    width: 7rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .LaFortaleza .p7 {
+    font-size: 1rem;
+    padding: 0.5rem 0 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LaFortaleza .p7 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .menu {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    grid-area: menuF;
+    margin-right: 6rem;
+    border-left: 1px solid #057f2a;
+  }
+}
+@media screen and (min-width: 150px) {
+  .menu li a {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #ff5d02;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu li a {
+    line-height: 2.8rem;
+    font-size: 1.1rem;
+  }
+}
+.menu li a:active {
+  color: #ff5d02;
+}
+.menu li a:hover {
+  color: #057f2a;
+}
+
+.redesSociales {
+  background-color: #057f2a;
+  padding: 13px;
+}
+@media screen and (min-width: 768px) {
+  .redesSociales {
+    grid-area: footer;
+  }
+}
+.redesSociales a {
+  text-decoration: none;
+}
+.redesSociales i {
+  color: #1c2723;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+@media screen and (min-width: 1328px) {
+  .redesSociales i {
+    margin-right: 60px;
+  }
+}
+.redesSociales i:hover {
+  color: #ff5d02;
+  opacity: 0.7;
+}
+
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
+}
+
+.by {
+  background-color: #057f2a;
+  grid-area: by;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff5d02;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 150px) {
+  .by {
+    line-height: 1.9rem;
+  }
+}
+.by ul li {
+  display: inline-block;
+}
+@media screen and (min-width: 150px) {
+  .by ul li {
+    line-height: 1.8rem;
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .by ul li {
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+}
+.by ul li a {
+  color: #ff5d02;
+  text-decoration: none;
+}
+.by ul li a:hover {
+  color: #1c2723;
+  font-weight: 700;
+}
+
+.linea3 {
+  height: 1px;
+  width: 37%;
+  background-color: #ff5d02;
+  margin: 0.5rem 0 1.4rem;
+}
+@media screen and (min-width: 150px) {
+  .linea3 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea3 {
+    width: 37%;
+  }
+}
+
+.menu-nav {
+  background-color: #26362b;
+}
+
+.video, .reproduccionVideo, .verduras, .titleR {
+  background-color: #26362b;
+}
+
+.verde-dark {
+  background-color: #1c2723;
+}
+
+/*# sourceMappingURL=reserva.css.map */
