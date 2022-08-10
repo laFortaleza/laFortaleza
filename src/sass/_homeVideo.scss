@@ -93,8 +93,8 @@
 }
 .btnServicios{
     @include pantalla(xs){
-        // color: $verde-pino;
-        // border: 1px solid $verde-pino;
+        color: $verde-principal;
+        border: 1px solid $verde-principal;
         border-radius: 6px;
         padding: .4rem;
         text-decoration: none;
@@ -105,10 +105,10 @@
         font-size: .9rem;
     }
 }
-// .btnServicios:hover{
-//     color: #fff;
-//     background-color: $verde-pino;
-// }
+.btnServicios:hover{
+    color: #fff;
+    background-color: $verde-principal;
+}
 .texto{
     @include pantalla(xs){
         text-align: center;

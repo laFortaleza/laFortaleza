@@ -6,6 +6,10 @@
   font-family: "Lexend Deca", "Urbanist", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 img {
   object-fit: cover;
 }
@@ -365,6 +369,8 @@ img {
 
 @media screen and (min-width: 150px) {
   .btnServicios {
+    color: #057f2a;
+    border: 1px solid #057f2a;
     border-radius: 6px;
     padding: 0.4rem;
     text-decoration: none;
@@ -376,6 +382,11 @@ img {
   .btnServicios {
     font-size: 0.9rem;
   }
+}
+
+.btnServicios:hover {
+  color: #fff;
+  background-color: #057f2a;
 }
 
 @media screen and (min-width: 150px) {
@@ -815,53 +826,16 @@ header label {
   z-index: 2;
 }
 
-.carrusel, .grande, .puntos, .frutas, footer, .menu-nav {
-  background-color: #fff;
-  transition: 0.7s ease all;
+.menu-nav {
+  background-color: #26362b;
 }
 
 .video, .reproduccionVideo, .verduras, .titleR {
-  background-color: #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServicios {
-  color: #26362b;
-  border: 1px solid #26362b;
-  transition: 0.7s ease all;
-}
-
-.btnServicios:hover {
-  color: #fff;
   background-color: #26362b;
-  transition: 7s ease all;
 }
 
 .verde-dark {
   background-color: #1c2723;
-  transition: 0.7s ease all;
-}
-
-.verde-pino {
-  background-color: #26362b;
-  transition: 0.7s ease all;
-}
-
-.verde-principal {
-  background-color: #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServices {
-  color: #057f2a;
-  border: 1px solid #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServices:hover {
-  color: #fff;
-  background-color: #057f2a;
-  transition: 0.7s ease all;
 }
 
 /*# sourceMappingURL=index.css.map */

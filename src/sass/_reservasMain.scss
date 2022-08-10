@@ -4,26 +4,22 @@ header{
     @include pantalla(xs){
         height: auto;
         padding: 0rem 0px 5rem;
-        background-color: $verde-dark;
+        // background-color: $verde-dark;
     };
 }
 main{
         
     @include pantalla(xs){
         height: auto;
-        background-color: $verde-dark;
+        // background-color: $verde-dark;
     };
 
 }
 .primera-seccion{
     height: auto;
-    background-color: $verde-dark;
-    @include pantalla(xs){
-        padding-bottom: 0;
-    };
-    @include pantalla(md){
-      padding-bottom: 5rem;
-    };
+    // background-color: $verde-dark;
+    // background-color: #fff;
+
    .texto-1{
        @include pantalla(xs){
             font-size: 1rem;
@@ -51,6 +47,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 4rem ;
     // align-items: center;
     // @include pantalla(xs){
     // };
@@ -69,6 +66,7 @@ main{
         }
         @include pantalla ( md){
             width: 40%;
+            padding: 4rem 0;
         }
     }
     div{
@@ -185,7 +183,7 @@ button:hover{
     }
     @include pantalla(md){
         padding: 2rem 0;
-        margin: 2rem;
+        // margin: 0  2rem;
     }
     
 }
