@@ -126,31 +126,38 @@ header {
   .whatsapp {
     position: absolute;
     display: flex;
-    margin-top: 14.5rem;
-    margin-left: 168px;
+    margin-top: 10rem;
+    margin-left: 115px;
     width: 15px;
     height: auto;
     z-index: 2;
   }
 }
+@media screen and (min-width: 399px) {
+  .whatsapp {
+    margin-top: 14rem;
+    margin-left: 155px;
+    width: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .whatsapp {
     margin-top: 30rem;
-    margin-left: 340px;
+    margin-left: 350px;
     width: 21px;
   }
 }
 @media screen and (min-width: 1024px) {
   .whatsapp {
-    margin-top: 39.5rem;
-    margin-left: 590px;
+    margin-top: 30rem;
+    margin-left: 470px;
     width: 25px;
   }
 }
 @media screen and (min-width: 1328px) {
   .whatsapp {
-    margin-top: 41rem;
-    margin-left: 700px;
+    margin-top: 38rem;
+    margin-left: 680px;
   }
 }
 
@@ -248,32 +255,66 @@ header label {
   display: none;
 }
 
+.linea {
+  color: #057f2a;
+  background-color: #057f2a;
+  height: 1px;
+}
 @media screen and (min-width: 150px) {
   .linea {
-    margin: 20px 10px 0 10px;
-    width: 130px;
-    border-top: 1px solid #057f2a;
-    position: relative;
-    top: 20px;
-    float: left;
+    width: 25%;
+    margin: 0 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .linea {
-    margin: 30px 5px 30px 10px;
-    width: 310px;
+    margin: 0 3rem;
+    width: 30%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .linea {
-    margin: 30px 20px 50px 20px;
-    width: 520px;
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 150px) {
+  .title {
+    padding: 1rem 0;
   }
 }
-@media screen and (min-width: 1328px) {
-  .linea {
-    margin: 30px 20px 50px 20px;
-    width: 640px;
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 2rem 0;
+    margin: 2rem;
+  }
+}
+
+.primera-seccion {
+  height: auto;
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion .texto-1 {
+    font-size: 15px;
+    color: #057f2a;
+    letter-spacing: 1px;
+    font-weight: 250;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion .texto-1 {
+    font-size: 25px;
   }
 }
 
@@ -676,16 +717,26 @@ header label {
 
 @media screen and (min-width: 150px) {
   .buttonWaapServ a {
-    position: absolute;
-    bottom: 5px;
+    /* position: absolute;
+    bottom: -25px;
     left: 10.5rem;
-    background-color: #26362b;
-    border-radius: 50%;
+    background-color:$verde-pino;
+    border-radius:50%;
     width: 40px;
-    height: 10px;
+    height: 10px;  
     padding: 20px;
     margin: 0;
-    overflow-y: hidden;
+    overflow-y: hidden; */
+  }
+}
+@media screen and (min-width: 399px) {
+  .buttonWaapServ a {
+    bottom: 2.5rem;
+    left: 10rem;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    z-index: 10;
   }
 }
 @media screen and (min-width: 768px) {
@@ -700,7 +751,7 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .buttonWaapServ a {
-    bottom: -57rem;
+    bottom: -58.5rem;
     left: 36.5rem;
     width: 75px;
     height: 50px;
@@ -709,7 +760,7 @@ header label {
 }
 @media screen and (min-width: 1328px) {
   .buttonWaapServ a {
-    bottom: -68.7rem;
+    bottom: -76rem;
     left: 43.5rem;
     width: 75px;
     height: 50px;
@@ -767,7 +818,8 @@ header label {
 @media screen and (min-width: 1024px) {
   .contenedorVideo {
     height: 20rem;
-    margin-left: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     padding-top: 7rem;
     padding-bottom: 40px;
   }
@@ -885,7 +937,7 @@ header label {
 }
 
 @media screen and (min-width: 150px) {
-  .buttonServ a {
+  .play {
     position: absolute;
     bottom: 68px;
     left: 2rem;
@@ -899,7 +951,7 @@ header label {
   }
 }
 @media screen and (min-width: 768px) {
-  .buttonServ a {
+  .play {
     bottom: 6rem;
     left: 7.5rem;
     width: 70px;
@@ -909,16 +961,16 @@ header label {
   }
 }
 @media screen and (min-width: 1024px) {
-  .buttonServ a {
-    bottom: 6.5rem;
+  .play {
     left: 9.5rem;
+    top: -1rem;
     width: 75px;
     height: 50px;
     padding: 30px;
   }
 }
 @media screen and (min-width: 1328px) {
-  .buttonServ a {
+  .play {
     bottom: 7rem;
     left: 17rem;
     width: 75px;
@@ -969,9 +1021,17 @@ header label {
 
 @media screen and (min-width: 150px) {
   .videoS {
-    width: 23rem;
+    width: 20rem;
     padding-left: 3rem;
-    margin: 10px 1px 1px 1px;
+    margin: 17px 1px 1px 1px;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 399px) {
+  .videoS {
+    width: 22rem;
+    padding-left: 3rem;
+    margin: 17px 1px 1px 1px;
     border-radius: 10px;
   }
 }
@@ -984,8 +1044,8 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .videoS {
-    width: 45rem;
-    padding-left: 15rem;
+    width: 28rem;
+    padding-left: 2.5rem;
     margin: 60px 1px 1px -50px;
     border-radius: 10px;
   }
@@ -1025,7 +1085,8 @@ header label {
   .t-contenedor .t-ul {
     width: 100%;
     height: 10%;
-    margin: 50px 0 20px 0;
+    margin: 50px 0 10px 0;
+    padding: 5px;
   }
 }
 
@@ -1057,7 +1118,7 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .t-contenedor .tabli {
-    padding-left: 18rem;
+    padding-left: 12rem;
     margin-left: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1086,9 +1147,16 @@ header label {
 
 @media screen and (min-width: 150px) {
   .t-contenedor .tab-subcontenedor {
-    min-height: 40vh;
+    min-height: 60vh;
     position: relative;
     margin: 0 20px 0 10px;
+  }
+}
+@media screen and (min-width: 399px) {
+  .t-contenedor .tab-subcontenedor {
+    min-height: 40vh;
+    position: relative;
+    margin: 0 10px 0 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1102,7 +1170,7 @@ header label {
 @media screen and (min-width: 1024px) {
   .t-contenedor .tab-subcontenedor {
     min-height: 110vh;
-    margin-left: 100px;
+    margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -1332,6 +1400,11 @@ footer {
   }
 }
 
+.LaFortaleza {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (min-width: 150px) {
   .LaFortaleza {
     padding-top: 7rem;
@@ -1421,6 +1494,14 @@ footer {
   .LaFortaleza hr {
     margin-left: 230px;
   }
+}
+
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
 }
 
 @media screen and (min-width: 150px) {

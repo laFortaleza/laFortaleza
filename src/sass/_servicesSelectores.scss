@@ -19,10 +19,12 @@
     margin: 30px 0 0 0;
     }
 
+
     @include pantalla(md){
     width: 100%;
     height: 10%;
-    margin: 50px 0 20px 0;
+    margin: 50px 0 10px 0;
+    padding: 5px;
     }
 
   }
@@ -54,7 +56,7 @@
     } 
 
     @include pantalla(lg){
-    padding-left: 18rem;
+    padding-left: 12rem;
     margin-left: 1rem; 
     margin-top: 1rem;
     margin-bottom: 1rem;   
@@ -83,9 +85,15 @@
   
   .t-contenedor .tab-subcontenedor {
     @include pantalla(xs){
-        min-height: 40vh; 
+        min-height: 60vh; 
         position: relative;
         margin: 0 20px 0 10px;
+    }
+
+    @include pantalla(sm){
+        min-height: 40vh; 
+        position: relative;
+        margin: 0 10px 0 10px;
     }
 
     @include pantalla(md){
@@ -97,7 +105,7 @@
 
     @include pantalla(lg){
         min-height: 110vh;
-        margin-left: 100px;
+        margin-left: 0.5rem;
     } 
 
     @include pantalla(xl){
@@ -114,6 +122,7 @@
     @include pantalla(xs){
        margin-left: 5px;
     }
+
 
     @include pantalla(md){
        margin-left: 20px;
@@ -169,6 +178,7 @@
     @include pantalla(md){
     width: 50rem;
     }
+
 
     @include pantalla(lg){
     width: 70rem;

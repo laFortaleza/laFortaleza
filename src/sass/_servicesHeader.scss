@@ -112,26 +112,32 @@ header{
     @include pantalla(xs){
         position: absolute;
         display: flex;    
-        margin-top: 14.5rem;
-        margin-left: 168px;  
+        margin-top: 10rem;
+        margin-left: 115px;  
         width: 15px;
         height: auto;
         z-index: 2;
     } 
+    @include pantalla(sm){
+        margin-top: 14rem;
+        margin-left: 155px; 
+        width: 16px;
+    }    
     @include pantalla(md){
         margin-top: 30rem;
-        margin-left: 340px; 
+        margin-left: 350px; 
         width: 21px;
     }    
+
     @include pantalla(lg){
-        margin-top: 39.5rem;
-        margin-left: 590px; 
+        margin-top: 30rem;
+        margin-left: 470px; 
         width: 25px;
     }    
     @include pantalla(xl){
-        margin-top: 41rem;
-        margin-left: 700px;
-    }    
+        margin-top: 38rem;
+        margin-left: 680px;
+    }       
 }
 
 .whatsapp:hover {
