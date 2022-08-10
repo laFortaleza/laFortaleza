@@ -490,7 +490,7 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .contenedorTabs {
-    width: 95%;
+    width: 100%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-radius: 0.5em;
@@ -521,7 +521,7 @@ header label {
 }
 @media screen and (min-width: 768px) {
   .contenedorTabs .li {
-    padding-left: 1px;
+    padding-left: 1rem;
     margin: 16px;
     font-size: 13px;
     font-weight: 300;
@@ -534,17 +534,12 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .contenedorTabs .li {
-    padding-left: 5rem;
+    padding-left: 1rem;
     margin-left: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 17px;
     font-weight: 300;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contenedorTabs .li {
-    padding-left: 5rem;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -576,7 +571,12 @@ header label {
   .contenedorTabs .subcontenedor {
     min-height: 20vh;
     position: relative;
-    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedorTabs .subcontenedor {
+    min-height: 50vh;
+    position: relative;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -722,6 +722,10 @@ header label {
 .fondoServ {
   background-color: #26362b;
   width: 100vw;
+}
+
+.buttonWaapServ {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 150px) {
