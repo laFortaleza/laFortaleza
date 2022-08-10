@@ -8,11 +8,12 @@
 }
 
 body {
-  background-color: #1c2723;
+  background-color: white;
 }
 
 body::-webkit-scrollbar {
   width: 10px;
+  background-color: #1c2723;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -211,7 +212,6 @@ header {
 
 .primera-seccion {
   height: auto;
-  background-color: #1c2723;
 }
 @media screen and (min-width: 150px) {
   .primera-seccion {
@@ -1529,5 +1529,16 @@ header label {
 }
 
 /* Finaliza Menu*/
+.menu-nav {
+  background-color: #26362b;
+}
+
+.video, .reproduccionVideo, .verduras, .titleR {
+  background-color: #26362b;
+}
+
+.verde-dark {
+  background-color: #1c2723;
+}
 
 /*# sourceMappingURL=nosotros.css.map */
