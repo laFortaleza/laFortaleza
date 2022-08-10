@@ -2,7 +2,7 @@
 .frutas{
 
     @include pantalla(xs){
-        background-color: $verde-dark;
+        // background-color: $blanco;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,7 +57,7 @@
     z-index: 10000;
     @include pantalla(xs){
         // height: 60vh;
-        background-color: $verde-pino;
+        // background-color: $verde-pino;
         display: flex;
         flex-direction: column;
         align-items: center;

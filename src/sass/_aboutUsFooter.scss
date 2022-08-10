@@ -226,17 +226,4 @@ footer{
     font-weight: 700;
   }
 
-  .linea3{
-    height: 1px;
-    width: 37%;
-    background-color: $naranja-oscuro;
-    margin: 0.5rem 0 1.4rem;
-    @include pantalla(xs){
-        width: 60%;
-    }
-    @include pantalla(md){
-       width: 37%;
-    }
-}
-
 /* Finaliza Footer*/

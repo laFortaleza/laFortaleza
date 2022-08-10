@@ -568,13 +568,13 @@ header label {
 
 @media screen and (min-width: 150px) {
   .contenedorTabs .subcontenedor {
-    min-height: 20vh;
+    min-height: 25vh;
     position: relative;
   }
 }
 @media screen and (min-width: 768px) {
   .contenedorTabs .subcontenedor {
-    min-height: 40vh;
+    min-height: 20vh;
     position: relative;
     overflow: hidden;
   }
@@ -617,6 +617,15 @@ header label {
     color: #057f2a;
     margin-top: 0;
     padding-left: 150px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 399px) {
+  .contenedorTabs .subcontenedor li {
+    color: #057f2a;
+    margin-top: 0;
+    padding-left: 160px;
     font-size: 12px;
     font-weight: 200;
   }
@@ -1021,8 +1030,8 @@ header label {
 
 @media screen and (min-width: 150px) {
   .videoS {
-    width: 20rem;
-    padding-left: 3rem;
+    width: 16rem;
+    padding-left: 1rem;
     margin: 17px 1px 1px 1px;
     border-radius: 10px;
   }
@@ -1076,8 +1085,7 @@ header label {
 @media screen and (min-width: 150px) {
   .t-contenedor .t-ul {
     width: 80%;
-    height: 10%;
-    padding: 20px;
+    padding: 1px;
     margin: 30px 0 0 0;
   }
 }
@@ -1092,7 +1100,7 @@ header label {
 
 @media screen and (min-width: 150px) {
   .t-contenedor .tabli {
-    padding-left: 40px;
+    padding-left: 15px;
     margin: 16px;
     font-size: 0;
     font-weight: 300;
@@ -1149,7 +1157,7 @@ header label {
   .t-contenedor .tab-subcontenedor {
     min-height: 60vh;
     position: relative;
-    margin: 0 20px 0 10px;
+    margin: 0 0 0 0;
   }
 }
 @media screen and (min-width: 399px) {
@@ -1161,7 +1169,7 @@ header label {
 }
 @media screen and (min-width: 768px) {
   .t-contenedor .tab-subcontenedor {
-    min-height: 110vh;
+    min-height: 75vh;
     position: relative;
     margin: 0 20px 0 10px;
     display: block;
@@ -1169,7 +1177,7 @@ header label {
 }
 @media screen and (min-width: 1024px) {
   .t-contenedor .tab-subcontenedor {
-    min-height: 110vh;
+    min-height: 135vh;
     margin-left: 0.5rem;
   }
 }
@@ -1396,7 +1404,7 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   footer {
-    margin-top: 210px;
+    margin-top: 0;
   }
 }
 
@@ -1622,23 +1630,6 @@ footer {
 .by ul li a:hover {
   color: #1c2723;
   font-weight: 700;
-}
-
-.linea3 {
-  height: 1px;
-  width: 37%;
-  background-color: #ff5d02;
-  margin: 0.5rem 0 1.4rem;
-}
-@media screen and (min-width: 150px) {
-  .linea3 {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .linea3 {
-    width: 37%;
-  }
 }
 
 /* Finaliza Footer*/

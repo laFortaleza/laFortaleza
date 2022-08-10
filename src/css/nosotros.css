@@ -1446,23 +1446,6 @@ footer {
   font-weight: 700;
 }
 
-.linea3 {
-  height: 1px;
-  width: 37%;
-  background-color: #ff5d02;
-  margin: 0.5rem 0 1.4rem;
-}
-@media screen and (min-width: 150px) {
-  .linea3 {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .linea3 {
-    width: 37%;
-  }
-}
-
 /* Finaliza Footer*/
 /* Inicia Menu*/
 #menu-bar {

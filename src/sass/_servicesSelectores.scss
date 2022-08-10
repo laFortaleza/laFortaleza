@@ -14,8 +14,7 @@
     list-style:none;
     @include pantalla(xs){
     width: 80%;
-    height: 10%;
-    padding: 20px;
+    padding: 1px;
     margin: 30px 0 0 0;
     }
 
@@ -32,7 +31,7 @@
    
   .t-contenedor .tabli {
     @include pantalla(xs){
-    padding-left: 40px;
+    padding-left: 15px;
     margin: 16px;   
     font-size: 0;
     font-weight: 300;    
@@ -87,7 +86,7 @@
     @include pantalla(xs){
         min-height: 60vh; 
         position: relative;
-        margin: 0 20px 0 10px;
+        margin: 0 0 0 0;
     }
 
     @include pantalla(sm){
@@ -97,14 +96,14 @@
     }
 
     @include pantalla(md){
-        min-height: 110vh; 
+        min-height: 75vh; 
         position: relative;
         margin: 0 20px 0 10px;
         display: block;
     }
 
     @include pantalla(lg){
-        min-height: 110vh;
+        min-height: 135vh;
         margin-left: 0.5rem;
     } 
 
