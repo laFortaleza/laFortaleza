@@ -5,31 +5,56 @@
     display: none;     
 }
 
-.linea {  
-    @include pantalla(xs) { 
-    margin: 20px 10px 0 10px;
-    width:130px;    
-    border-top:1px solid $verde-principal;
-    position: relative;
-    top:20px;
-    float:left; 
+.linea{
+    color: $verde-principal;
+    background-color: $verde-principal;
+    height: 1px;
+    @include pantalla(xs){
+        width: 25%;
+        margin: 0 1rem;
     }
-
     @include pantalla(md){
-    margin: 30px 5px 30px 10px;
-    width:310px;       
-   } 
+        margin: 0 3rem;
+        width: 30%;
+    }
+}
 
-    @include pantalla(lg){
-    margin: 30px 20px 50px 20px;
-    width:520px;       
-   }  
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    @include pantalla(xs){
+        padding: 1rem 0;
+    }
+    @include pantalla(md){
+        padding: 2rem 0;
+        margin: 2rem;
+    }
+    
+}
 
-    @include pantalla(xl){
-    margin: 30px 20px 50px 20px;
-    width: 640px;       
-   }  
-            
+.primera-seccion{
+    height: auto;
+	
+    @include pantalla(xs){
+        padding-bottom: 0;
+    };
+    @include pantalla(md){
+      padding-bottom: 5rem;
+    };
+   .texto-1{
+       @include pantalla(xs){
+            font-size: 15px;
+            // text-align: center;
+            color: $verde-principal;
+            letter-spacing: 1px;
+            font-weight:250;
+       }
+	   @include pantalla(md){
+		    font-size: 25px;
+	   }
+   }
 }
   
   .leyenda {
@@ -59,6 +84,10 @@
    }     
    
 }
+
+
+  
+  
 /*Finaliza Titulo Servicios*/
 
 /*Inicia Carrusel*/

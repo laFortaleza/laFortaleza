@@ -126,43 +126,38 @@ header {
   .whatsapp {
     position: absolute;
     display: flex;
-    margin-top: 14.5rem;
-    margin-left: 168px;
+    margin-top: 10rem;
+    margin-left: 115px;
     width: 15px;
     height: auto;
     z-index: 2;
   }
 }
+@media screen and (min-width: 399px) {
+  .whatsapp {
+    margin-top: 14rem;
+    margin-left: 155px;
+    width: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .whatsapp {
     margin-top: 30rem;
-    margin-left: 340px;
+    margin-left: 350px;
     width: 21px;
-  }
-}
-@media (max-width: 600px) {
-  .whatsapp {
-    margin-top: 20rem;
-    margin-left: 215px;
-  }
-}
-@media (max-width: 980px) {
-  .whatsapp {
-    margin-top: 35rem;
-    margin-left: 410px;
   }
 }
 @media screen and (min-width: 1024px) {
   .whatsapp {
-    margin-top: 39.5rem;
-    margin-left: 590px;
+    margin-top: 30rem;
+    margin-left: 470px;
     width: 25px;
   }
 }
 @media screen and (min-width: 1328px) {
   .whatsapp {
-    margin-top: 41rem;
-    margin-left: 700px;
+    margin-top: 38rem;
+    margin-left: 680px;
   }
 }
 
@@ -178,56 +173,67 @@ header {
   display: none;
 }
 
+.linea {
+  color: #ff5d02;
+  background-color: #ff5d02;
+  height: 1px;
+}
 @media screen and (min-width: 150px) {
   .linea {
-    margin: 20px 10px 0 10px;
-    width: 130px;
-    border-top: 1px solid #ff5d02;
-    position: relative;
-    top: 20px;
-    float: left;
-  }
-}
-@media (max-width: 300px) {
-  .linea {
-    margin: 20px 20px 0 15px;
-    width: 60px;
-  }
-}
-@media (max-width: 480px) {
-  .linea {
-    margin: 20px 10px 0 10px;
-    width: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .linea {
-    margin: 20px 50px 0 50px;
-    width: 120px;
-  }
-}
-@media (max-width: 980px) {
-  .linea {
-    margin: 20px 100px 0 80px;
-    width: 200px;
+    width: 25%;
+    margin: 0 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .linea {
-    margin: 30px 5px 30px 10px;
-    width: 310px;
+    margin: 0 3rem;
+    width: 30%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .linea {
-    margin: 30px 20px 50px 20px;
-    width: 520px;
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 150px) {
+  .title {
+    padding: 1rem 0;
   }
 }
-@media screen and (min-width: 1328px) {
-  .linea {
-    margin: 30px 20px 50px 20px;
-    width: 640px;
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 2rem 0;
+    margin: 2rem;
+  }
+}
+
+.primera-seccion {
+  height: auto;
+  background-color: #1c2723;
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .primera-seccion .texto-1 {
+    font-size: 15px;
+    color: #ff5d02;
+    letter-spacing: 1px;
+    font-weight: 250;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primera-seccion .texto-1 {
+    font-size: 25px;
   }
 }
 
@@ -471,6 +477,7 @@ header {
     overflow: hidden;
     background-color: #26362b;
     height: 5.5rem;
+    width: 100vw;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -505,9 +512,18 @@ header {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .contenedorValores {
+    margin-left: 90px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .contenedorValores {
     margin-left: 90px;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -518,101 +534,49 @@ header {
   }
 }
 
+.mision h2 {
+  color: #ff5d02;
+  font-weight: 200;
+  text-align: center;
+}
 @media screen and (min-width: 150px) {
-  .mision .linea {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 120px;
-    border-top: 1px solid #ff5d02;
-    position: relative;
-    top: 20px;
-    float: left;
-  }
-}
-@media (max-width: 300px) {
-  .mision .linea {
-    width: 65px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mision .linea {
+  .mision h2 {
+    font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 270px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision .linea {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 150px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  .mision .leyenda {
-    margin: 10px 0 10px 0;
-    color: #ff5d02;
-    font-weight: 250;
-    float: left;
   }
 }
 @media screen and (min-width: 768px) {
-  .mision .leyenda {
-    margin: 25px 0 10px 0;
-    font-size: 20px;
-    font-weight: 250;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision .leyenda {
-    margin: 50px 0 10px 0;
-    font-size: 22px;
-    font-weight: 250;
+  .mision h2 {
+    font-size: 18px;
+    margin-top: 2rem;
   }
 }
 @media screen and (min-width: 1328px) {
-  .mision .leyenda {
-    margin: 40px 0 10px 0;
-    font-size: 25px;
-    font-weight: 250;
+  .mision h2 {
+    font-size: 18px;
+    margin-top: 1rem;
   }
 }
 
 @media screen and (min-width: 150px) {
-  .texto p {
+  .texto {
     color: #ff5d02;
     background-color: #26362b;
     font-weight: 200;
-    font-size: 13px;
+    font-size: 10px;
+    margin-top: 6px;
     text-align: center;
     padding-bottom: 20px;
   }
 }
-@media (max-width: 300px) {
-  .texto p {
-    font-size: 11px;
-  }
-}
-@media (max-width: 980px) {
-  .texto p {
-    font-size: 20px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .texto p {
-    font-size: 15px;
-    padding: 20px;
+  .texto {
+    font-size: 12px;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .texto p {
+  .texto {
     text-align: center;
     font-size: 15px;
     padding: 40px;
@@ -626,6 +590,13 @@ header {
 
 .valores {
   background-color: #26362b;
+}
+@media screen and (min-width: 768px) {
+  .valores {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 24rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .valores {
@@ -658,7 +629,7 @@ header {
   .buttonImg a {
     position: absolute;
     bottom: 50px;
-    left: 4.4rem;
+    left: 1rem;
     background-color: #26362b;
     border-radius: 50%;
     width: 40px;
@@ -667,15 +638,19 @@ header {
     overflow-y: hidden;
   }
 }
-@media (max-width: 300px) {
+@media screen and (min-width: 399px) {
   .buttonImg a {
-    left: 2rem;
+    bottom: 50px;
+    left: 6rem;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .buttonImg a {
-    bottom: 90px;
-    left: 10rem;
+    bottom: 65px;
+    left: 0.5rem;
     width: 60px;
     height: 60px;
     padding: 20px;
@@ -684,7 +659,7 @@ header {
 @media screen and (min-width: 1024px) {
   .buttonImg a {
     bottom: 108px;
-    left: 5.3rem;
+    left: -1rem;
     width: 75px;
     height: 50px;
     padding: 40px;
@@ -704,27 +679,30 @@ header {
     width: 18px;
     height: auto;
     margin-top: 62px;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
   }
 }
-@media (max-width: 300px) {
+@media screen and (min-width: 399px) {
   .iconoMas {
-    margin-left: 2.5rem;
+    position: absolute;
+    width: 20px;
+    margin-top: 3.6rem;
+    margin-left: 6.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .iconoMas {
     position: absolute;
     width: 25px;
-    margin-top: 113px;
-    margin-left: 11rem;
+    margin-top: 135px;
+    margin-left: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .iconoMas {
     width: 30px;
     margin-top: 10.4rem;
-    margin-left: 7rem;
+    margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -744,29 +722,31 @@ header {
     overflow: hidden;
     height: 8.5rem;
     width: auto;
-    margin-left: 5.5rem;
+    margin-left: 2rem;
     margin-top: 0;
     opacity: 0.8;
     border-radius: 10px;
   }
 }
-@media (max-width: 300px) {
+@media screen and (min-width: 399px) {
   .imgValores {
-    margin-left: 3rem;
+    height: 8.5rem;
+    margin-left: 7rem;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .imgValores {
-    height: 15rem;
-    margin-left: 12rem;
-    margin-top: 0;
+    height: 12rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .imgValores {
     height: 18rem;
     width: auto;
-    margin-left: 8rem;
+    margin-left: 1rem;
     margin-top: 35px;
   }
 }
@@ -785,78 +765,51 @@ header {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .contenedorValores2 {
+    margin-left: 0px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .contenedorValores2 {
-    margin-right: 90px;
+    margin-left: 0;
+    margin-right: 8rem;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1328px) {
   .contenedorValores2 {
-    margin-right: 150px;
+    margin-left: 150px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
+.mision2 h2 {
+  color: #057f2a;
+  font-weight: 200;
+  text-align: center;
+}
 @media screen and (min-width: 150px) {
-  .mision2 .linea {
+  .mision2 h2 {
+    font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 120px;
-    border-top: 1px solid #057f2a;
-    position: relative;
-    top: 20px;
-    float: left;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
-  .mision2 .linea {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 270px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision2 .linea {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 150px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  .mision2 .leyenda {
-    margin: 30px 0 10px 0;
-    color: #057f2a;
-    font-weight: 250;
-    float: left;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mision2 .leyenda {
-    margin: 45px 0 10px 0;
-    font-size: 20px;
-    font-weight: 250;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision2 .leyenda {
-    margin: 65px 0 10px 0;
-    font-size: 22px;
-    font-weight: 250;
+  .mision2 h2 {
+    font-size: 18px;
+    margin-top: 4rem;
   }
 }
 @media screen and (min-width: 1328px) {
-  .mision2 .leyenda {
-    margin: 65px 0 10px 0;
-    font-size: 25px;
-    font-weight: 250;
+  .mision2 h2 {
+    font-size: 18px;
+    margin-top: 1rem;
   }
 }
 
@@ -864,7 +817,7 @@ header {
   .texto2 p {
     color: #057f2a;
     font-weight: 200;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -888,6 +841,12 @@ header {
   overflow-y: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .valores2 {
+    display: flex;
+    height: 24rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .valores2 {
     display: flex;
@@ -922,7 +881,7 @@ header {
   .buttonImg2 a {
     position: absolute;
     bottom: 48px;
-    left: 16.8rem;
+    left: 1rem;
     background-color: #1c2723;
     border-radius: 50%;
     width: 40px;
@@ -931,10 +890,19 @@ header {
     overflow-y: hidden;
   }
 }
+@media screen and (min-width: 399px) {
+  .buttonImg2 a {
+    bottom: 48px;
+    left: 6rem;
+    width: 40px;
+    height: 10px;
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .buttonImg2 a {
-    bottom: 85px;
-    left: 32.5rem;
+    bottom: 95px;
+    left: -1rem;
     width: 60px;
     height: 60px;
     padding: 20px;
@@ -942,8 +910,8 @@ header {
 }
 @media screen and (min-width: 1024px) {
   .buttonImg2 a {
-    bottom: 92px;
-    left: 32.5rem;
+    bottom: 98px;
+    left: 26rem;
     width: 75px;
     height: 50px;
     padding: 40px;
@@ -963,22 +931,30 @@ header {
     width: 18px;
     height: auto;
     margin-top: 62px;
-    margin-left: 17.6rem;
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 399px) {
+  .iconoMas2 {
+    position: absolute;
+    width: 18px;
+    margin-top: 62px;
+    margin-left: 6.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .iconoMas2 {
     position: absolute;
     width: 25px;
-    margin-top: 117px;
-    margin-left: 33.5rem;
+    margin-top: 135px;
+    margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .iconoMas2 {
     width: 30px;
-    margin-top: 12.3rem;
-    margin-left: 34rem;
+    margin-top: 11.5rem;
+    margin-left: 28rem;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -998,25 +974,33 @@ header {
     overflow: hidden;
     height: 8.5rem;
     width: 13rem;
-    margin-left: 5.5rem;
+    margin-left: 2rem;
     margin-top: 0;
     opacity: 0.8;
     border-radius: 10px;
   }
 }
+@media screen and (min-width: 399px) {
+  .imgValores2 {
+    height: 8.5rem;
+    width: 13rem;
+    margin-left: 7rem;
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .imgValores2 {
     height: 15rem;
-    width: 22.5rem;
-    margin-left: 12rem;
-    margin-top: 0;
+    width: 20rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .imgValores2 {
     height: 18rem;
     width: 26.5rem;
-    margin-left: 8rem;
+    margin-left: 3rem;
     margin-top: 50px;
   }
 }
@@ -1041,6 +1025,8 @@ header {
 @media screen and (min-width: 768px) {
   .valoresTex {
     font-size: 15px;
+    margin-left: 4rem;
+    margin-right: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1053,74 +1039,28 @@ header {
   background-color: #26362b;
 }
 
+.mision3 h2 {
+  color: #ff5d02;
+  font-weight: 200;
+  text-align: center;
+}
 @media screen and (min-width: 150px) {
-  .mision3 .linea {
+  .mision3 h2 {
+    font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 113px;
-    border-top: 1px solid #ff5d02;
-    position: relative;
-    top: 20px;
-    float: left;
   }
 }
 @media screen and (min-width: 768px) {
-  .mision3 .linea {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 260px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision3 .linea {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 150px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision3 .linea {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 150px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  .mision3 .leyenda {
-    margin: 30px 0 10px 0;
-    color: #ff5d02;
-    font-weight: 250;
-    float: left;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mision3 .leyenda {
-    margin: 45px 0 10px 0;
-    font-size: 20px;
-    font-weight: 250;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .mision3 .leyenda {
-    margin: 50px 0 10px 0;
-    font-size: 22px;
-    font-weight: 250;
+  .mision3 h2 {
+    font-size: 18px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1328px) {
-  .mision3 .leyenda {
-    margin: 40px 0 10px 0;
-    font-size: 25px;
-    font-weight: 250;
+  .mision3 h2 {
+    font-size: 18px;
+    margin-top: 1rem;
   }
 }
 
@@ -1238,6 +1178,7 @@ header {
     overflow: hidden;
     background-color: #26362b;
     height: 5.5rem;
+    width: 100vw;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -1377,6 +1318,14 @@ footer {
   }
 }
 
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
+}
+
 @media screen and (min-width: 150px) {
   .menu {
     padding-bottom: 2rem;
@@ -1495,31 +1444,6 @@ footer {
 .by ul li a:hover {
   color: #1c2723;
   font-weight: 700;
-}
-
-.linea2 {
-  display: flex;
-  text-align: center;
-  height: 1px;
-  width: 30%;
-  background-color: #ff5d02;
-}
-
-.linea3 {
-  height: 1px;
-  width: 37%;
-  background-color: #ff5d02;
-  margin: 0.5rem 0 1.4rem;
-}
-@media screen and (min-width: 150px) {
-  .linea3 {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .linea3 {
-    width: 37%;
-  }
 }
 
 /* Finaliza Footer*/

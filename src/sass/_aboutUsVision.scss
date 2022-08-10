@@ -3,88 +3,57 @@
 
 .contenedorValores2{
     @include pantalla(xs){
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-
-    }
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        }
     
-    @include pantalla(lg){
-    margin-right: 90px;
+        @include pantalla(md){
+        margin-left: 0px;
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        }
+            
+        @include pantalla(lg){
+        margin-left: 0;
+        margin-right: 8rem ;
+        padding-top: 40px;
+        }
+        
+        @include pantalla(xl){
+        margin-left: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+}
+
+.mision2 h2{
+    color: $verde-principal;
+    font-weight: 200;
+    text-align: center;
+    @include pantalla(xs){
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    @include pantalla(md){
+        font-size: 18px;
+        margin-top: 4rem;
     }
 
     @include pantalla(xl){
-    margin-right: 150px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+        font-size: 18px;
+        margin-top: 1rem;
     }
-}
-
-.mision2 .linea {
-    @include pantalla(xs) { 
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 120px;    
-    border-top:1px solid $verde-principal;
-    position: relative;
-    top:20px;
-    float:left; 
-    }
-    
-    @include pantalla(md){
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width:270px;       
-    } 
-    
-    @include pantalla(lg){
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width:150px;       
-    }  
-
-            
-}
-  
-.mision2 .leyenda {
-    @include pantalla(xs){      
-    margin: 30px 0 10px 0;
-    color: $verde-principal;
-    font-weight: 250;
-    float:left;
-   } 
-
-   @include pantalla(md){      
-    margin: 45px 0 10px 0;  
-    font-size: 20px;
-    font-weight: 250;
-   }
-
-   @include pantalla(lg){         
-    margin: 65px 0 10px 0;    
-    font-size: 22px;
-    font-weight: 250;
-   }  
-
-   @include pantalla(xl){      
-    margin: 65px 0 10px 0;  
-    font-size: 25px;
-    font-weight: 250;
-   }     
-   
 }
 
 .texto2 p {
     @include pantalla(xs){
     color: $verde-principal;    
     font-weight: 200;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center; 
     padding-bottom: 20px;
     } 
@@ -109,7 +78,11 @@
 }
 
 
-.valores2{        
+.valores2{      
+    @include pantalla(md){
+        display: flex;
+        height: 24rem;
+    }  
     @include pantalla(lg){
         display: flex;
         flex-direction: row-reverse; 
@@ -141,7 +114,7 @@
     @include pantalla(xs){
     position: absolute;
     bottom: 48px;
-    left: 16.8rem;
+    left: 1rem;
     background-color:$verde-dark;
     border-radius:50%;
     width: 40px;
@@ -150,17 +123,25 @@
     overflow-y: hidden;
     }
 
+    @include pantalla(sm){    
+    bottom: 48px;
+    left: 6rem;
+    width: 40px;
+    height: 10px;  
+    padding: 20px;    
+    }
+
     @include pantalla(md){    
-    bottom: 85px;
-    left: 32.5rem;
+    bottom: 95px;
+    left: -1rem;
     width: 60px;
     height: 60px;  
     padding: 20px;    
     }
 
     @include pantalla(lg){    
-    bottom: 92px;
-    left: 32.5rem;    
+    bottom: 98px;
+    left: 26rem;    
     width: 75px;
     height: 50px;  
     padding: 40px;
@@ -179,20 +160,27 @@
     width: 18px;
     height: auto;
     margin-top: 62px;
-    margin-left: 17.6rem;
+    margin-left: 1.5rem;
+    }  
+
+    @include pantalla(sm){
+    position: absolute;
+    width: 18px;
+    margin-top: 62px;
+    margin-left: 6.5rem;   
     }  
 
     @include pantalla(md){
     position: absolute;
     width: 25px;
-    margin-top: 117px;
-    margin-left: 33.5rem;    
+    margin-top: 135px;
+    margin-left: 0.5rem;    
     }  
 
     @include pantalla(lg){
     width: 30px;
-    margin-top: 12.3rem;
-    margin-left: 34rem;    
+    margin-top: 11.5rem;
+    margin-left: 28rem;    
     }  
      
     @include pantalla(xl){
@@ -211,23 +199,29 @@
         overflow: hidden;        
         height: 8.5rem;
         width: 13rem;
-        margin-left:5.5rem;
+        margin-left:2rem;
         margin-top: 0;             
         opacity: 0.8;
         border-radius: 10px;
     }
 
+    @include pantalla(sm){
+        height: 8.5rem;
+        width: 13rem;      
+        margin-left:7rem;
+        margin-top: 0;      
+    }
     @include pantalla(md){
         height: 15rem;
-        width: 22.5rem;       
-        margin-left: 12rem;
-        margin-top: 0;      
+        width: 20rem;       
+        margin-left: 1rem;
+        margin-top: 2rem;      
     }
     
     @include pantalla(lg){               
         height: 18rem;
         width: 26.5rem;        
-        margin-left: 8rem;
+        margin-left: 3rem;
         margin-top: 50px;       
     }
 

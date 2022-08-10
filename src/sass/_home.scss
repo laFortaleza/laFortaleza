@@ -6,9 +6,32 @@
     overflow-x: hidden;
     font-family: 'Lexend Deca','Urbanist', sans-serif;
 }
+<<<<<<< HEAD
 body{
     background-color: white;
 }
+=======
+
+body{
+    background-color: $verde-dark;    
+}
+
+body::-webkit-scrollbar{
+    width: 10px;      
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #263d2d;
+    border-radius: 50px;    
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #22492e;    
+}
+
+
+
+>>>>>>> 077b261b71ed70277f134298d0b6cc0df5d43b74
 img{
     object-fit: cover;
 }
