@@ -1497,6 +1497,14 @@ footer {
   font-weight: 700;
 }
 
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
+}
+
 .linea3 {
   height: 1px;
   width: 37%;

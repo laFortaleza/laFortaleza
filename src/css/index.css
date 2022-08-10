@@ -171,8 +171,7 @@ img {
   align-items: center;
 }
 .linea {
-  color: #ff5d02;
-  background-color: #ff5d02;
+  background-color: #057f2a;
   height: 1px;
 }
 @media screen and (min-width: 150px) {
@@ -191,7 +190,6 @@ img {
 .carrusel {
   padding: 0rem;
   overflow: hidden;
-  background-color: #1c2723;
 }
 @media screen and (min-width: 150px) {
   .carrusel {
@@ -205,7 +203,6 @@ img {
   }
 }
 .carrusel .grande {
-  background-color: #1c2723;
   width: 300%;
   display: flex;
   flex-flow: row nowrap;
@@ -251,7 +248,6 @@ img {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #1c2723;
   padding-top: 1rem;
 }
 .carrusel .puntos .punto {
@@ -272,7 +268,6 @@ img {
 
 @media screen and (min-width: 150px) {
   .video {
-    background-color: #26362b;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -286,9 +281,6 @@ img {
     padding-right: 2rem;
     padding-bottom: 0;
   }
-}
-.video .reproduccionVideo {
-  background-color: #26362b;
 }
 @media screen and (min-width: 150px) {
   .video .reproduccionVideo {
@@ -320,10 +312,6 @@ img {
     background-color: #057f2a;
     height: 2px;
   }
-}
-
-.barra1:hover {
-  height: 6px;
 }
 
 @media screen and (min-width: 150px) {
@@ -377,8 +365,6 @@ img {
 
 @media screen and (min-width: 150px) {
   .btnServicios {
-    color: #057f2a;
-    border: 1px solid #057f2a;
     border-radius: 6px;
     padding: 0.4rem;
     text-decoration: none;
@@ -390,11 +376,6 @@ img {
   .btnServicios {
     font-size: 0.9rem;
   }
-}
-
-.btnServicios:hover {
-  color: #fff;
-  background-color: #057f2a;
 }
 
 @media screen and (min-width: 150px) {
@@ -416,7 +397,6 @@ img {
 
 @media screen and (min-width: 150px) {
   .frutas {
-    background-color: #1c2723;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,7 +461,6 @@ img {
 }
 @media screen and (min-width: 150px) {
   .verduras {
-    background-color: #26362b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -569,7 +548,6 @@ img {
 }
 
 footer {
-  background-color: #1c2723;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -784,7 +762,6 @@ header label {
   left: 0;
   width: 35%;
   height: 100vh;
-  background: #1c2723;
   opacity: 0.8;
   transition: all 0.5s;
   transform: translateX(-100%);
@@ -836,6 +813,55 @@ header label {
   color: #ff5d02;
   position: absolute;
   z-index: 2;
+}
+
+.carrusel, .grande, .puntos, .frutas, footer, .menu-nav {
+  background-color: #fff;
+  transition: 0.7s ease all;
+}
+
+.video, .reproduccionVideo, .verduras, .titleR {
+  background-color: #057f2a;
+  transition: 0.7s ease all;
+}
+
+.btnServicios {
+  color: #26362b;
+  border: 1px solid #26362b;
+  transition: 0.7s ease all;
+}
+
+.btnServicios:hover {
+  color: #fff;
+  background-color: #26362b;
+  transition: 7s ease all;
+}
+
+.verde-dark {
+  background-color: #1c2723;
+  transition: 0.7s ease all;
+}
+
+.verde-pino {
+  background-color: #26362b;
+  transition: 0.7s ease all;
+}
+
+.verde-principal {
+  background-color: #057f2a;
+  transition: 0.7s ease all;
+}
+
+.btnServices {
+  color: #057f2a;
+  border: 1px solid #057f2a;
+  transition: 0.7s ease all;
+}
+
+.btnServices:hover {
+  color: #fff;
+  background-color: #057f2a;
+  transition: 0.7s ease all;
 }
 
 /*# sourceMappingURL=index.css.map */
