@@ -6,6 +6,24 @@
   font-family: "Lexend Deca", "Urbanist", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1c2723;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #263d2d;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #22492e;
+}
+
 img {
   object-fit: cover;
 }
@@ -187,6 +205,68 @@ img {
   }
 }
 
+.switch {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+@media screen and (min-width: 150px) {
+  .switch {
+    width: 80vw;
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .switch {
+    width: 97vw;
+    margin: 6rem;
+  }
+}
+
+.clarOscuro {
+  padding: 0;
+  background-color: rgb(79, 110, 79);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.clarOscuro::after {
+  content: "";
+  display: block;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.clarOscuro.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.clarOscuro.active::after {
+  right: 0;
+  left: unset;
+}
+.clarOscuro span {
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  display: block;
+  background: none;
+  color: #ff5d02;
+  font-size: 0.9rem;
+}
+
 .carrusel {
   padding: 0rem;
   overflow: hidden;
@@ -365,6 +445,8 @@ img {
 
 @media screen and (min-width: 150px) {
   .btnServicios {
+    color: #057f2a;
+    border: 1px solid #057f2a;
     border-radius: 6px;
     padding: 0.4rem;
     text-decoration: none;
@@ -376,6 +458,11 @@ img {
   .btnServicios {
     font-size: 0.9rem;
   }
+}
+
+.btnServicios:hover {
+  color: #fff;
+  background-color: #057f2a;
 }
 
 @media screen and (min-width: 150px) {
@@ -815,53 +902,16 @@ header label {
   z-index: 2;
 }
 
-.carrusel, .grande, .puntos, .frutas, footer, .menu-nav {
-  background-color: #fff;
-  transition: 0.7s ease all;
+.menu-nav {
+  background-color: #26362b;
 }
 
 .video, .reproduccionVideo, .verduras, .titleR {
-  background-color: #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServicios {
-  color: #26362b;
-  border: 1px solid #26362b;
-  transition: 0.7s ease all;
-}
-
-.btnServicios:hover {
-  color: #fff;
   background-color: #26362b;
-  transition: 7s ease all;
 }
 
 .verde-dark {
   background-color: #1c2723;
-  transition: 0.7s ease all;
-}
-
-.verde-pino {
-  background-color: #26362b;
-  transition: 0.7s ease all;
-}
-
-.verde-principal {
-  background-color: #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServices {
-  color: #057f2a;
-  border: 1px solid #057f2a;
-  transition: 0.7s ease all;
-}
-
-.btnServices:hover {
-  color: #fff;
-  background-color: #057f2a;
-  transition: 0.7s ease all;
 }
 
 /*# sourceMappingURL=index.css.map */

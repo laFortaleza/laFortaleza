@@ -5,10 +5,17 @@
     width: 100vw;
 }
 
+
+.buttonWaapServ {
+    overflow: hidden;
+}
+
+
 .buttonWaapServ a{
+    
     @include pantalla(xs){
-    position: absolute;
-    bottom: 5px;
+    /* position: absolute;
+    bottom: -25px;
     left: 10.5rem;
     background-color:$verde-pino;
     border-radius:50%;
@@ -16,7 +23,16 @@
     height: 10px;  
     padding: 20px;
     margin: 0;
-    overflow-y: hidden;
+    overflow-y: hidden; */
+    }
+
+    @include pantalla(sm){    
+        bottom: 2.5rem;
+        left: 10rem;    
+        width: 50px;
+        height: 50px;  
+        padding: 25px;
+        z-index: 10;
     }
 
     @include pantalla(md){    
@@ -29,7 +45,7 @@
     }
 
     @include pantalla(lg){    
-    bottom: -57rem;
+    bottom: -58.5rem;
     left: 36.5rem;    
     width: 75px;
     height: 50px;  
@@ -37,7 +53,7 @@
     }
 
     @include pantalla(xl){    
-    bottom: -68.7rem;
+    bottom: -76rem;
     left: 43.5rem;    
     width: 75px;
     height: 50px;  
@@ -92,7 +108,8 @@
         
     @include pantalla(lg){
     height: 20rem;
-    margin-left: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     padding-top: 7rem;
     padding-bottom: 40px;
     }
@@ -204,7 +221,7 @@
 
 
 
-.buttonServ a{
+.play {
     @include pantalla(xs){
     position: absolute;
     bottom: 68px;
@@ -227,9 +244,9 @@
     z-index: 10;
     }
 
-    @include pantalla(lg){    
-    bottom: 6.5rem;
-    left: 9.5rem;    
+    @include pantalla(lg){
+    left: 9.5rem; 
+    top: -1rem;   
     width: 75px;
     height: 50px;  
     padding: 30px;
@@ -283,9 +300,16 @@
 
 .videoS{
     @include pantalla(xs){
-    width: 23rem;
+    width: 16rem;
+    padding-left: 1rem;
+    margin: 17px 1px 1px 1px;
+    border-radius: 10px;
+    }
+
+    @include pantalla(sm){
+    width: 22rem;
     padding-left: 3rem;
-    margin: 10px 1px 1px 1px;
+    margin: 17px 1px 1px 1px;
     border-radius: 10px;
     }
 
@@ -296,8 +320,8 @@
     }
 
     @include pantalla(lg){
-    width: 45rem;
-    padding-left: 15rem;
+    width: 28rem;
+    padding-left: 2.5rem;
     margin: 60px 1px 1px -50px;
     border-radius: 10px;
     }

@@ -106,6 +106,14 @@ footer{
 
 }
 
+.linea2{
+    display: flex;
+    text-align: center;
+    height: 1px;
+    width: 30%;
+    background-color: $naranja-oscuro;
+}
+
 .menu{
     @include pantalla(xs){
         padding-bottom: 2rem;        
@@ -217,24 +225,5 @@ footer{
     color: #1c2723;
     font-weight: 700;
   }
-  .linea2{
-    display: flex;
-    text-align: center;
-    height: 1px;
-    width: 30%;
-    background-color: $naranja-oscuro;
-}
-  .linea3{
-    height: 1px;
-    width: 37%;
-    background-color: $naranja-oscuro;
-    margin: 0.5rem 0 1.4rem;
-    @include pantalla(xs){
-        width: 60%;
-    }
-    @include pantalla(md){
-       width: 37%;
-    }
-}
 
 /* Finaliza Footer*/

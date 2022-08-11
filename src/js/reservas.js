@@ -22,7 +22,7 @@ function mostrarReserva(e){
         container.className = "informacion";
         btnEliminar.className = "eliminar"
         titulo.innerHTML = "<h3>MI RESERVA</h3>"
-        informacion.innerHTML= `<p> ${services.value} </p> <br> Desde ${checkInt.value} hasta ${checkout.value} <br> Para ${personas.value} personas`
+        informacion.innerHTML= `<p> ${services.value}<br/> <br/> <i class="fa-solid fa-calendar"></i> Desde ${checkInt.value} hasta ${checkout.value} <br/> <br/>  <i class="fa-solid fa-users"></i> Para ${personas.value} personas </p>`
         
         btnEliminar.innerHTML= "Eliminar";
         myReserva.appendChild(container);

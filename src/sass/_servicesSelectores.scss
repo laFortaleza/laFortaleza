@@ -14,15 +14,16 @@
     list-style:none;
     @include pantalla(xs){
     width: 80%;
-    height: 10%;
-    padding: 20px;
+    padding: 1px;
     margin: 30px 0 0 0;
     }
+
 
     @include pantalla(md){
     width: 100%;
     height: 10%;
-    margin: 50px 0 20px 0;
+    margin: 50px 0 10px 0;
+    padding: 5px;
     }
 
   }
@@ -30,7 +31,7 @@
    
   .t-contenedor .tabli {
     @include pantalla(xs){
-    padding-left: 40px;
+    padding-left: 15px;
     margin: 16px;   
     font-size: 0;
     font-weight: 300;    
@@ -54,7 +55,7 @@
     } 
 
     @include pantalla(lg){
-    padding-left: 18rem;
+    padding-left: 12rem;
     margin-left: 1rem; 
     margin-top: 1rem;
     margin-bottom: 1rem;   
@@ -83,21 +84,27 @@
   
   .t-contenedor .tab-subcontenedor {
     @include pantalla(xs){
+        min-height: 60vh; 
+        position: relative;
+        margin: 0 0 0 0;
+    }
+
+    @include pantalla(sm){
         min-height: 40vh; 
         position: relative;
-        margin: 0 20px 0 10px;
+        margin: 0 10px 0 10px;
     }
 
     @include pantalla(md){
-        min-height: 110vh; 
+        min-height: 75vh; 
         position: relative;
         margin: 0 20px 0 10px;
         display: block;
     }
 
     @include pantalla(lg){
-        min-height: 110vh;
-        margin-left: 100px;
+        min-height: 135vh;
+        margin-left: 0.5rem;
     } 
 
     @include pantalla(xl){
@@ -114,6 +121,7 @@
     @include pantalla(xs){
        margin-left: 5px;
     }
+
 
     @include pantalla(md){
        margin-left: 20px;
@@ -169,6 +177,7 @@
     @include pantalla(md){
     width: 50rem;
     }
+
 
     @include pantalla(lg){
     width: 70rem;

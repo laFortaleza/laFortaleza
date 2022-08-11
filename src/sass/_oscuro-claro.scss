@@ -1,55 +1,51 @@
 @import "variables";
 // index---------------------------------------
  //claro
- .carrusel, .grande, .puntos, .frutas, footer, .menu-nav{
-     background-color: $blanco;
-     transition: .7s ease all;
-    }
+.menu-nav{
+    background-color: $verde-pino;
+}
     .video, .reproduccionVideo, .verduras, .titleR{
-        background-color: $verde-principal;
-        transition: .7s ease all;
-    }
-    .btnServicios{
-        color: $verde-pino;
-        border: 1px solid $verde-pino;
-        transition: .7s ease all;
-    }
-    .btnServicios:hover{
-        color: #fff;
         background-color: $verde-pino;
-        transition: 7s ease all;
+        // transition: .7s ease all;
     }
+    // .btnServicios{
+    //     color: $verde-pino;
+    //     border: 1px solid $verde-pino;
+    //     transition: .7s ease all;
+    // }
+    // .btnServicios:hover{
+    //     color: #fff;
+    //     background-color: $verde-pino;
+    //     transition: 7s ease all;
+    // }
     
     
     
     
     //oscuro
-    
-    
-    
     .verde-dark{
         background-color: $verde-dark;
-        transition: .7s ease all;
+        // transition: .7s ease all;
     }
     
-    .verde-pino{
-        background-color: $verde-pino;
-        transition: .7s ease all;
-    }
-    .verde-principal{
-        background-color: $verde-principal;
-        transition: .7s ease all;
-    }
-    .btnServices{
-        color: $verde-principal;
-        border: 1px solid $verde-principal;
-        transition: .7s ease all;
-    }
-    .btnServices:hover{
-        color: #fff;
-        background-color: $verde-principal;
-        transition: .7s ease all;
-    }
+    // .verde-pino{
+    //     background-color: $verde-pino;
+    //     transition: .7s ease all;
+    // }
+    // .verde-principal{
+    //     background-color: $verde-principal;
+    //     transition: .7s ease all;
+    // }
+    // .btnServices{
+    //     color: $verde-principal;
+    //     border: 1px solid $verde-principal;
+    //     transition: .7s ease all;
+    // }
+    // .btnServices:hover{
+    //     color: #fff;
+    //     background-color: $verde-principal;
+    //     transition: .7s ease all;
+    // }
 //reservas
 
 

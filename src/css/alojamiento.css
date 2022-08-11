@@ -2,12 +2,30 @@
 
 /*# sourceMappingURL=alojamiento.css.map */
 
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Lexend Deca", "Urbanist", sans-serif;
+=======
+body{
+  background-color: #1c2723;    
+}
+
+body::-webkit-scrollbar{
+  width: 10px;      
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #263d2d;
+  border-radius: 50px;    
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #22492e;    
+>>>>>>> 352a2ecdc352c61f5a445255044daeed27ec96b3
 }
 
 
@@ -1005,6 +1023,7 @@ header label {
   color: #ff5d02;
   position: absolute;
   z-index: 2;
+<<<<<<< HEAD
 }
 
 .dark-mode-button{
@@ -1251,3 +1270,6 @@ html.dark-mode h3{
 }
  /* acarpa  */
 /*# sourceMappingURL=nosotros.css.map */
+=======
+}
+>>>>>>> 352a2ecdc352c61f5a445255044daeed27ec96b3
