@@ -11,7 +11,7 @@
 // const titleReservas = document.querySelector(".titleR")
 
 
-const boton = document.querySelector(".boton");
+const boton = document.querySelector(".clarOscuro");
 
 accion =(e) =>{
     e.preventListener;
@@ -22,6 +22,7 @@ accion =(e) =>{
         // frutas.classList.toggle("verde-dark")
         // footer.classList.toggle("verde-dark");
         document.body.classList.toggle("verde-dark")
+        boton.classList.toggle("active")
         // navMenu.classList.toggle("blanco")
         // videoC.classList.toggle("verde-pino");
         // reproduccion.classList.toggle("verde-pino")
