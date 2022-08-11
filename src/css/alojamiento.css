@@ -465,12 +465,12 @@ align-content: center;
       padding: 0;
     }
   }
-
+   /* aloja1  */
  
 @media screen and (min-width: 150px) {
   .contenedorCarpa {
     margin-right: 0;
-    padding-top: 0;
+    padding-top: 10%;
     padding-bottom: 0;
     background-color: #1c2723;
   }
@@ -738,7 +738,7 @@ align-content: center;
   }
 }
 
-/* valores */
+/* carpa end */
 
 /* footer Menu*/
 footer {
@@ -1029,5 +1029,225 @@ html.dark-mode h3{
 }
 
 /*# sourceMappingURL=index.css.map */
+.acarpa {
+  z-index: 10000;
+}
+@media screen and (min-width: 150px) {
+  .acarpa {
+    background-color: #1c2723;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa {
+    flex-direction: row;
+    padding-bottom: 0rem;
+  }
+}
+@media screen and (min-width: 150px) {
+  .acarpa .acarpa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.6rem;
+  }
+}
 
+
+/* @media screen and (min-width: 768px) {
+  .aloja .aloja1 {
+    padding-bottom: 0rem;
+    border-right: 1px solid #ff5d02;
+  }
+} */
+
+@media screen and (min-width: 150px) {
+  .acarpa .acarpa1 .p10 {
+    color: #057f2a;
+    font-size: 1rem;
+    padding: 2rem 0;
+    
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .acarpa .acarpa1 .p11 {
+    color: #ff5d02;
+    width: 65%;
+  }
+}
+@media screen and (min-width: 150px) {
+  .acarpa .acarpa1 .p5 {
+    color: #057f2a;
+    font-size: 1rem;
+    padding: 2rem 0;
+    text-align: center;
+    width: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa .acarpa1 .p5 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .acarpa .quiosco {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa .quiosco {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .acarpa .quiosco {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 150px) {
+  .acarpa .quiosco .quiosco1 {
+    width: 88%;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa .quiosco .quiosco1 {
+    width: 200%;
+    padding-top: 0;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .acarpa1 .bloque {
+    min-height: 20vh;
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa1 .bloque {
+    min-height: 40vh;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1328px) {
+  .acarpa .bloque {
+    min-height: 50vh;
+    position: relative;
+  }
+}
+
+.acarpa .bloque {
+  list-style: none;
+  width: 150vh;
+  display: inline-block;
+}
+@media screen and (min-width: 150px) {
+  .acarpa .bloque {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa .bloque {
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .acarpa .bloque {
+    margin-left: 150px;
+  }
+}
+@media screen and (min-width: 1328px) {
+  .acarpa .bloque {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .acarpa li {
+    color: #057f2a;
+    margin-top: 0;
+    padding-left: 150px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa li {
+    color: #057f2a;
+    margin-top: 10px;
+    padding-left: 250px;
+    font-size: 17px;
+    font-weight: 200;
+  }
+}
+
+.acarpa i {
+  color: #ff5d02;
+  
+}
+@media screen and (min-width: 150px) {
+  .acarpa i {
+    font-size: 10px;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa i {
+    font-size: 15px;
+    margin: 10px;
+  }
+}
+
+.acarpa h2 {
+  color: #057f2a;
+  font-weight: 300;
+  display: inline-block;
+  position: absolute;
+}
+@media screen and (min-width: 150px) {
+  .acarpa h2 {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .acarpa h2 {
+    padding-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  .acarpa hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ff5d02;
+    margin: 3px 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .acarpa hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ff5d02;
+    margin: 1em 0;
+    padding: 0;
+  }
+}
+ /* acarpa  */
 /*# sourceMappingURL=nosotros.css.map */
