@@ -178,14 +178,14 @@ header {
 }
 @media screen and (min-width: 150px) {
   .switch {
-    width: 80vw;
+    width: 87vw;
     margin: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .switch {
     width: 97vw;
-    margin: 6rem;
+    margin-top: 6rem;
   }
 }
 

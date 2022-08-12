@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,187 +11,159 @@
     <!-- <link rel="stylesheet" href="./src/css/alojamiento.css"> -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+
 
     <script src="https://kit.fontawesome.com/3405a3f558.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/fontello.css">
-    <title>La Fortaleza</title>
+    <title>Contactenos La Fortaleza</title>
 </head>
+
 <body>
     <header>
         <div class="containerMenu">
             <input type="checkbox" id="menu-bar">
-            
+
             <label class="icon-menu" for="menu-bar"></label>
-             <nav class="menu-nav">
+            <nav class="menu-nav">
                 <a href="./index.html">Inicio</a>
-                 <a href="./servicios.html">Servicios</a>
-                 <a href="./alojamiento.html">Alojamiento</a>
-                 <a href="./reserva.html">Reservas</a>
-                 <a href="./nosotros.html">Nosotros</a>
-                <a href="contactenos.html">Contáctanos</a>
-               </nav>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./alojamiento.html">Alojamiento</a>
+                <a href="./reserva.html">Reservas</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="#">Contáctanos</a>
+            </nav>
         </div>
-        
+
         <div class="head">
             <img id="logo" src="./src/img/Logo.png" alt="Logo La Fortaleza" title="La Fortaleza">
         </div>
         <div id="wpp">
-            <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!" target="_blank"><img class="whatsapp" src="./src/img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!"
+                target="_blank"><img class="whatsapp" src="./src/img/whatsapp.png" alt="whatsapp"></a>
         </div>
-            <img id="index-fondo" src="./src/img/tomatoes-g13f7ca44c_1920.jpg" alt="Paisaje la fortaleza">
+        <div class="switch">
+            <button class="clarOscuro">
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </div>
+        <img id="index-fondo" src="./src/img/tomatoes-g13f7ca44c_1920.jpg" alt="Paisaje la fortaleza">
+
     </header>
     <main>
-
-        
-
-    <p class="p22">----   Contáctanos   ----</p>
-    
-    <!-- <section class="contac" id="contac">
-        <div class="texto">
-           <p class="p3">Contáctanos</p>
-            <h3>Telefono</h3>
-            <p>(+57)3118169087</p>
-            <h2>WhatsApp</h2>
-            <p>(+57) 3124026944</p>
-            
-
-            <label class="icon-phone" for="vide"></label>
-        </div>
-        <div class="t"></div>
-
-        <p>hola</p>
-       
-    </section> -->
-    <section class="contacm">  
-
-      <section class="LaFortaleza">
-        <h3 class="icon-"></h3>
-        <ul class="ul">
-            <li class="li"><i class="fa-solid fa-phone"></i>  Teléfono</li>
-            <li>(+52)311 8169087</li><br>
-            <li class="li"><i class="fa-brands fa-whatsapp"></i>  Whatsapp</li>
-            <li>(+52)312 4026944</li><br>
-            <li class="li"><i class="fa-solid fa-envelope"></i>  Email</li>
-            <li>fincalafortalezaecobio@gmail.com</li>
-        </ul>
-        
-       
-    
-        <!-- <p class="p6">Telefono </p>
-        <p class="p6">(+52)311 8169087 </p>
-        <p class="p6">Whatsaapp</p>
-        <p class="p6">(+52)312 4026944</p>
-        <p class="p6">Email</p>
-        <p class="p6">fincalafortalezaecobio@gmail.com</p> -->
-        
-      </section>
-      <section class="menu">
-        
-            <H2>Horario de atencion</H2>
-            <h3>L - V</h3><p class="p6">  9: a.m A 06:00 p.m</p>
-            <h3>S - D</h3><p class="p6">  10: a.m A 04:00 p.m</p>
-            <input class="botons" type="submit" id="res" value="Reservas">
-           
-      </section>
-    
-    </section>
-    
-    <section class="form">
-        <div class="form-register">
-              <h4>Comunicate</h4>
-              <form action="https://formsubmit.co/fincalafortalezaecobio@gmail.com" method="POST">
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Correo" required>
-            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono" required >
-            <input class="controls" type="text" name="asunto" id="asunto" placeholder="Asunto" required>
-           <textarea class="controls" name="texto" id="texto" placeholder="Mensaje" cols="30" rows="10" required></textarea>       
-           <!-- <input class="botons" type="submit" value="Enviar"> -->
-           <input type="submit" class="botons" id="button" value="Enviar" >
-        </form>
-        <!-- <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-       <script type="text/javascript">emailjs.init('anY2oLe-0E-9PcSJb')</script> -->
-        </section> 
-        </div> 
-       
-    
-    <footer>
-        <section class="LaFortaleza">
-            <a href="#">
-                <img id="logoFooter" src="./src/img/Logo.png" alt="Logo">
-            </a>
-            <p class="p6">LA FORTALEZA</p>
-            <p class="linea2">&nbsp;</p>
-            <p class="p7">Finca Ecolodge</p>
-            
+        <section class="primera-seccion">
+            <div class="titleR">
+                <p class="linea">&nbsp;</p>
+                <h1 class="texto-1"> Contáctanos</h1>
+                <p class="linea">&nbsp;</p>
+            </div>
         </section>
-        <section class="menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./alojamiento.html">Alojamiento</a></li>
-                <li><a href="./reserva.html">Reservas</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contactenos</a></li>
-            </ul>
-        </section>
-        <section class="redesSociales">
-            <a href="https://www.facebook.com/FincaEcolodgeLaFortaleza" target="_blank" rel="noopener noreferrer" title="Facebook" alt="Facebook" >
-                <i class="fa-brands fa-facebook-f iconosRedes"></i>
-            </a>
-            <a href="https://www.instagram.com/fincalafortalezaecobio/?hl=es" target="_blank" rel="noopener noreferrer" title="Instagram" alt="Instagram">
-                <i class="fa-brands fa-instagram iconosRedes"></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!" target="_blank" title="WhatsApp" alt="Wpp">
-                <i class="fa-brands fa-whatsapp iconosRedes"></i>
-            </a>
-            <a href="mailto:fincalafortalezaecobio@gmail.com?subject=Quiero%20obtener%20información%20sobre»" target="_blank" title="Email" alt="email">
-                <i class="fa-solid fa-envelope iconosRedes"></i>
-            </a>
-            <a href="https://www.google.com/maps/place/Ecolodge+La+Fortaleza/@6.8448779,-70.7210129,17z/data=!3m1!4b1!4m5!3m4!1s0x8e6fc9b9e70fd659:0x93ece5ea8c368d58!8m2!3d6.8448779!4d-70.7210129" target="_blank" rel="noopener noreferrer"  title="Ubicación" alt="ubicación">
-                <i class="fa-solid fa-location-dot iconosRedes"></i>
-            </a>
-        </section>
-        <section class="by">
-            <p class="linea3">&nbsp;</p>
-            <p>Copyright @ 2022 by </p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/felipe-ruiz/">Madyam Ruiz - </a></li>
-                <li><a href="https://www.linkedin.com/in/yary-garcia/" target="_blank" rel="noopener" title="Ir a linkedin">Yary Garc&iacutea - </a></li>
-                <li><a href="www.linkedin.com/in/carolina-uribe-botero-7b0839195" target="_blank" rel="noopener" title="Ir a linkedin">Carolina Uribe</a></li>
-            </ul>
-        </section>
-    </footer>
- </main>
- <!-- <script src="./src/js/index.js"></script> -->
- 
 
- <script src="./src/js/contactenos.js"></script>
-<script src="./src/js/modo-oscuro.js"></script>
+        <section class="contacm">
+            <section>
+                <h3 class="icon-"></h3>
+                <ul class="ul">
+                    <li class="li"><i class="fa-solid fa-phone"></i> Teléfono</li>
+                    <li>(+52)311 8169087</li><br>
+                    <li class="li"><i class="fa-brands fa-whatsapp"></i> Whatsapp</li>
+                    <li>(+52)312 4026944</li><br>
+                    <li class="li"><i class="fa-solid fa-envelope"></i> Email</li>
+                    <li>fincalafortalezaecobio@gmail.com</li>
+                </ul>
+
+            </section>
+            <section class="horario menu">
+
+                <h2>Horario de atencion</h2>
+                <h3>L - V</h3>
+                <p class="p6"> 9: a.m A 06:00 p.m</p>
+                <h3>S - D</h3>
+                <p class="p6"> 10: a.m A 04:00 p.m</p>
+                <a href="./reserva.html" class="botons" id="res">Reservas</a>
+                <!-- <input class="botons" type="submit" id="res" value="Reservas"> -->
+
+            </section>
+
+        </section>
+
+        <section class="form">
+            <div class="form-register">
+                <h4>Comunicate</h4>
+                <form action="https://formsubmit.co/fincalafortalezaecobio@gmail.com" method="POST">
+                    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo" required>
+                    <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+                    <input class="controls" type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+                    <textarea class="controls" name="texto" id="texto" placeholder="Mensaje" cols="30" rows="10"
+                        required></textarea>
+                    <input type="submit" class="botons" id="button" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+            <section class="LaFortaleza">
+                <a href="#">
+                    <img id="logoFooter" src="./src/img/Logo.png" alt="Logo">
+                </a>
+                <p class="p6">LA FORTALEZA</p>
+                <p class="linea2">&nbsp;</p>
+                <p class="p7">Finca Ecolodge</p>
+
+            </section>
+            <section class="menu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./alojamiento.html">Alojamiento</a></li>
+                    <li><a href="./reserva.html">Reservas</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </section>
+            <section class="redesSociales">
+                <a href="https://www.facebook.com/FincaEcolodgeLaFortaleza" target="_blank" rel="noopener noreferrer"
+                    title="Facebook" alt="Facebook">
+                    <i class="fa-brands fa-facebook-f iconosRedes"></i>
+                </a>
+                <a href="https://www.instagram.com/fincalafortalezaecobio/?hl=es" target="_blank"
+                    rel="noopener noreferrer" title="Instagram" alt="Instagram">
+                    <i class="fa-brands fa-instagram iconosRedes"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!"
+                    target="_blank" title="WhatsApp" alt="Wpp">
+                    <i class="fa-brands fa-whatsapp iconosRedes"></i>
+                </a>
+                <a href="mailto:fincalafortalezaecobio@gmail.com?subject=Quiero%20obtener%20información%20sobre»"
+                    target="_blank" title="Email" alt="email">
+                    <i class="fa-solid fa-envelope iconosRedes"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/Ecolodge+La+Fortaleza/@6.8448779,-70.7210129,17z/data=!3m1!4b1!4m5!3m4!1s0x8e6fc9b9e70fd659:0x93ece5ea8c368d58!8m2!3d6.8448779!4d-70.7210129"
+                    target="_blank" rel="noopener noreferrer" title="Ubicación" alt="ubicación">
+                    <i class="fa-solid fa-location-dot iconosRedes"></i>
+                </a>
+            </section>
+            <section class="by">
+                <p class="linea3">&nbsp;</p>
+                <p>Copyright @ 2022 by </p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/felipe-ruiz/" target="_blank" rel="noopener"
+                            title="Ir a linkedin">Madyam Ruiz - </a></li>
+                    <li><a href="https://www.linkedin.com/in/yary-garcia/" target="_blank" rel="noopener"
+                            title="Ir a linkedin">Yary Garc&iacutea - </a></li>
+                    <li><a href="www.linkedin.com/in/carolina-uribe-botero-7b0839195" target="_blank" rel="noopener"
+                            title="Ir a linkedin">Carolina Uribe</a></li>
+                </ul>
+            </section>
+        </footer>
+    </main>
+
+    <script src="./src/js/modo-oscuro.js"></script>
+
 </body>
-<script>
-// const button= document.getElementById(button);
 
-// document.getElementById('form')
-// .addEventListener('submit', function(event){
-//     event.preventDefault();
-
-//     button.vaule='Enviando....';
-
-//     const servicedID = 'default_service';
-//     const templatedID = 'template_4gtcfwm';
-
-//     emailjs.sendForm(servicedID, templatedID, this)
-//     .then(() => {
-//         button.value = 'Enviar';
-//         alert('mensaje enviado');
-//     }, (err) => {
-//         button.value = 'Enviar';
-//         alert(JSON.stringify(err));
-//     });
-    
-// });
-
-</script>
 </html>

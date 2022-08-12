@@ -154,15 +154,13 @@ header{
     align-items:center;
     z-index: 1000;
     @include pantalla(xs){
-        width: 80vw;
+        width: 87vw;
         margin: 0.5rem;
     }
     @include pantalla(md){
         width: 97vw;
-        margin: 6rem;
-        // height: 34vh;
+        margin-top: 6rem;
     }
-    // background-color: #fff;
 }
 .clarOscuro{
     padding: 0;

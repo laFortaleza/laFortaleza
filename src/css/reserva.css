@@ -261,7 +261,7 @@ img {
   transform: scale(1.3);
 }
 
-.title {
+.titleR {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -829,5 +829,6 @@ footer {
 .verde-dark {
   background-color: #1c2723;
 }
+
 
 /*# sourceMappingURL=reserva.css.map */

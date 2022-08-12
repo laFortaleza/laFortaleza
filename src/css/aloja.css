@@ -99,7 +99,6 @@ header {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #1c2723;
     margin: 4px;
     z-index: 2;
   }
@@ -234,9 +233,11 @@ header {
 }
 
 /* Inicia seccion mision*/
-.aloja {
+
+/* .aloja {
   background-color: #26362b;
-}
+  
+} */
 
 @media screen and (min-width: 150px) {
   .cont-alojamiento {
@@ -270,7 +271,8 @@ header {
 @media screen and (min-width: 150px) {
   .texto {
     color: #057f2a;
-    background-color: #26362b;
+    /* background-color: #26362b; */
+    
     font-weight: 200;
     font-size: 10px;
     margin-top: 6px;
@@ -324,9 +326,9 @@ header {
   overflow-y: hidden;
 }
 
-.alojamiento {
-  background-color: #26362b;
-}
+/* .alojamiento { */
+  /* background-color:#1c2723; */
+/* } */
 @media screen and (min-width: 768px) {
   .alojamiento {
     display: flex;
@@ -366,7 +368,7 @@ header {
     position: absolute;
     bottom: 50px;
     left: 1rem;
-    background-color: #26362b;
+    background-color: #1c2723;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -495,7 +497,7 @@ header {
 /* finaliza seccion mision*/
 /* Inicia seccion vision*/
 .alojamiento-2{
-  background-color: #263d2d;
+  background-color: #26362b;
 }
 .texto2{
   color: #057f2a;
@@ -646,7 +648,7 @@ header {
     position: absolute;
     bottom: 48px;
     left: 1rem;
-    background-color: #1c2723;
+    background-color: #26362b;
     border-radius: 50%;
     width: 40px;
     height: 10px;
@@ -800,7 +802,7 @@ header {
 }
 
 .mision3 {
-  background-color: #26362b;
+  /* background-color: #1c2723; */
 }
 
 .mision3 h2 {
@@ -970,22 +972,23 @@ header {
 /* Inicia Footer*/
 footer {
   text-align: center;
+  background-color: #26362b;
   
 }
 @media screen and (min-width: 768px) {
   footer {
-    margin-top: 110px;
+    /* margin-top: 110px; */
     display: grid;
     grid-template: repeat(3, auto)/repeat(2, auto);
     grid-template-areas: "info menuF" "footer footer" "by by";
     align-items: center;
   }
 }
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   footer {
     margin-top: 210px;
   }
-}
+} */
 
 .LaFortaleza {
   display: flex;
@@ -1013,8 +1016,8 @@ footer {
 }
 @media screen and (min-width: 1328px) {
   .LaFortaleza {
-    padding-top: 4rem;
-    margin-left: 10rem;
+    /* padding-top: 4rem; */
+    /* margin-left: 10rem; */
   }
 }
 @media screen and (min-width: 150px) {
@@ -1068,18 +1071,18 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .LaFortaleza hr {
-    width: 85px;
-    margin-left: 110px;
+    /* width: 85px; */
+    /* margin-left: 110px; */
   }
 }
 @media screen and (min-width: 1024px) {
   .LaFortaleza hr {
-    margin-left: 220px;
+    /* margin-left: 220px; */
   }
 }
 @media screen and (min-width: 1328px) {
   .LaFortaleza hr {
-    margin-left: 230px;
+    /* margin-left: 230px; */
   }
 }
 
@@ -1100,19 +1103,19 @@ footer {
   .menu {
     padding: 1px 0px 20px;
     grid-area: menuF;
-    margin-right: 11rem;
+    /* margin-right: 11rem; */
     border-left: 1.2px solid #057f2a;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu {
     padding: 20px 0px 10px;
-    margin-right: 20rem;
+    /* margin-right: 20rem; */
   }
 }
 @media screen and (min-width: 1328px) {
   .menu {
-    margin-right: 30rem;
+    /* margin-right: 30rem; */
   }
 }
 @media screen and (min-width: 150px) {
@@ -1303,6 +1306,73 @@ header label {
 }
 
 .verde-dark {
+  background-color: #1c2723;
+}
+
+
+
+.switch {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+@media screen and (min-width: 150px) {
+  .switch {
+    width: 87vw;
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .switch {
+    width: 97vw;
+    margin-top: 6rem;
+  }
+}
+
+.clarOscuro {
+  padding: 0;
+  background-color: rgb(79, 110, 79);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.clarOscuro::after {
+  content: "";
+  display: block;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.clarOscuro.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.clarOscuro.active::after {
+  right: 0;
+  left: unset;
+}
+.clarOscuro span {
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  display: block;
+  background: none;
+  color: #ff5d02;
+  font-size: 0.9rem;
+}
+.verde-dark{
   background-color: #1c2723;
 }
 
