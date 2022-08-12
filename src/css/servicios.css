@@ -1462,7 +1462,6 @@ footer {
 }
 @media screen and (min-width: 768px) {
   footer {
-    margin-top: 110px;
     display: grid;
     grid-template: repeat(3, auto)/repeat(2, auto);
     grid-template-areas: "info menuF" "footer footer" "by by";
@@ -1482,13 +1481,12 @@ footer {
 }
 @media screen and (min-width: 150px) {
   .LaFortaleza {
-    padding-top: 7rem;
+    padding-top: 2rem;
     color: #057f2a;
   }
 }
 @media screen and (min-width: 768px) {
   .LaFortaleza {
-    padding-top: 3rem;
     grid-area: info;
     margin-left: 4rem;
   }
@@ -1507,7 +1505,7 @@ footer {
 }
 @media screen and (min-width: 150px) {
   .LaFortaleza #logoFooter {
-    width: 6rem;
+    width: 9rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1586,21 +1584,9 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    padding: 1px 0px 20px;
     grid-area: menuF;
-    margin-right: 11rem;
+    margin-right: 6rem;
     border-left: 1.2px solid #057f2a;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    padding: 20px 0px 10px;
-    margin-right: 20rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .menu {
-    margin-right: 30rem;
   }
 }
 @media screen and (min-width: 150px) {

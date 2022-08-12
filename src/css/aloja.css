@@ -1101,23 +1101,14 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    padding: 1px 0px 20px;
+    /* padding: 1px 0px 20px; */
     grid-area: menuF;
-    /* margin-right: 11rem; */
+    margin-right: 6rem;
     border-left: 1.2px solid #057f2a;
   }
 }
-@media screen and (min-width: 1024px) {
-  .menu {
-    padding: 20px 0px 10px;
-    /* margin-right: 20rem; */
-  }
-}
-@media screen and (min-width: 1328px) {
-  .menu {
-    /* margin-right: 30rem; */
-  }
-}
+
+
 @media screen and (min-width: 150px) {
   .menu li a {
     font-weight: 200;
@@ -1375,5 +1366,19 @@ header label {
 .verde-dark{
   background-color: #1c2723;
 }
-
+.carpas{
+  padding-top: 4rem;
+}
+@media screen and (min-width: 150px) {
+  .chinchorro, .quiosco {
+    padding-top: 1.8rem ;
+    /* overflow-y: hidden; */
+  }
+}
+@media screen and (min-width: 740px) {
+  .chinchorro, .quiosco {
+    padding-top: 0;
+    /* overflow-y: hidden; */
+  }
+}
 /*# sourceMappingURL=nosotros.css.map */

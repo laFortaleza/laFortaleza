@@ -122,19 +122,19 @@ footer{
     @include pantalla(md){
         padding: 1px 0px 20px;               
         grid-area: menuF;
-        margin-right: 11rem;
+        margin-right: 6rem;
         border-left: 1.2px solid $verde-principal;
         
     }
 
-    @include pantalla(lg){
-        padding: 20px 0px 10px; 
-        margin-right: 20rem;             
-    }
+    // @include pantalla(lg){
+    //     padding: 20px 0px 10px; 
+    //     margin-right: 20rem;             
+    // }
 
-    @include pantalla(xl){
-        margin-right: 30rem;             
-    }
+    // @include pantalla(xl){
+    //     margin-right: 30rem;             
+    // }
     
     li a{
         @include pantalla(xs){

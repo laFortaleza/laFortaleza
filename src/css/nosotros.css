@@ -178,7 +178,7 @@ header {
 }
 @media screen and (min-width: 150px) {
   .switch {
-    width: 87vw;
+    width: 88vw;
     margin: 0.5rem;
   }
 }
@@ -1397,19 +1397,8 @@ footer {
   .menu {
     padding: 1px 0px 20px;
     grid-area: menuF;
-    margin-right: 11rem;
+    margin-right: 6rem;
     border-left: 1.2px solid #057f2a;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    padding: 20px 0px 10px;
-    margin-right: 20rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .menu {
-    margin-right: 30rem;
   }
 }
 @media screen and (min-width: 150px) {
