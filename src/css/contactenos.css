@@ -294,7 +294,7 @@
   @media screen and (min-width: 700px) {
     .contac {
       display: flex;
-      flex-direction: row;
+      flex-direction: row; 
       padding-right: 10rem;
       padding-bottom: 0;
       height: 100%;
