@@ -234,19 +234,19 @@ header {
 }
 
 /* Inicia seccion mision*/
-.mision {
+.aloja {
   background-color: #26362b;
 }
 
 @media screen and (min-width: 150px) {
-  .contenedorValores {
+  .cont-alojamiento {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
-  .contenedorValores {
+  .cont-alojamiento {
     margin-left: 90px;
     margin-right: 0;
     padding-top: 0;
@@ -254,40 +254,16 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  .contenedorValores {
+  .cont-alojamiento {
     margin-left: 90px;
     padding-top: 40px;
   }
 }
 @media screen and (min-width: 1328px) {
-  .contenedorValores {
+  .cont-alojamiento {
     margin-left: 150px;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-}
-
-.mision h2 {
-  color: #ff5d02;
-  font-weight: 200;
-  text-align: center;
-}
-@media screen and (min-width: 150px) {
-  .mision h2 {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mision h2 {
-    font-size: 18px;
-    margin-top: 2rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .mision h2 {
-    font-size: 18px;
-    margin-top: 1rem;
   }
 }
 
@@ -348,18 +324,18 @@ header {
   overflow-y: hidden;
 }
 
-.valores {
+.alojamiento {
   background-color: #26362b;
 }
 @media screen and (min-width: 768px) {
-  .valores {
+  .alojamiento {
     display: flex;
     flex-wrap: nowrap;
     height: 24rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .valores {
+  .alojamiento {
     display: flex;
     flex-wrap: nowrap;
     height: 24rem;
@@ -518,7 +494,7 @@ header {
 
 /* finaliza seccion mision*/
 /* Inicia seccion vision*/
-.valores2{
+.alojamiento-2{
   background-color: #263d2d;
 }
 .texto2{
@@ -540,7 +516,7 @@ header {
   color: #ff5d02;
 } 
 @media screen and (min-width: 150px) {
-  .contenedorValores2 {
+  .cont-alojamiento2 {
     margin-right: 100px;
     margin-left: 100px;
     padding-top: 0;
@@ -550,7 +526,7 @@ header {
   }
 }
 @media screen and (min-width: 768px) {
-  .contenedorValores2 {
+  .cont-alojamiento2 {
     margin-left: 0px;
     margin-right: 0;
     padding-top: 0;
@@ -560,7 +536,7 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  .contenedorValores2 {
+  .cont-alojamiento2 {
     margin-left: 0;
     margin-right: 100px;
     padding-top: 40px;
@@ -569,7 +545,7 @@ header {
   }
 }
 @media screen and (min-width: 1328px) {
-  .contenedorValores2 {
+  .cont-alojamiento2 {
     margin-left: 150px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -630,13 +606,13 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .valores2 {
+  .alojamiento-2 {
     display: flex;
     height: 24rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .valores2 {
+  .alojamiento-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -800,25 +776,25 @@ header {
 
 /* finaliza seccion vision*/
 /*Inicia Valores*/
-.valoresTex {
+.cont-alojamientos {
   color: #ff5d02;
   text-align: center;
 }
 @media screen and (min-width: 150px) {
-  .valoresTex {
+  .cont-alojamientos {
     font-weight: 200;
     font-size: 13px;
   }
 }
 @media screen and (min-width: 768px) {
-  .valoresTex {
+  .cont-alojamientos {
     font-size: 15px;
     margin-left: 4rem;
     margin-right: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .valoresTex {
+  .cont-alojamientos {
     font-size: 15px;
   }
 }
