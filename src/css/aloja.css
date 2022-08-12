@@ -229,339 +229,10 @@ header {
   font-size: 0.9rem;
 }
 
-/*Finaliza Header Nosotros*/
-/*Inicia Carrusel Nosotros*/
-/*Inicia Titulo Nosotros*/
-.carrusel::-webkit-scrollbar {
-  display: none;
-}
-
-.linea {
-  color: #ff5d02;
-  background-color: #ff5d02;
-  height: 1px;
-}
-@media screen and (min-width: 150px) {
-  .linea {
-    width: 25%;
-    margin: 0 1rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .linea {
-    margin: 0 3rem;
-    width: 30%;
-  }
-}
-
-.title {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 150px) {
-  .title {
-    padding: 1rem 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .title {
-    padding: 2rem 0;
-    margin: 2rem;
-  }
-}
-
-.primera-seccion {
-  height: auto;
-}
-@media screen and (min-width: 150px) {
-  .primera-seccion {
-    padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .primera-seccion {
-    padding-bottom: 5rem;
-  }
-}
-@media screen and (min-width: 150px) {
-  .primera-seccion .texto-1 {
-    font-size: 15px;
-    color: #ff5d02;
-    letter-spacing: 1px;
-    font-weight: 250;
-  }
-}
-@media screen and (min-width: 768px) {
-  .primera-seccion .texto-1 {
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  .leyenda {
-    margin: 30px 10px 50px 10px;
-    color: #ff5d02;
-    font-weight: 300;
-    float: left;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .leyenda {
-    margin: 35px 30px 50px 20px;
-    font-size: 35px;
-    font-weight: 500;
-  }
-}
-@media screen and (min-width: 768px) {
-  .leyenda {
-    margin: 35px 5px 5px 5px;
-    font-size: 20px;
-    font-weight: 300;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .leyenda {
-    margin: 35px 30px 50px 20px;
-    font-size: 25px;
-    font-weight: 500px;
-  }
-}
-
-/*Finaliza Titulo Nosotros*/
-/*Inicia Carrusel*/
-.contenedor-titulo-controles {
-  display: flex;
-  justify-content: center;
-}
-
-.contenedor-titulo-controles .indicadores button {
-  background: #ff5d02;
-  height: 2px;
-  width: 10px;
-  cursor: pointer;
-  border: none;
-  margin-right: 5px;
-}
-
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
-  background: #057f2a;
-}
-
-.imagenes-recomendadas {
-  margin-bottom: 70px;
-}
-
-.imagenes-recomendadas .contenedor-principal {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-@media screen and (min-width: 150px) {
-  .imagenes-recomendadas .contenedor-principal .flecha-izquierda,
-.imagenes-recomendadas .contenedor-principal .flecha-derecha {
-    border: none;
-    background: none;
-    font-size: 15px;
-    height: 60%;
-    top: 25%;
-    line-height: 40px;
-    width: 50px;
-    color: #ff5d02;
-    cursor: pointer;
-    z-index: 500;
-    transition: 0.2s ease all;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .imagenes-recomendadas .contenedor-principal .flecha-izquierda,
-.imagenes-recomendadas .contenedor-principal .flecha-derecha {
-    font-size: 20px;
-  }
-}
-
-.imagenes-recomendadas .contenedor-principal .flecha-izquierda:hover,
-.imagenes-recomendadas .contenedor-principal .flecha-derecha:hover {
-  opacity: 0.7;
+.leyenda{
   color: #057f2a;
 }
 
-.imagenes-recomendadas .contenedor-principal .flecha-izquierda {
-  left: 0;
-}
-
-.imagenes-recomendadas .contenedor-principal .flecha-derecha {
-  right: 0;
-}
-
-@media screen and (min-width: 150px) {
-  .imagenes-recomendadas .contenedor-carousel {
-    width: 200%;
-    overflow: hidden;
-    scroll-behavior: smooth;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .imagenes-recomendadas .contenedor-carousel {
-    width: 95%;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .imagenes-recomendadas .contenedor-carousel {
-    width: 100%;
-  }
-}
-
-.imagenes-recomendadas .contenedor-carousel .carouselNos {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-@media screen and (min-width: 150px) {
-  .imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos {
-    transition: 0.1s ease all;
-    min-width: 50%;
-    box-shadow: 5px 5px 10px black;
-    opacity: 0.3;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos {
-    min-width: 35%;
-  }
-}
-
-.imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos.hover {
-  transform-origin: center;
-  opacity: 100%;
-}
-
-.imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos img {
-  width: 100%;
-  vertical-align: top;
-}
-
-/*Finaliza Carrusel*/
-/*Inicia Separador Nosotros*/
-.buttonWaap {
-  position: absolute;
-  overflow-y: hidden;
-}
-
-.fondo {
-  background-color: #26362b;
-  width: 100vw;
-}
-
-@media screen and (min-width: 150px) {
-  .buttonWaap a {
-    position: absolute;
-    bottom: -27px;
-    left: 10.5rem;
-    background-color: #26362b;
-    border-radius: 50%;
-    width: 40px;
-    height: 10px;
-    padding: 20px;
-    margin: 0;
-    overflow-y: hidden;
-  }
-}
-@media screen and (min-width: 768px) {
-  .buttonWaap a {
-    bottom: -27px;
-    left: 21rem;
-    width: 70px;
-    height: 50px;
-    padding: 25px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .buttonWaap a {
-    bottom: -27px;
-    left: 36.5rem;
-    width: 75px;
-    height: 50px;
-    padding: 30px;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .buttonWaap a {
-    bottom: -27px;
-    left: 43.5rem;
-    width: 75px;
-    height: 50px;
-    padding: 30px;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  .whatsapp2 {
-    position: relative;
-    z-index: 2;
-    width: 15px;
-    height: auto;
-    margin-top: 85px;
-    margin-left: 11.2rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .whatsapp2 {
-    width: 21px;
-    margin-top: 7.5rem;
-    margin-left: 22.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .whatsapp2 {
-    width: 25px;
-    margin-top: 14rem;
-    margin-left: 38rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .whatsapp2 {
-    margin-top: 14rem;
-    margin-left: 45rem;
-  }
-}
-
-.whatsapp2:hover {
-  transition: 1s;
-  transform: scale(1.3);
-}
-
-@media screen and (min-width: 150px) {
-  .separadorNos {
-    overflow: hidden;
-    background-color: #26362b;
-    height: 5.5rem;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    opacity: 0.8;
-  }
-}
-@media screen and (min-width: 768px) {
-  .separadorNos {
-    height: 8rem;
-    width: 100vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .separadorNos {
-    height: 15rem;
-    width: 100vw;
-  }
-}
-
-/*Finaliza Separador Nosotros*/
 /* Inicia seccion mision*/
 .mision {
   background-color: #26362b;
@@ -622,24 +293,51 @@ header {
 
 @media screen and (min-width: 150px) {
   .texto {
-    color: #ff5d02;
+    color: #057f2a;
     background-color: #26362b;
     font-weight: 200;
     font-size: 10px;
     margin-top: 6px;
-    text-align: center;
+    text-align: initial;
     padding-bottom: 20px;
+    padding-top: 0;
+      padding: 1rem 2rem;
   }
 }
+
+.mision .leyenda{
+  text-align: center;
+}
+
+.mision .linea{
+  text-align: center;
+  color: #ff5d02;
+}
+
+.texto p {
+  color: #ff5d02;
+} 
+
+.texto .p1 {
+  color: #057f2a;
+} 
+
+.texto i {
+  color: #ff5d02;
+} 
 @media screen and (min-width: 768px) {
   .texto {
     font-size: 12px;
     padding: 5px;
+    padding-top: 0;
+      padding: 1rem 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .texto {
-    text-align: center;
+    text-align: initial;
+    padding-top: 0;
+      padding: 1rem 2rem;
     font-size: 15px;
     padding: 40px;
   }
@@ -820,11 +518,35 @@ header {
 
 /* finaliza seccion mision*/
 /* Inicia seccion vision*/
+.valores2{
+  background-color: #263d2d;
+}
+.texto2{
+  color: #057f2a;
+}
+
+.texto2 .p2 {
+  color: #ff5d02;
+  text-align: initial;
+} 
+
+.texto2 .p3 {
+  color: #057f2a;
+  font-weight: 200;
+  text-align: center;
+} 
+
+.texto2 i {
+  color: #ff5d02;
+} 
 @media screen and (min-width: 150px) {
   .contenedorValores2 {
-    margin-right: 0;
+    margin-right: 100px;
+    margin-left: 100px;
     padding-top: 0;
     padding-bottom: 0;
+    font-weight: 200;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -833,13 +555,17 @@ header {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    font-weight: 200;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 1024px) {
   .contenedorValores2 {
     margin-left: 0;
-    margin-right: 8rem;
+    margin-right: 100px;
     padding-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1328px) {
@@ -851,7 +577,7 @@ header {
 }
 
 .mision2 h2 {
-  color: #057f2a;
+  
   font-weight: 200;
   text-align: center;
 }
@@ -1268,6 +994,7 @@ header {
 /* Inicia Footer*/
 footer {
   text-align: center;
+  
 }
 @media screen and (min-width: 768px) {
   footer {
