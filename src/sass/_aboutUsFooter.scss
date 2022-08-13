@@ -19,8 +19,8 @@ footer{
     @include pantalla(xs){
         padding-top: 10rem;
         color: $verde-principal;
+        
     };
-    
     @include pantalla(md){
         padding-top: 20rem;
         grid-area: info ;

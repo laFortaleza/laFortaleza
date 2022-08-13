@@ -1,9 +1,10 @@
 @import "variables", "mixins";
 footer{
     // background-color: $blanco;
-    text-align: center;
     background-color: $verde-pino;
+    text-align: center;
     @include pantalla(md){
+        padding-top: -3rem;
         display: grid;
         grid-template: repeat(3,auto)/repeat(2, auto);
         grid-template-areas:
@@ -18,11 +19,12 @@ footer{
     align-items: center;
     flex-direction: column;
     @include pantalla(xs){
-        padding-top: 2rem;
+        padding-top: 5rem;
         color: $verde-principal;
         
     };
     @include pantalla(md){
+        padding-top: 0;
         grid-area: info ;
         margin-left: 4rem;
     }
@@ -60,6 +62,7 @@ footer{
         padding-bottom: 2rem;
     };
     @include pantalla(md){
+        padding-top: 0;
         grid-area: menuF;
         margin-right: 6rem;
         border-left: 1px solid $verde-principal

@@ -1456,11 +1456,12 @@ header label {
 /* Finaliza Imagenes*/
 /*Finaliza Selectores*/
 footer {
-  text-align: center;
   background-color: #26362b;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   footer {
+    padding-top: -3rem;
     display: grid;
     grid-template: repeat(3, auto)/repeat(2, auto);
     grid-template-areas: "info menuF" "footer footer" "by by";
@@ -1475,12 +1476,13 @@ footer {
 }
 @media screen and (min-width: 150px) {
   .LaFortaleza {
-    padding-top: 2rem;
+    padding-top: 5rem;
     color: #057f2a;
   }
 }
 @media screen and (min-width: 768px) {
   .LaFortaleza {
+    padding-top: 0;
     grid-area: info;
     margin-left: 4rem;
   }
@@ -1525,6 +1527,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .menu {
+    padding-top: 0;
     grid-area: menuF;
     margin-right: 6rem;
     border-left: 1px solid #057f2a;
