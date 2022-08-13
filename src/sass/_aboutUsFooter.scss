@@ -1,148 +1,78 @@
 @import "variables", "mixins";
-/* Inicia Footer*/
-
-footer{    
+footer{
+    // background-color: $blanco;
     text-align: center;
     @include pantalla(md){
-        margin-top: 110px;
         display: grid;
         grid-template: repeat(3,auto)/repeat(2, auto);
-        grid-template-areas: "info menuF" "footer footer" "by by";
+        grid-template-areas:
+        "info menuF"
+        "footer footer"
+        "by by";
         align-items: center;
-    }  
-
-    @include pantalla(lg){
-        margin-top: 210px;
-    }    
+    }
 }
-
 .LaFortaleza{
     display: flex;
     align-items: center;
     flex-direction: column;
     @include pantalla(xs){
-        padding-top: 7rem;
+        padding-top: 10rem;
         color: $verde-principal;
         
-    }
-
+    };
     @include pantalla(md){
-        padding-top: 3rem;
+        padding-top: 20rem;
         grid-area: info ;
         margin-left: 4rem;
     }
 
-    @include pantalla(lg){
-        padding-top: 5rem;
-        margin-left: 6rem;
-    }
-
-    @include pantalla(xl){
-        padding-top: 4rem;
-        margin-left: 10rem;
-    }
-
     #logoFooter{
         @include pantalla(xs){
-            width: 6rem;
+            width: 9rem;
         };
         @include pantalla(md){
             width: 7rem;
         };
     }
-
-    #logoFooter:hover{
-        transition: 1s;
-        transform: scale(0.9);
-    
-    }
-
     .p6{
         @include pantalla(xs){
-            font-size: 1.1rem;
-            padding: 1rem 0;
-            font-weight: 300;
-        }
+            font-size: 1.2rem;
+            padding:1rem 0;
+        };
         @include pantalla(md){
             font-size: 1.2rem;
-        }
+        };
     }
-
     .p7{
         @include pantalla(xs){
             font-size:1rem;
-            padding: .5rem 0 2.5rem;
-            font-weight: 300;             
-        }  
+            padding: .5rem 0 4rem; 
+        };  
         @include pantalla(md){
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         } 
     }
 }
-
-.LaFortaleza hr{ 
-    @include pantalla(xs){        
-        height: 1.2px;
-        border: none;
-        color: $naranja-oscuro;
-        background-color: $naranja-oscuro;
-        width: 80px;
-        margin-left: 155px;
-    }  
-
-    @include pantalla(md){        
-        width: 85px;
-        margin-left: 110px;
-    }   
-
-    @include pantalla(lg){      
-        margin-left: 220px;
-    }   
-
-    @include pantalla(xl){      
-        margin-left: 230px;
-    }  
-    
-
-}
-
-.linea2{
-    display: flex;
-    text-align: center;
-    height: 1px;
-    width: 30%;
-    background-color: $naranja-oscuro;
-}
-
 .menu{
+    
     @include pantalla(xs){
-        padding-bottom: 2rem;        
-    }
-
+        padding-bottom: 2rem;
+    };
     @include pantalla(md){
-        padding: 1px 0px 20px;               
+        padding-top: 20rem;
         grid-area: menuF;
         margin-right: 6rem;
-        border-left: 1.2px solid $verde-principal;
-        
-    }
-
-    // @include pantalla(lg){
-    //     padding: 20px 0px 10px; 
-    //     margin-right: 20rem;             
-    // }
-
-    // @include pantalla(xl){
-    //     margin-right: 30rem;             
-    // }
+        border-left: 1px solid $verde-principal
+    };
     
     li a{
         @include pantalla(xs){
-            font-weight: 200;
             font-size: 1rem;
+            font-weight: 200;
             color: $naranja-oscuro;
             text-decoration: none;
-            line-height: 2px;
+            line-height: 2rem;
         };
          @include pantalla(md){
             line-height: 2.8rem;
@@ -152,78 +82,85 @@ footer{
     li a:active{
         color: $naranja-oscuro;
     }
-    li a:hover{        
+    li a:hover{
+        // font-size: 1.1em;
         color: $verde-principal;
     }
 }
-
 .redesSociales{
     background-color: $verde-principal;
     padding: 13px;     
     @include pantalla(md){
         grid-area: footer;
-    }         
-             
-             
+    }
+    a{
+        text-decoration: none;
+    }
+    i{
+        color: $verde-dark;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 15px; 
+        @include pantalla(xl){
+            margin-right: 60px;
+        }  
+    }
+    i:hover{
+        color: $naranja-oscuro;
+        opacity: 0.7;
+    }
 }
-
-.redesSociales a{
-    text-decoration: none;
+.linea2{
+    display: flex;
+    text-align: center;
+    height: 1px;
+    width: 30%;
+    background-color: $naranja-oscuro;
 }
-
-.redesSociales i{
-    color: $verde-dark;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 15px; 
-    @include pantalla(xl){
-        margin-right: 60px;
-    }   
-}
-
-.redesSociales i:hover{
-    color: $naranja-oscuro;
-    opacity: 0.7;
-}
-
-.by {
-    background-color: #057f2a;
+.by{
+    background-color: $verde-principal;
     grid-area: by;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ff5d02;
+    color: $naranja-oscuro;
     font-weight: 300;
-    letter-spacing: 4px;
-  }
-  @media screen and (min-width: 150px) {
-    .by {
-      line-height: 1.9rem;
+    letter-spacing:4px;
+    @include pantalla(xs){
+        line-height: 1.9rem;
     }
-  }
-  .by ul li {
-    display: inline-block;
-  }
-  @media screen and (min-width: 150px) {
-    .by ul li {
-      line-height: 1.8rem;
-      font-size: 9px;
+    
+    ul li{
+        display: inline-block;
+        @include pantalla(xs){
+            line-height: 1.8rem;
+            font-size: 9px;
+        }
+        @include pantalla(md){
+            font-size: 14px;
+            line-height: 2.5rem;
+        }
+        a{
+            color: $naranja-oscuro;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $verde-dark;
+            font-weight: 700;
+        }
     }
-  }
-  @media screen and (min-width: 768px) {
-    .by ul li {
-      font-size: 14px;
-      line-height: 2.5rem;
+    
+}
+.linea3{
+    height: 1px;
+    width: 37%;
+    background-color: $naranja-oscuro;
+    margin: 0.5rem 0 1.4rem;
+    @include pantalla(xs){
+        width: 60%;
     }
-  }
-  .by ul li a {
-    color: #ff5d02;
-    text-decoration: none;
-  }
-  .by ul li a:hover {
-    color: #1c2723;
-    font-weight: 700;
-  }
-
-/* Finaliza Footer*/
+    @include pantalla(md){
+       width: 37%;
+    }
+}
