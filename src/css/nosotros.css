@@ -1265,22 +1265,15 @@ header {
 }
 
 /*Finaliza Valores*/
-/* Inicia Footer*/
 footer {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   footer {
-    margin-top: 110px;
     display: grid;
     grid-template: repeat(3, auto)/repeat(2, auto);
     grid-template-areas: "info menuF" "footer footer" "by by";
     align-items: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  footer {
-    margin-top: 210px;
   }
 }
 
@@ -1291,32 +1284,20 @@ footer {
 }
 @media screen and (min-width: 150px) {
   .LaFortaleza {
-    padding-top: 7rem;
+    padding-top: 10rem;
     color: #057f2a;
   }
 }
 @media screen and (min-width: 768px) {
   .LaFortaleza {
-    padding-top: 3rem;
+    padding-top: 20rem;
     grid-area: info;
     margin-left: 4rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  .LaFortaleza {
-    padding-top: 5rem;
-    margin-left: 6rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .LaFortaleza {
-    padding-top: 4rem;
-    margin-left: 10rem;
-  }
-}
 @media screen and (min-width: 150px) {
   .LaFortaleza #logoFooter {
-    width: 6rem;
+    width: 9rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1324,15 +1305,10 @@ footer {
     width: 7rem;
   }
 }
-.LaFortaleza #logoFooter:hover {
-  transition: 1s;
-  transform: scale(0.9);
-}
 @media screen and (min-width: 150px) {
   .LaFortaleza .p6 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
-    font-weight: 300;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1343,49 +1319,13 @@ footer {
 @media screen and (min-width: 150px) {
   .LaFortaleza .p7 {
     font-size: 1rem;
-    padding: 0.5rem 0 2.5rem;
-    font-weight: 300;
+    padding: 0.5rem 0 4rem;
   }
 }
 @media screen and (min-width: 768px) {
   .LaFortaleza .p7 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-}
-
-@media screen and (min-width: 150px) {
-  .LaFortaleza hr {
-    height: 1.2px;
-    border: none;
-    color: #ff5d02;
-    background-color: #ff5d02;
-    width: 80px;
-    margin-left: 155px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .LaFortaleza hr {
-    width: 85px;
-    margin-left: 110px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .LaFortaleza hr {
-    margin-left: 220px;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .LaFortaleza hr {
-    margin-left: 230px;
-  }
-}
-
-.linea2 {
-  display: flex;
-  text-align: center;
-  height: 1px;
-  width: 30%;
-  background-color: #ff5d02;
 }
 
 @media screen and (min-width: 150px) {
@@ -1395,30 +1335,19 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    padding: 1px 0px 20px;
+    padding-top: 20rem;
     grid-area: menuF;
-    margin-right: 11rem;
-    border-left: 1.2px solid #057f2a;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    padding: 20px 0px 10px;
-    margin-right: 20rem;
-  }
-}
-@media screen and (min-width: 1328px) {
-  .menu {
-    margin-right: 30rem;
+    margin-right: 6rem;
+    border-left: 1px solid #057f2a;
   }
 }
 @media screen and (min-width: 150px) {
   .menu li a {
-    font-weight: 200;
     font-size: 1rem;
+    font-weight: 200;
     color: #ff5d02;
     text-decoration: none;
-    line-height: 2px;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1443,11 +1372,9 @@ footer {
     grid-area: footer;
   }
 }
-
 .redesSociales a {
   text-decoration: none;
 }
-
 .redesSociales i {
   color: #1c2723;
   font-size: 18px;
@@ -1459,10 +1386,17 @@ footer {
     margin-right: 60px;
   }
 }
-
 .redesSociales i:hover {
   color: #ff5d02;
   opacity: 0.7;
+}
+
+.linea2 {
+  display: flex;
+  text-align: center;
+  height: 1px;
+  width: 30%;
+  background-color: #ff5d02;
 }
 
 .by {
@@ -1476,7 +1410,6 @@ footer {
   font-weight: 300;
   letter-spacing: 4px;
 }
-
 @media screen and (min-width: 150px) {
   .by {
     line-height: 1.9rem;
@@ -1485,7 +1418,6 @@ footer {
 .by ul li {
   display: inline-block;
 }
-
 @media screen and (min-width: 150px) {
   .by ul li {
     line-height: 1.8rem;
@@ -1502,13 +1434,28 @@ footer {
   color: #ff5d02;
   text-decoration: none;
 }
-
 .by ul li a:hover {
   color: #1c2723;
   font-weight: 700;
 }
 
-/* Finaliza Footer*/
+.linea3 {
+  height: 1px;
+  width: 37%;
+  background-color: #ff5d02;
+  margin: 0.5rem 0 1.4rem;
+}
+@media screen and (min-width: 150px) {
+  .linea3 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .linea3 {
+    width: 37%;
+  }
+}
+
 /* Inicia Menu*/
 #menu-bar {
   display: none;
